@@ -22,21 +22,21 @@ export const metadata: Metadata = {
     ["og:site_name"]: "ECHO Design",
     ["viewport"]: "width=device-width, initial-scale=1.0",
   },
-  description: "Công ty cổ phần EchoDesign",
+  description: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING ",
   openGraph: {
-    title: "ECHO Design",
-    description: "Công ty cổ phần EchoDesign",
+    title: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
+    description: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING ",
     url: "https://www.echodesign.vn/",
     type: "website",
     images: [
       {
-        url: "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9pY29uLnBuZw==&version_id=null",
+        url: "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvbG9nby5wbmc=&version_id=null",
         alt: "thumbnailUrl",
         width: 400,
         height: 200,
       },
     ],
-    siteName: "Công ty cổ phần EchoDesign",
+    siteName: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING ",
   },
 };
 
