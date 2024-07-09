@@ -4,7 +4,7 @@ import { MenuToggle } from "../atoms/MenuToggle";
 import { motion } from "framer-motion";
 import useBreakpoint from "@/hooks/useBreakpoint";
 import Image from "next/image";
-import LogoText from "@/public/logo-text.jpg";
+import LogoText from "@/public/images/logo.png";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -89,7 +89,7 @@ const Header = () => {
               <Image
                 width={145}
                 height={40}
-                objectFit="covert"
+                objectFit="cover"
                 alt="Logo echo"
                 src={LogoText}
               />
@@ -189,14 +189,13 @@ const Header = () => {
         </motion.nav>
       ) : (
         <div className="container mx-auto w-full flex justify-between py-1 px-3">
-          <Link href="/" className=" block h-12 w-36 mt-1">
+          <Link href="/" className=" block w-36 mt-1">
             <Image
               src={LogoText}
               width={144}
               height={48}
-              objectFit="cover"
               alt="Logo echo"
-              className="py-1"
+              className="py-1 object-cover"
             />
           </Link>
           <div className="flex items-center uppercase">

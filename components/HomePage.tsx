@@ -3,29 +3,48 @@ import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from "@/public/logo.png";
-import Slide2 from "@/public/slide_2.jpg";
-import Slide1 from "@/public/slide_1.jpg";
-import Slide3 from "@/public/slide_3.jpg";
-import Slide4 from "@/public/slide_4.jpg";
+import Slide2 from "@/public/images/Picture2.png";
+import Slide1 from "@/public/images/Picture3.png";
+import Slide3 from "@/public/images/Picture4.png";
+import Slide4 from "@/public/images/Picture5.png";
 import useBreakpoint from "@/hooks/useBreakpoint";
 import { useAppStore } from "@/store/app.store";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
-import { FuturaNow, Litera } from "@/utils/font";
+import { FuturaNow } from "@/utils/font";
 import clsx from "clsx";
 import Link from "next/link";
 import { MENU_HOME, RoutesEnum } from "@/constants/app.constants";
-import { cn } from "@/lib/utils";
-import { useRouter } from "next/navigation";
 import thucte from "@/data/thuc-te.json";
 import EchoImage from "@/public/echo.png";
 import ArchitectImage from "@/public/architect.png";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import Thicong2 from "@/public/images/thicong2.png";
+import Thicong3 from "@/public/images/thicong3.png";
+import Thicong4 from "@/public/images/thicong4.png";
+import Thicong5 from "@/public/images/thicong5.png";
+import Thicong6 from "@/public/images/thicong6.png";
+import Thicong7 from "@/public/images/thicong7.png";
+import Thicong9 from "@/public/images/thicong9.png";
+import Thicong10 from "@/public/images/thicong10.png";
+import Thicong11 from "@/public/images/thicong11.png";
+import Thicong12 from "@/public/images/thicong12.png";
+import Thicong13 from "@/public/images/thicong13.png";
+import Thicong14 from "@/public/images/thicong14.png";
+
+const THICONG = [
+  Thicong2,
+  Thicong3,
+  Thicong4,
+  Thicong5,
+  Thicong6,
+  Thicong7,
+  Thicong9,
+  Thicong10,
+  Thicong11,
+  Thicong12,
+  Thicong13,
+  Thicong14,
+];
 
 const TITLE = "E C H O".split(" ");
 const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
@@ -46,10 +65,9 @@ const HEIGHT_HEADER_DESKTOP = 68;
 const HEIGHT_FOOTER_DESKTOP = -8;
 
 const HomePage = () => {
-  const router = useRouter();
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
+  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
   const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
   const [type, setType] = useState(1);
@@ -124,14 +142,14 @@ const HomePage = () => {
           }px)`,
         }}
       >
-        <p
+        {/* <p
           className={cn(
             "text-center absolute left-[50%] translate-x-[-50%] bottom-4 z-10 text-white text-nowrap",
             FuturaNow.className
           )}
         >
           Timeless design, endless echo
-        </p>
+        </p> */}
         <Image
           src={Logo}
           width={0}
@@ -495,22 +513,51 @@ const HomePage = () => {
         <div className="container mx-auto">
           <div className="flex items-center flex-col md:flex-row flex-wrap gap-6 mt-16">
             <div className="flex-1">
-              <h3 className="text-3xl mb-8">ECHO DESIGN</h3>
+              <h3 className="text-3xl mb-8">
+                CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
+              </h3>
               <p>
-                Lời đầu tiên, chúng tôi - CÔNG TY CỔ PHẦN ECHO DESIGN gửi tới
-                Quý khách hàng lời chào trân trọng, lời chúc sức khoẻ, thành
-                công, thịnh vượng và gặp nhiều may mắn. ECHO Design được thành
-                lập bởi đội ngũ kiến trúc sư, thiết kế nội thất đầy sáng tạo và
-                nhiệt huyết kết hợp với đội ngũ thợ thi công tay nghề cao, giàu
-                kinh nghiêm dưới sự giám sát chặt chẽ của các quản lý và kỹ sư
-                sẽ mang đến những không gian sống và hưởng thụ hoàn hảo cho mỗi
-                quý khách hàng. Với khẩu hiệu “Thiết kế vượt thời gian, tiếng
-                vang vượt thời đại”, cùng sự chuyên sâu trong lĩnh vực nghiên
-                cứu khoa học về sản xuất nội thất và các giải pháp thi công tối
-                ưu, chúng tôi luôn mong muốn mang đến cho quý khách hàng những
-                thiết kế độc đáo, mang tính tương lai, và biến những thiết kế ấy
-                trở thành hiện thực nhằm nâng cao chất lượng cuộc sống của quý
-                khách hàng.
+                <p>
+                  Lời đầu tiên, chúng tôi -{" "}
+                  <span className="font-medium">
+                    CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
+                  </span>{" "}
+                  gửi tới Quý khách hàng lời chào trân trọng, lời chúc sức khoẻ,
+                  thành công, thịnh vượng và gặp nhiều may mắn.
+                </p>
+                <p className="mt-2">
+                  <span className="font-medium">
+                    Công Ty Cổ Phần Xây dựng và Thương mại Việt Sing
+                  </span>{" "}
+                  được thành lập với mục đích cung cấp đến Quý khách hàng các
+                  sản phẩm chính hãng, chất lượng cao từ các thương hiệu nổi
+                  tiếng trên thế giới. Công Ty Cổ Phần Xây dựng và Thương mại
+                  Việt Sing là nhà cung cấp và phân phối các dòng sơn công
+                  nghiệp, sơn nội-ngoại thất, các sản phẩm phụ gia cho các công
+                  trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn chống
+                  thấm, Băng keo chống thấm....
+                </p>
+                <p className="mt-2">
+                  <span className="font-medium">Công ty Việt Sing</span> cũng là
+                  đại lý cấp đặc biệt cung cấp và phân phối các loại sơn của
+                  hãng Jotun (Na Uy).
+                </p>
+                <p className="mt-2">
+                  <span className="font-medium">Công ty Việt Sing</span> bằng
+                  tất cả nguồn lực tốt nhất với kinh nghiệm, lòng nhiệt huyết và
+                  sức mạnh tập thể. Chúng tôi tự tin sẽ mang đến cho Quý khách
+                  hàng những lựa chọn tối ưu phù hợp với từng hạng mục và từng
+                  công trình để đảm bảo an toàn, chất lượng, tiến độ; đồng thời
+                  góp phần giúp sắc màu của công trình luôn bền đẹp với thời
+                  gian.
+                </p>
+                <p className="mt-2">
+                  <span className="font-medium">Công ty Việt Sing</span> cam kết
+                  đem lại dịch vụ tốt nhất cho từng khách hàng. Mặc dù chúng tôi
+                  cung cấp những sản phẩm chất lượng cao nhưng giá cả luôn rất
+                  cạnh tranh. Chúng tôi có chính sách chiết khấu sản phẩm rất ưu
+                  đãi dành cho khách hàng.
+                </p>
               </p>
               <div>
                 <Link
@@ -538,7 +585,7 @@ const HomePage = () => {
                 )}
               >
                 <span className="leading-[20px] md:leading-[40px]">
-                  Dự án thiết kế
+                  Thi công
                 </span>
               </div>
             </div>
@@ -550,92 +597,15 @@ const HomePage = () => {
         <div>
           <div className="bg-[#efefef] mt-10">
             <div className="container mx-auto pt-6">
-              <div className="justify-center pb-6 flex-wrap hidden md:flex">
-                {MENU_HOME.map((item, index) => (
-                  <div
-                    key={item.label}
-                    className={clsx(
-                      "relative before:content-['/'] text-center before:right-0 before:top-[50%] before:translate-y-[-50%] before:absolute text-base py-[10px] px-7",
-                      index === MENU_HOME.length - 1 ? "before:hidden" : ""
-                    )}
-                  >
-                    <span
-                      className={cn(
-                        "text-center cursor-pointer",
-                        type === item.type ? "underline" : ""
-                      )}
-                      onClick={() => {
-                        setType(item.type);
-                      }}
-                    >
-                      {item.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              <Accordion
-                type="single"
-                collapsible
-                className="w-full bg-white mb-6 block md:hidden"
-              >
-                <AccordionItem value={productDesign.to}>
-                  <AccordionTrigger className="py-2 hover:no-underline">
-                    <p className="text-center w-full pl-4 text-base ">
-                      {productDesign.label}
-                    </p>
-                  </AccordionTrigger>
-                  <AccordionContent className="pb-0">
-                    {MENU_HOME.filter(
-                      (item) => item.type !== productDesign.type
-                    ).map((item, index) => (
-                      <p
-                        className={cn(
-                          "text-center text-base py-2 border-b border-solid border-secondary",
-                          index === 0 ? "border-t" : ""
-                        )}
-                        key={item.label}
-                        onClick={() => {
-                          setType(item.type);
-                        }}
-                      >
-                        {item.label}
-                      </p>
-                    ))}
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {productDesign.data.slice(0, 2).map((item) => (
-                  <div key={item.slug} className="relative">
-                    <div className="relative overflow-hidden group">
-                      <Link
-                        href={productDesign.to + "/" + item.slug}
-                        className="block"
-                      >
-                        <img
-                          src={item.images[0]}
-                          alt={item.name}
-                          width="100%"
-                          loading="lazy"
-                          className="h-[200px] md:h-[250px] lg:h-[400px]"
-                        />
-                      </Link>
-                      <Link
-                        href={productDesign.to + "/" + item.slug}
-                        className="text-white cursor-pointer transition flex-col group-hover:translate-y-[0%] translate-y-[100%] absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.3)] flex justify-center items-center"
-                      >
-                        <p className="text-xl">{item.name}</p>
-                        <Link
-                          href={productDesign.to + "/" + item.slug}
-                          className="text-primary cursor-pointer mt-3"
-                        >
-                          Xem chi tiết
-                        </Link>
-                      </Link>
-                    </div>
-                    <Link href={productDesign.to + "/" + item.slug}>
-                      <p className="mt-2 font-medium text-lg">{item.name}</p>
-                    </Link>
+                {THICONG.map((item, index) => (
+                  <div>
+                    <Image
+                      className="w-full h-[500px]"
+                      src={item}
+                      key={index}
+                      alt="image"
+                    />
                   </div>
                 ))}
               </div>

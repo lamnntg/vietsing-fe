@@ -5,7 +5,7 @@ import ContactFooter from "./ContactFooter";
 import clsx from "clsx";
 import { FuturaNow } from "@/utils/font";
 import { usePathname } from "next/navigation";
-import LogoWhite from "@/public/logo-text-white.png";
+import LogoWhite from "@/public/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,7 +15,6 @@ import {
   FACEBOOK_LINK,
   RoutesEnum,
 } from "@/constants/app.constants";
-import { FileVideo, NotepadText } from "lucide-react";
 import DropdownMenu from "../DropdownMenu";
 
 const Footer = () => {
@@ -37,14 +36,15 @@ const Footer = () => {
             alt="Logo"
           />
           <p className="mt-6">
-            Số 6 Kim Đồng, Giáp Bát, Hoàng Mai, Hà Nội, Việt Nam
+            Tổ dân phố Liên Cơ, Xã Kiêu Kỵ, Huyện Gia Lâm, Thành Phố Hà Nội,
+            Việt Nam
           </p>
           <p className="mt-3">
             <Link
-              href="tel:088 688 99 95"
+              href="tel:0941689999"
               className="hover:text-primary transition"
             >
-              088 688 99 95
+              0932.925.999 / 0941.689.999
             </Link>
           </p>
           <p className="mt-3">
@@ -53,7 +53,7 @@ const Footer = () => {
               target="_blank"
               className="hover:text-primary transition"
             >
-              infor@echodesign.vn
+              info@vietsinggroup.com.vn
             </Link>
           </p>
           <p className="mt-3">Thời gian làm việc: 8:30 - 18:00 (Th2 - Th7)</p>
