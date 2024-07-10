@@ -31,6 +31,25 @@ import Thicong12 from "@/public/images/thicong12.png";
 import Thicong13 from "@/public/images/thicong13.png";
 import Thicong14 from "@/public/images/thicong14.png";
 
+import Image1 from "@/public/images/image1.jpg";
+import Image2 from "@/public/images/image2.jpg";
+import Image3 from "@/public/images/image3.jpg";
+import Image4 from "@/public/images/image4.jpg";
+import Image5 from "@/public/images/image5.jpg";
+import Image6 from "@/public/images/image6.jpg";
+import Image7 from "@/public/images/image7.jpg";
+import Image8 from "@/public/images/image8.jpg";
+
+const GYM_IMAGES = [
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
+  Image6,
+  Image7,
+  Image8,
+];
 const THICONG = [
   Thicong2,
   Thicong3,
@@ -601,7 +620,7 @@ const HomePage = () => {
                 {THICONG.map((item, index) => (
                   <div>
                     <Image
-                      className="w-full h-[500px]"
+                      className="w-full h-[500px] object-cover"
                       src={item}
                       key={index}
                       alt="image"
@@ -629,56 +648,25 @@ const HomePage = () => {
                 )}
               >
                 <span className="leading-[20px] md:leading-[40px] uppercase">
-                  Dự án thi công
+                  Hình ảnh
                 </span>
               </div>
             </div>
             <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
           </div>
-          <div className="bg-[#efefef] mt-10">
+          <div className="bg-[#efefef] my-10">
             <div className="container mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
-                {thucte.slice(0, 2).map((item) => (
-                  <div key={item.slug} className="relative">
-                    <div className="relative overflow-hidden group">
-                      <Link
-                        href={RoutesEnum.THUC_TE + "/" + item.slug}
-                        className="block"
-                      >
-                        <img
-                          src={item.images[0]}
-                          alt={item.name}
-                          width="100%"
-                          loading="lazy"
-                          className="h-[200px] md:h-[250px] lg:h-[400px]"
-                        />
-                      </Link>
-                      <Link
-                        href={RoutesEnum.THUC_TE + "/" + item.slug}
-                        className="text-white cursor-pointer transition flex-col group-hover:translate-y-[0%] translate-y-[100%] absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.3)] flex justify-center items-center"
-                      >
-                        <p className="text-xl">{item.name}</p>
-                        <Link
-                          href={RoutesEnum.THUC_TE + "/" + item.slug}
-                          className="text-primary cursor-pointer mt-3"
-                        >
-                          Xem chi tiết
-                        </Link>
-                      </Link>
-                    </div>
-                    <Link href={RoutesEnum.THUC_TE + "/" + item.slug}>
-                      <p className="mt-2 font-medium text-lg">{item.name}</p>
-                    </Link>
+                {GYM_IMAGES.map((item, index) => (
+                  <div>
+                    <Image
+                      className="w-full h-[400px] object-cover"
+                      src={item}
+                      key={index}
+                      alt="image"
+                    />
                   </div>
                 ))}
-              </div>
-              <div className="text-center mt-8 pb-6 flex justify-center">
-                <Link
-                  href={RoutesEnum.THUC_TE}
-                  className="bg-[#1c1c1c] text-white w-[140px] flex justify-center items-center py-3 rounded-md border border-solid border-black hover:bg-white transition hover:text-black"
-                >
-                  Xem thêm
-                </Link>
               </div>
             </div>
           </div>

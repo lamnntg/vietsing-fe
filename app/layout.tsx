@@ -16,10 +16,10 @@ const sourceSansPro = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "ECHO Design",
+  title: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
   other: {
-    ["or:title"]: "ECHO Design",
-    ["og:site_name"]: "ECHO Design",
+    ["or:title"]: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
+    ["og:site_name"]: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
     ["viewport"]: "width=device-width, initial-scale=1.0",
   },
   description: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING ",
