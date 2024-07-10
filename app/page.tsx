@@ -10,10 +10,9 @@ export const viewport: Viewport = {
 export default function Home() {
   return (
     <main>
-      <Head>
+      {/* <Head>
         <link rel="preload" href="../public/home_thumbnail.jpeg" as="image" />
-        <link rel="preload" href="../public/logo.png" as="image" />
-      </Head>
+      </Head> */}
       <HomePage />
     </main>
   );

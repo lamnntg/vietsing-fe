@@ -26,17 +26,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
     description: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING ",
-    url: "https://www.echodesign.vn/",
+    url: "https://vietsing-fe.vercel.app/",
     type: "website",
     images: [
       {
-        url: "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvbG9nby5wbmc=&version_id=null",
+        url: "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvbG9nb19zbWFsbC5wbmc=&version_id=null",
         alt: "thumbnailUrl",
         width: 400,
         height: 200,
       },
     ],
-    siteName: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING ",
+    siteName: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
   },
 };
 

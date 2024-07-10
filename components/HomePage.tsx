@@ -2,7 +2,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Logo from "@/public/logo.png";
+import Logo from "@/public/images/logo.png";
 import Slide2 from "@/public/images/Picture2.png";
 import Slide1 from "@/public/images/Picture3.png";
 import Slide3 from "@/public/images/Picture4.png";
