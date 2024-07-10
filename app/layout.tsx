@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING ",
   openGraph: {
     title: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
-    description: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING ",
+    description: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
     url: "https://vietsing-fe.vercel.app/",
     type: "website",
     images: [
