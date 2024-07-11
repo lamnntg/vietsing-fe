@@ -54,7 +54,7 @@ const ContactFooter = () => {
             </Link>
           </div>
           <div
-            className="bg-[#f58634] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer"
+            className="bg-primary rounded-full w-10 h-10 flex justify-center items-center cursor-pointer"
             onClick={() => setActive(!active)}
           >
             <FontAwesomeIcon icon={faXmark} color="#fff" size="xl" />

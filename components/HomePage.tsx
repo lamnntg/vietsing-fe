@@ -15,7 +15,6 @@ import { FuturaNow } from "@/utils/font";
 import clsx from "clsx";
 import Link from "next/link";
 import { MENU_HOME, RoutesEnum } from "@/constants/app.constants";
-import thucte from "@/data/thuc-te.json";
 import EchoImage from "@/public/echo.png";
 import ArchitectImage from "@/public/architect.png";
 import Thicong2 from "@/public/images/thicong2.png";
@@ -39,6 +38,7 @@ import Image5 from "@/public/images/image5.jpg";
 import Image6 from "@/public/images/image6.jpg";
 import Image7 from "@/public/images/image7.jpg";
 import Image8 from "@/public/images/image8.jpg";
+import Video from "next-video";
 
 const GYM_IMAGES = [
   Image1,
@@ -151,14 +151,9 @@ const HomePage = () => {
   return (
     <div>
       <div
-        className="w-[100%] bg-white flex justify-center items-center relative"
+        className="w-[100%] bg-white flex justify-center items-center relative h-[80vh]"
         style={{
           zIndex: step === StepEnums.THREE ? 1 : 3,
-          height: `calc(100vh - ${
-            isMobileLargeDown
-              ? HEIGHT_FOOTER_MOBILE + HEIGHT_HEADER_MOBILE
-              : HEIGHT_FOOTER_DESKTOP + HEIGHT_HEADER_DESKTOP
-          }px)`,
         }}
       >
         {/* <p
@@ -462,67 +457,36 @@ const HomePage = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1 } }}
-            className="w-[100%] h-[100%] relative"
+            className="w-[100%] h-[100%] absolute top-0 left-0"
           >
-            <Swiper
-              className="w-[100%] h-[100%]"
-              spaceBetween={30}
-              centeredSlides={true}
-              autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-              navigation={true}
-              modules={[Autoplay, EffectFade]}
-              effect="fade"
-            >
-              <SwiperSlide>
-                <Image
-                  src={Slide1}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  alt="Thumnail"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  src={Slide2}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  alt="Thumnail"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  src={Slide3}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  alt="Thumnail"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image
-                  src={Slide4}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  alt="Thumnail"
-                />
-              </SwiperSlide>
-            </Swiper>
-            <div className="absolute bottom-[50%] translate-y-[50%] left-6 md:left-24 z-10 uppercase font-semibold">
-              <p className="text-white text-[24px] md:text-[28px] lg:text-[56px]">
-                Thiết kế & thi công
-              </p>
-              <p className="text-primary  text-[24px]  md:text-[28px] lg:text-[56px]">
-                Kiến trúc nội thất
-                <span className="hidden md:inline">, chuyên nghiệp</span>
-              </p>
-              <p className="block md:hidden text-primary text-[24px]  md:text-[28px] lg:text-[56px]">
-                chuyên nghiệp
-              </p>
+            <div className="w-full h-full">
+              <video
+                loop
+                muted
+                autoPlay
+                playsInline
+                poster=""
+                className="w-full h-full object-cover"
+              >
+                <source
+                  src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
+                  type="video/mp4"
+                ></source>
+              </video>
+              {/* <Video
+                src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls={false}
+                className="min-w-full min-h-full w-auto h-auto"
+              ></Video> */}
+            </div>
+            <div className="absolute top-[10%] left-[50%] translate-x-[-50%] z-10 uppercase font-semibold">
+              <h2 className="text-[36px] text-white max-w-[90%] lg:max-w-[600px] text-center lg:text-[50px]">
+                LEADERS IN QUALITY CONSTRUCTION AND INFRASTRUCTURE
+              </h2>
             </div>
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[9]"></div>
           </motion.div>
