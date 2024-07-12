@@ -4,7 +4,7 @@ import { MenuToggle } from "../atoms/MenuToggle";
 import { motion } from "framer-motion";
 import useBreakpoint from "@/hooks/useBreakpoint";
 import Image from "next/image";
-import LogoText from "@/public/images/logo.png";
+import LogoText from "@/public/images/logo_small.png";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -87,9 +87,7 @@ const Header = () => {
           <div className="flex justify-between pr-4 relative py-2">
             <Link href="/">
               <Image
-                width={145}
-                height={40}
-                objectFit="cover"
+                className="w-[80px] h-[40px] object-cover"
                 alt="Logo echo"
                 src={LogoText}
               />
@@ -122,12 +120,16 @@ const Header = () => {
               >
                 Giới thiệu
               </Link>
-              <DropdownMenu
-                item={{
-                  label: "Dự án thiết kế",
-                  items: dropdownMenuItems,
-                }}
-              />
+              <Link
+                href={RoutesEnum.COMPLETED}
+                className={cn(
+                  "flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base",
+                  pathname === RoutesEnum.COMPLETED && "text-primary"
+                )}
+                prefetch
+              >
+                Dự án lắp đặt
+              </Link>
               <Link
                 href={RoutesEnum.COMPLETED}
                 className={cn(
@@ -192,10 +194,8 @@ const Header = () => {
           <Link href="/" className=" block w-36 mt-1">
             <Image
               src={LogoText}
-              width={144}
-              height={48}
+              className="w-[90px] h-[52px] object-cover py-1"
               alt="Logo echo"
-              className="py-1 object-cover"
             />
           </Link>
           <div className="flex items-center uppercase">
@@ -217,12 +217,16 @@ const Header = () => {
             >
               Giới thiệu
             </Link>
-            <DropdownMenu
-              item={{
-                label: "Dự án thiết kế",
-                items: dropdownMenuItems,
-              }}
-            />
+            <Link
+              href={RoutesEnum.COMPLETED}
+              className={cn(
+                "flex items-center px-4 text-sm hover:text-primary transition",
+                pathname === RoutesEnum.COMPLETED && "text-primary"
+              )}
+              prefetch
+            >
+              Dự án lắp đặt
+            </Link>
             <Link
               href={RoutesEnum.COMPLETED}
               className={cn(

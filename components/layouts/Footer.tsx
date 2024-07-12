@@ -116,14 +116,14 @@ const Footer = () => {
         <div>
           <p className="mb-2 md:mb-7">FANPAGE</p>
           <div className="flex items-center gap-2 mb-3 transition hover:text-primary cursor-pointer">
-            <iframe
+            {/* <iframe
               src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fed.interior.architecture&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=433043327764949"
               width="340"
               height="130"
               scrolling="no"
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               className="max-w-full"
-            ></iframe>
+            ></iframe> */}
           </div>
         </div>
       </div>
