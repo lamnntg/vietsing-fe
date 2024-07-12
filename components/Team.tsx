@@ -19,7 +19,7 @@ const Team = () => {
   const [mySwipper, setMySwipper] = useState<SwiperType>();
   return (
     <div className="container mx-auto mt-[60px] md:mt-[80px] lg:mt-[120px]">
-      <h3 className="text-primary text-2xl">ECHO DESIGN</h3>
+      <h3 className="text-primary text-2xl">VIỆT SING</h3>
       <p className="text-4xl my-3 mt-4 lg:text-[52px] font-semibold mt-1">
         ĐỘI NGŨ
       </p>

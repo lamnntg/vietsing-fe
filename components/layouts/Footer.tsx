@@ -70,18 +70,17 @@ const Footer = () => {
           >
             Giới thiệu
           </Link>
-          <DropdownMenu
-            item={{
-              label: "Dự án thiết kế",
-              items: dropdownMenuItems,
-            }}
-            isFooter={true}
-          />
           <Link
             className="mb-3 transition hover:text-primary"
             href={RoutesEnum.THUC_TE}
           >
-            Dự án thi công hoàn thiện
+            Dự án thi công lắp đặt
+          </Link>
+          <Link
+            className="mb-3 transition hover:text-primary"
+            href={RoutesEnum.THUC_TE}
+          >
+            Dự án thi công
           </Link>
         </div>
 

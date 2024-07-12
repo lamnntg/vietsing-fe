@@ -1,29 +1,12 @@
 "use client";
-import useBreakpoint from "@/hooks/useBreakpoint";
 import React from "react";
 import Slide3 from "@/public/slide_3.jpg";
 import Image from "next/image";
-import {
-  Clock,
-  Mail,
-  MapPin,
-  Newspaper,
-  Phone,
-  StickyNote,
-} from "lucide-react";
+import { Clock, Mail, MapPin, Newspaper, Phone } from "lucide-react";
 import Link from "next/link";
 import { FACEBOOK_LINK, IFRAME_GOOGLE_MAP } from "@/constants/app.constants";
 
-const defaultProps = {
-  center: {
-    lat: 21.027763,
-    lng: 105.83416,
-  },
-  zoom: 14,
-};
-
 const Contact = () => {
-  const { isMobileLargeDown } = useBreakpoint();
   return (
     <main>
       <div className="h-[370] relative after:absolute after:contents-[''] after:top-0 after:left-0 after:w-full after:h-full after:bg-black after:opacity-45">
@@ -48,20 +31,23 @@ const Contact = () => {
           <p className="text-wrap">
             Chúng tôi sẽ liên hệ và giới thiệu chi tiết về các dự án đã và đang
             thi công, cũng như tư vấn về dự án của quý khách.{" "}
-            <span className="font-semibold">Echo design</span> cam kết đem đến
-            cho quý khách hàng dịch vụ tư vấn chuyên nghiệp, hiệu quả và nhanh
-            chóng nhất.
+            <span className="font-semibold">VIỆT SING</span> cam kết đem đến cho
+            quý khách hàng dịch vụ tư vấn chuyên nghiệp, hiệu quả và nhanh chóng
+            nhất.
           </p>
         </div>
         <div className="flex-1 max-w-full">
           <ul className="border border-b-0 border-solid border-[rgba(0,0,0,.125)] rounded">
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <MapPin />
-              <span>Số 6 Kim Đồng, Giáp Bát, Hoàng Mai, Hà Nội </span>
+              <span>
+                Tổ dân phố Liên Cơ, Xã Kiêu Kỵ, Huyện Gia Lâm, Thành Phố Hà Nội,
+                Việt Nam
+              </span>
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <Phone />
-              <Link href="tel:+0886889995">088.688.9995</Link>
+              <Link href="tel:+0932925999">0932.925.999 / 0941.689.999</Link>
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <MapPin />
@@ -71,12 +57,14 @@ const Contact = () => {
                 target="_blank"
                 className="break-words w-[85%]"
               >
-                {FACEBOOK_LINK}
+                Facebook
               </Link>
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <Mail />
-              <Link href="mailto:info@echodesign.vn">info@echodesign.vn</Link>
+              <Link href="mailto:info@vietsinggroup.com.vn">
+                info@vietsinggroup.com.vn
+              </Link>
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <Clock />
@@ -84,10 +72,7 @@ const Contact = () => {
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <Newspaper />
-              <span>
-                Giấy ĐKKD: Giấy ĐKKD số 0110511487 cấp ngày 17 - 10 - 2023 tại
-                Hà Nội
-              </span>
+              <span></span>
             </li>
           </ul>
         </div>

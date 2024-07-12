@@ -1,21 +1,13 @@
-import { Metadata } from "next";
 import React from "react";
 import Image from "next/image";
-import Slide2 from "@/public/slide_2.jpg";
+import Slide2 from "@/public/images/Picture5.png";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  Building,
-  Building2,
-  ChevronLeft,
-  ChevronRight,
-  SquarePen,
-} from "lucide-react";
-import SlideIntroduce from "@/components/SlideIntroduce";
+import { Building, Building2, SquarePen } from "lucide-react";
 import Team from "@/components/Team";
 
 export default function Introduce() {
@@ -28,29 +20,29 @@ export default function Introduce() {
           alt="Thumnail"
         />
         <p className="absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%] z-[2] text-4xl text-nowrap lg:text-5xl text-white">
-          Về ECHO Design
+          Về VIỆT SING
         </p>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[1]"></div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-[60%,40%] gap-8 container mx-auto items-center my-[100px]">
         <div>
-          <h1 className="text-[30px] lg:text-[36px] xl:text-[40px] font-semibold text-black leading-[45px] mb-6 text-nowrap">
-            CÔNG TY CỔ PHẦN ECHO DESIGN
+          <h1 className="text-[30px] lg:text-[36px] xl:text-[40px] font-semibold text-black leading-[45px] mb-6">
+            CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
           </h1>
           <p className="text-[15px] font-[300] text-[#222] leading-7 tracking-wide">
-            Lời đầu tiên, chúng tôi - CÔNG TY CỔ PHẦN ECHO DESIGN gửi tới Quý
-            khách hàng lời chào trân trọng, lời chúc sức khoẻ, thành công, thịnh
-            vượng và gặp nhiều may mắn. ECHO Design được thành lập bởi đội ngũ
-            kiến trúc sư, thiết kế nội thất đầy sáng tạo và nhiệt huyết kết hợp
-            với đội ngũ thợ thi công tay nghề cao, giàu kinh nghiêm dưới sự giám
-            sát chặt chẽ của các quản lý và kỹ sư sẽ mang đến những không gian
-            sống và hưởng thụ hoàn hảo cho mỗi quý khách hàng. Với khẩu hiệu
-            “Thiết kế vượt thời gian, tiếng vang vượt thời đại”, cùng sự chuyên
-            sâu trong lĩnh vực nghiên cứu khoa học về sản xuất nội thất và các
-            giải pháp thi công tối ưu, chúng tôi luôn mong muốn mang đến cho quý
-            khách hàng những thiết kế độc đáo, mang tính tương lai, và biến
-            những thiết kế ấy trở thành hiện thực nhằm nâng cao chất lượng cuộc
-            sống của quý khách hàng.
+            Lời đầu tiên, chúng tôi - CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI
+            VIỆT SING gửi tới Quý khách hàng lời chào trân trọng, lời chúc sức
+            khoẻ, thành công, thịnh vượng và gặp nhiều may mắn. VIỆT SING được
+            thành lập bởi đội ngũ kiến trúc sư, thiết kế nội thất đầy sáng tạo
+            và nhiệt huyết kết hợp với đội ngũ thợ thi công tay nghề cao, giàu
+            kinh nghiêm dưới sự giám sát chặt chẽ của các quản lý và kỹ sư sẽ
+            mang đến những không gian sống và hưởng thụ hoàn hảo cho mỗi quý
+            khách hàng. Với khẩu hiệu “Thiết kế vượt thời gian, tiếng vang vượt
+            thời đại”, cùng sự chuyên sâu trong lĩnh vực nghiên cứu khoa học về
+            sản xuất nội thất và các giải pháp thi công tối ưu, chúng tôi luôn
+            mong muốn mang đến cho quý khách hàng những thiết kế độc đáo, mang
+            tính tương lai, và biến những thiết kế ấy trở thành hiện thực nhằm
+            nâng cao chất lượng cuộc sống của quý khách hàng.
           </p>
         </div>
         <div>
@@ -73,7 +65,7 @@ export default function Introduce() {
               Tầm nhìn
             </AccordionTrigger>
             <AccordionContent className="text-base px-6 py-5 border border-solid border-[#dedede]">
-              Trong giai đoạn 5 năm tới, Echo Design định hướng phát triển trở
+              Trong giai đoạn 5 năm tới, VIỆT SING định hướng phát triển trở
               thành công ty thiết kế và thi công kiến trúc nội thất trong top 10
               miền Bắc. Chúng tôi sẽ mở rộng phát triển tại các tỉnh thành phố
               lớn như: TP Hồ Chí Minh, Đà Nẵng, Hải Phòng, Hải Dương, Thanh Hóa,
@@ -111,10 +103,10 @@ export default function Introduce() {
                 của khách hàng nhắm nâng tầm giá trị cuộc sống.
               </p>
               <p>
-                - Đội ngũ nhân sự chuyên nghiệp: Echo Design tập trung phát
-                triển nguồn nhân sự và coi đó là nền tảng và cốt lõi của công
-                ty. Chúng tôi xây dựng một đội ngũ nhân sự có chuyên môn và bề
-                dày kinh nghiệm trong lĩnh vực kiến trúc, xây dựng và nội thất.{" "}
+                - Đội ngũ nhân sự chuyên nghiệp: VIỆT SING tập trung phát triển
+                nguồn nhân sự và coi đó là nền tảng và cốt lõi của công ty.
+                Chúng tôi xây dựng một đội ngũ nhân sự có chuyên môn và bề dày
+                kinh nghiệm trong lĩnh vực kiến trúc, xây dựng và nội thất.{" "}
               </p>
               <p>
                 - Uy tín hàng đầu: Đó là mục tiêu lớn nhất mà chúng tôi luôn
@@ -123,8 +115,8 @@ export default function Introduce() {
               </p>
               <p>
                 - Tối ưu chi phí và tiết kiệm thời gian của khách hàng: Thấu
-                hiểu được nỗi băn khoăn đó của khách hàng, Echo design đưa ra
-                quy trình thiết kế, sản xuất và hoàn thiện nhanh chóng với chất
+                hiểu được nỗi băn khoăn đó của khách hàng, VIỆT SING đưa ra quy
+                trình thiết kế, sản xuất và hoàn thiện nhanh chóng với chất
                 lượng và chi phí tối ưu cho mỗi công trình.
               </p>{" "}
             </AccordionContent>

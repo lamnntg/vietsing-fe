@@ -9,8 +9,8 @@ const page = () => {
       </h1>
       <div className="container mx-auto mb-10">
         <p>
-          <span className="text-primary font-semibold">Echo design</span> xin
-          gửi đến khách hàng bảng chi tiết chi phí các gói thiết kế cho các loại
+          <span className="text-primary font-semibold">VIỆT SING</span> xin gửi
+          đến khách hàng bảng chi tiết chi phí các gói thiết kế cho các loại
           hình công trình như sau:
         </p>
         <p className="mt-2 font-medium text-lg">
