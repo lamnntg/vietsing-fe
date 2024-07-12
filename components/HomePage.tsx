@@ -151,19 +151,11 @@ const HomePage = () => {
   return (
     <div>
       <div
-        className="w-[100%] bg-white flex justify-center items-center relative h-[80vh]"
+        className="w-[100%] bg-white flex justify-center items-center relative h-[70vh]"
         style={{
           zIndex: step === StepEnums.THREE ? 1 : 3,
         }}
       >
-        {/* <p
-          className={cn(
-            "text-center absolute left-[50%] translate-x-[-50%] bottom-4 z-10 text-white text-nowrap",
-            FuturaNow.className
-          )}
-        >
-          Timeless design, endless echo
-        </p> */}
         <Image
           src={Logo}
           width={0}
@@ -454,183 +446,175 @@ const HomePage = () => {
           </div>
         )}
         {step === StepEnums.THREE && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 1 } }}
-            className="w-[100%] h-[100%] absolute top-0 left-0"
-          >
-            <div className="w-full h-full">
+          <>
+            <div className="fixed top-0 left-0 w-full h-[100vh] z-[-1] overflow-hidden">
               <video
                 loop
                 muted
                 autoPlay
                 playsInline
                 poster=""
-                className="w-full h-full object-cover"
+                className="w-[100vw] h-[100vh] object-cover"
               >
                 <source
                   src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
                   type="video/mp4"
                 ></source>
               </video>
-              {/* <Video
-                src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls={false}
-                className="min-w-full min-h-full w-auto h-auto"
-              ></Video> */}
             </div>
-            <div className="absolute top-[10%] left-[50%] translate-x-[-50%] z-10 uppercase font-semibold">
-              <h2 className="text-[36px] text-white max-w-[90%] lg:max-w-[600px] text-center lg:text-[50px]">
-                LEADERS IN QUALITY CONSTRUCTION AND INFRASTRUCTURE
-              </h2>
-            </div>
-            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[9]"></div>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { duration: 1 } }}
+              className="w-[100%] h-[70vh] absolute top-0 left-0"
+            >
+              <div className="absolute top-[10%] left-[50%] translate-x-[-50%] z-10 uppercase font-semibold">
+                <h2 className="text-[36px] text-white max-w-[90%] lg:max-w-[600px] text-center lg:text-[50px]">
+                  LEADERS IN QUALITY CONSTRUCTION AND INFRASTRUCTURE
+                </h2>
+              </div>
+            </motion.div>
+          </>
         )}
       </div>
       {step === StepEnums.THREE && (
-        <div className="container mx-auto">
-          <div className="flex items-center flex-col md:flex-row flex-wrap gap-6 mt-16">
-            <div className="flex-1">
-              <h3 className="text-3xl mb-8">
-                CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
-              </h3>
-              <p>
+        <div className="bg-white z-10 relative">
+          <div className="container mx-auto">
+            <div className="flex items-center flex-col md:flex-row flex-wrap gap-6">
+              <div className="flex-1">
+                <h3 className="text-3xl mb-8 pt-10">
+                  CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
+                </h3>
                 <p>
-                  Lời đầu tiên, chúng tôi -{" "}
-                  <span className="font-medium">
-                    CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
-                  </span>{" "}
-                  gửi tới Quý khách hàng lời chào trân trọng, lời chúc sức khoẻ,
-                  thành công, thịnh vượng và gặp nhiều may mắn.
+                  <p>
+                    Lời đầu tiên, chúng tôi -{" "}
+                    <span className="font-medium">
+                      CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
+                    </span>{" "}
+                    gửi tới Quý khách hàng lời chào trân trọng, lời chúc sức
+                    khoẻ, thành công, thịnh vượng và gặp nhiều may mắn.
+                  </p>
+                  <p className="mt-2">
+                    <span className="font-medium">
+                      Công Ty Cổ Phần Xây dựng và Thương mại Việt Sing
+                    </span>{" "}
+                    được thành lập với mục đích cung cấp đến Quý khách hàng các
+                    sản phẩm chính hãng, chất lượng cao từ các thương hiệu nổi
+                    tiếng trên thế giới. Công Ty Cổ Phần Xây dựng và Thương mại
+                    Việt Sing là nhà cung cấp và phân phối các dòng sơn công
+                    nghiệp, sơn nội-ngoại thất, các sản phẩm phụ gia cho các
+                    công trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn
+                    chống thấm, Băng keo chống thấm....
+                  </p>
+                  <p className="mt-2">
+                    <span className="font-medium">Công ty Việt Sing</span> cũng
+                    là đại lý cấp đặc biệt cung cấp và phân phối các loại sơn
+                    của hãng Jotun (Na Uy).
+                  </p>
+                  <p className="mt-2">
+                    <span className="font-medium">Công ty Việt Sing</span> bằng
+                    tất cả nguồn lực tốt nhất với kinh nghiệm, lòng nhiệt huyết
+                    và sức mạnh tập thể. Chúng tôi tự tin sẽ mang đến cho Quý
+                    khách hàng những lựa chọn tối ưu phù hợp với từng hạng mục
+                    và từng công trình để đảm bảo an toàn, chất lượng, tiến độ;
+                    đồng thời góp phần giúp sắc màu của công trình luôn bền đẹp
+                    với thời gian.
+                  </p>
+                  <p className="mt-2">
+                    <span className="font-medium">Công ty Việt Sing</span> cam
+                    kết đem lại dịch vụ tốt nhất cho từng khách hàng. Mặc dù
+                    chúng tôi cung cấp những sản phẩm chất lượng cao nhưng giá
+                    cả luôn rất cạnh tranh. Chúng tôi có chính sách chiết khấu
+                    sản phẩm rất ưu đãi dành cho khách hàng.
+                  </p>
                 </p>
-                <p className="mt-2">
-                  <span className="font-medium">
-                    Công Ty Cổ Phần Xây dựng và Thương mại Việt Sing
-                  </span>{" "}
-                  được thành lập với mục đích cung cấp đến Quý khách hàng các
-                  sản phẩm chính hãng, chất lượng cao từ các thương hiệu nổi
-                  tiếng trên thế giới. Công Ty Cổ Phần Xây dựng và Thương mại
-                  Việt Sing là nhà cung cấp và phân phối các dòng sơn công
-                  nghiệp, sơn nội-ngoại thất, các sản phẩm phụ gia cho các công
-                  trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn chống
-                  thấm, Băng keo chống thấm....
-                </p>
-                <p className="mt-2">
-                  <span className="font-medium">Công ty Việt Sing</span> cũng là
-                  đại lý cấp đặc biệt cung cấp và phân phối các loại sơn của
-                  hãng Jotun (Na Uy).
-                </p>
-                <p className="mt-2">
-                  <span className="font-medium">Công ty Việt Sing</span> bằng
-                  tất cả nguồn lực tốt nhất với kinh nghiệm, lòng nhiệt huyết và
-                  sức mạnh tập thể. Chúng tôi tự tin sẽ mang đến cho Quý khách
-                  hàng những lựa chọn tối ưu phù hợp với từng hạng mục và từng
-                  công trình để đảm bảo an toàn, chất lượng, tiến độ; đồng thời
-                  góp phần giúp sắc màu của công trình luôn bền đẹp với thời
-                  gian.
-                </p>
-                <p className="mt-2">
-                  <span className="font-medium">Công ty Việt Sing</span> cam kết
-                  đem lại dịch vụ tốt nhất cho từng khách hàng. Mặc dù chúng tôi
-                  cung cấp những sản phẩm chất lượng cao nhưng giá cả luôn rất
-                  cạnh tranh. Chúng tôi có chính sách chiết khấu sản phẩm rất ưu
-                  đãi dành cho khách hàng.
-                </p>
-              </p>
-              <div>
-                <Link
-                  className="bg-black px-10 mt-10 inline-block py-3 text-white"
-                  href="/gioi-thieu"
+                <div>
+                  <Link
+                    className="bg-black px-10 mt-10 inline-block py-3 text-white"
+                    href="/gioi-thieu"
+                  >
+                    TÌM HIỂU THÊM
+                  </Link>
+                </div>
+              </div>
+              <div className="flex-1">
+                <Image
+                  src={Slide1}
+                  style={{ objectFit: "cover" }}
+                  alt="Thumnail"
+                />
+              </div>
+            </div>
+            <div className="flex justify-center mt-10 relative">
+              <div className="px-8 bg-white relative z-[2] ">
+                <div
+                  className={clsx(
+                    "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
+                    FuturaNow.className
+                  )}
                 >
-                  TÌM HIỂU THÊM
-                </Link>
+                  <span className="leading-[20px] md:leading-[40px]">
+                    Thi công
+                  </span>
+                </div>
               </div>
-            </div>
-            <div className="flex-1">
-              <Image
-                src={Slide1}
-                style={{ objectFit: "cover" }}
-                alt="Thumnail"
-              />
+              <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
             </div>
           </div>
-          <div className="flex justify-center mt-10 relative">
-            <div className="px-8 bg-white relative z-[2] ">
-              <div
-                className={clsx(
-                  "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
-                  FuturaNow.className
-                )}
-              >
-                <span className="leading-[20px] md:leading-[40px]">
-                  Thi công
-                </span>
+          <div>
+            <div className="bg-[#efefef] mt-10">
+              <div className="container mx-auto pt-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {THICONG.map((item, index) => (
+                    <div>
+                      <Image
+                        className="w-full h-[500px] object-cover"
+                        src={item}
+                        key={index}
+                        alt="image"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div className="text-center mt-8 pb-6 flex justify-center">
+                  <Link
+                    href={productDesign.to}
+                    className="bg-[#1c1c1c] text-white w-[140px] flex justify-center items-center py-3 rounded-md border border-solid border-black hover:bg-white transition hover:text-black"
+                  >
+                    Xem thêm
+                  </Link>
+                </div>
               </div>
             </div>
-            <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
-          </div>
-        </div>
-      )}
-      {step === StepEnums.THREE && (
-        <div>
-          <div className="bg-[#efefef] mt-10">
-            <div className="container mx-auto pt-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {THICONG.map((item, index) => (
-                  <div>
-                    <Image
-                      className="w-full h-[500px] object-cover"
-                      src={item}
-                      key={index}
-                      alt="image"
-                    />
-                  </div>
-                ))}
-              </div>
-              <div className="text-center mt-8 pb-6 flex justify-center">
-                <Link
-                  href={productDesign.to}
-                  className="bg-[#1c1c1c] text-white w-[140px] flex justify-center items-center py-3 rounded-md border border-solid border-black hover:bg-white transition hover:text-black"
-                >
-                  Xem thêm
-                </Link>
-              </div>
-            </div>
-          </div>
 
-          <div className="container mx-auto flex justify-center mt-10 relative">
-            <div className="px-8 bg-white relative z-[2] ">
-              <div
-                className={clsx(
-                  "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base text-center md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
-                  FuturaNow.className
-                )}
-              >
-                <span className="leading-[20px] md:leading-[40px] uppercase">
-                  Hình ảnh
-                </span>
+            <div className="container mx-auto flex justify-center mt-10 relative">
+              <div className="px-8 bg-white relative z-[2] ">
+                <div
+                  className={clsx(
+                    "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base text-center md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
+                    FuturaNow.className
+                  )}
+                >
+                  <span className="leading-[20px] md:leading-[40px] uppercase">
+                    Hình ảnh
+                  </span>
+                </div>
               </div>
+              <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
             </div>
-            <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
-          </div>
-          <div className="bg-[#efefef] my-10">
-            <div className="container mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
-                {GYM_IMAGES.map((item, index) => (
-                  <div>
-                    <Image
-                      className="w-full h-[400px] object-cover"
-                      src={item}
-                      key={index}
-                      alt="image"
-                    />
-                  </div>
-                ))}
+            <div className="bg-[#efefef] py-10">
+              <div className="container mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
+                  {GYM_IMAGES.map((item, index) => (
+                    <div>
+                      <Image
+                        className="w-full h-[400px] object-cover"
+                        src={item}
+                        key={index}
+                        alt="image"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ const Footer = () => {
     return null;
   }
   return (
-    <div className="bg-[#4b4b4b] text-white pt-10 pb-6">
+    <div className="bg-[#4b4b4b] text-white pt-10 pb-6 z-10 relative">
       <div className="container mx-auto lg:grid lg:grid-cols-[2fr_1fr_1fr_1fr] gap-8 grid grid-cols-1 md:grid-cols-2">
         <div>
           <Image
