@@ -151,7 +151,7 @@ const HomePage = () => {
   return (
     <div>
       <div
-        className="w-[100%] bg-white flex justify-center items-center relative h-[70vh]"
+        className="w-[100%] bg-white flex justify-center items-center relative h-[100vh]"
         style={{
           zIndex: step === StepEnums.THREE ? 1 : 3,
         }}
@@ -465,11 +465,17 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { duration: 1 } }}
-              className="w-[100%] h-[70vh] absolute top-0 left-0"
+              className="w-[100%] h-[100vh] absolute top-0 left-0"
             >
               <div className="absolute top-[10%] left-[50%] translate-x-[-50%] z-10 uppercase font-semibold">
-                <h2 className="text-[36px] text-white max-w-[90%] lg:max-w-[600px] text-center lg:text-[50px]">
-                  LEADERS IN QUALITY CONSTRUCTION AND INFRASTRUCTURE
+                <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">
+                  <p>
+                    <span className="text-primary font-bold		">VIỆT</span>{" "}
+                    <span className="text-[#312e81] font-bold		">SING</span>
+                  </p>
+                  <p className="text">SỨC MẠNH NGOÀI TRỜI</p>
+                  <p className="text">SÁNG TẠO NGHỆ THUẬT</p>
+                  <p className="text">TỎA SÁNG KHÔNG GIAN</p>
                 </h2>
               </div>
             </motion.div>
