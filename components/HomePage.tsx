@@ -34,9 +34,9 @@ import Image6 from "@/public/images/image6.jpg";
 import Image7 from "@/public/images/image7.jpg";
 import Image8 from "@/public/images/image8.jpg";
 
-import Service1 from "@/public/images/service1.webp";
-import Service2 from "@/public/images/service2.jpg";
-import Service3 from "@/public/images/service3.webp";
+import Service1 from "@/public/images/services/gym-equip.webp";
+import Service2 from "@/public/images/services/art-work.jpg";
+import Service3 from "@/public/images/services/deco.jpeg";
 
 import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -617,16 +617,20 @@ const HomePage = () => {
                   </div>
                   <div className="w-[100%] lg:w-[40%]">
                     <p className="font-bold mb-4 text-4xl">
-                      Sx lắp đặt trò chơi thiết bị tập gym ngoài trời
+                      SẢN XUẤT LẮP ĐẶT TRÒ CHƠI THIẾT BỊ TẬP GYM
                     </p>
                     <p className="text-gray-500">
-                      This is a great space to write a long text about your
-                      company and your services. You can use this space to go
-                      into a little more detail about your company. Talk about
-                      your team and what services you provide. Tell your
-                      visitors the story of how you came up with the idea for
-                      your business and what makes you different from your
-                      competitors.
+                      Công ty Việt Sing chuyên sản xuất và lắp đặt thiết bị trò
+                      chơi và tập gym ngoài trời, cam kết chất lượng và an toàn
+                      hàng đầu. Chúng tôi sử dụng vật liệu bền vững như thép
+                      không gỉ, nhựa cao cấp, đảm bảo độ bền và khả năng chống
+                      chịu thời tiết.
+                      <br />
+                      Thiết kế đa dạng, hiện đại, phù hợp với mọi lứa tuổi và
+                      nhu cầu sử dụng. Dịch vụ chuyên nghiệp từ tư vấn thiết kế
+                      đến lắp đặt và bảo trì định kỳ, giúp sản phẩm luôn hoạt
+                      động tốt. Việt Sing mong muốn nâng cao sức khỏe và gắn kết
+                      cộng đồng, tạo không gian sống năng động và lành mạnh.
                     </p>
                   </div>
                 </div>
@@ -635,15 +639,13 @@ const HomePage = () => {
                     <Image src={Service2} alt="service 1" />
                   </div>
                   <div className="w-[100%] lg:w-[40%]">
-                    <p className="font-bold mb-4 text-4xl">Tượng art work </p>
+                    <p className="font-bold mb-4 text-4xl">TƯỢNG ART WORK </p>
                     <p className="text-gray-500">
-                      This is a great space to write a long text about your
-                      company and your services. You can use this space to go
-                      into a little more detail about your company. Talk about
-                      your team and what services you provide. Tell your
-                      visitors the story of how you came up with the idea for
-                      your business and what makes you different from your
-                      competitors.
+                      Dịch vụ cung cấp các tượng art work tinh xảo và độc đáo.
+                      Chúng tôi sử dụng vật liệu cao cấp như đá, gỗ, kim loại,
+                      đảm bảo độ bền và thẩm mỹ. Mỗi tác phẩm được chế tác tỉ
+                      mỉ, thể hiện rõ nét phong cách và tâm hồn của nghệ nhân,
+                      góp phần tạo điểm nhấn cho không gian sống và làm việc.
                     </p>
                   </div>
                 </div>
@@ -652,15 +654,14 @@ const HomePage = () => {
                     <Image src={Service3} alt="service 1" />
                   </div>
                   <div className="w-[100%] lg:w-[40%]">
-                    <p className="font-bold mb-4 text-4xl">Bảng biển deco </p>
+                    <p className="font-bold mb-4 text-4xl">BẢNG BIỂN DECO </p>
                     <p className="text-gray-500">
-                      This is a great space to write a long text about your
-                      company and your services. You can use this space to go
-                      into a little more detail about your company. Talk about
-                      your team and what services you provide. Tell your
-                      visitors the story of how you came up with the idea for
-                      your business and what makes you different from your
-                      competitors.
+                      Thiết kế và sản xuất bảng biển deco sáng tạo và hiện đại.
+                      Chúng tôi sử dụng các vật liệu cao cấp, bền bỉ như gỗ, kim
+                      loại và nhựa, đảm bảo sản phẩm có độ bền cao và thẩm mỹ.
+                      Các bảng biển deco của chúng tôi không chỉ giúp trang trí
+                      không gian mà còn tạo điểm nhấn độc đáo, phù hợp với nhiều
+                      phong cách và nhu cầu trang trí khác nhau.
                     </p>
                   </div>
                 </div>
