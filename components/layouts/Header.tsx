@@ -49,7 +49,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = (e: Event) => {
       const height = window.innerHeight;
-      if (window.scrollY > height * 0.9) {
+      if (window.scrollY > height * 0.25) {
         setActive(true);
       } else {
         setActive(false);
