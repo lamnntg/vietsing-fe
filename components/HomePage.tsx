@@ -3,18 +3,13 @@ import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
-import Slide2 from "@/public/images/Picture2.png";
 import Slide1 from "@/public/images/Picture3.png";
-import Slide3 from "@/public/images/Picture4.png";
-import Slide4 from "@/public/images/Picture5.png";
 import useBreakpoint from "@/hooks/useBreakpoint";
 import { useAppStore } from "@/store/app.store";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
 import { FuturaNow } from "@/utils/font";
 import clsx from "clsx";
 import Link from "next/link";
-import { MENU_HOME, RoutesEnum } from "@/constants/app.constants";
+import { MENU_HOME } from "@/constants/app.constants";
 import EchoImage from "@/public/echo.png";
 import ArchitectImage from "@/public/architect.png";
 import Thicong2 from "@/public/images/thicong2.png";
@@ -38,8 +33,13 @@ import Image5 from "@/public/images/image5.jpg";
 import Image6 from "@/public/images/image6.jpg";
 import Image7 from "@/public/images/image7.jpg";
 import Image8 from "@/public/images/image8.jpg";
-import Video from "next-video";
 
+import Service1 from "@/public/images/service1.webp";
+import Service2 from "@/public/images/service2.jpg";
+import Service3 from "@/public/images/service3.webp";
+
+import { Montserrat } from "next/font/google";
+const montserrat = Montserrat({ subsets: ["latin"] });
 const GYM_IMAGES = [
   Image1,
   Image2,
@@ -65,8 +65,6 @@ const THICONG = [
   Thicong14,
 ];
 
-const TITLE = "E C H O".split(" ");
-const DESCRIPTION = "A R C H I T E C T U R E . I N T E R I O R".split(" ");
 const SLOGAN = "T i m e l e s s".split(" ");
 const SLOGAN2 = "d e s i g n ,".split(" ");
 const SLOGAN3 = "e n d l e s s".split(" ");
@@ -76,12 +74,6 @@ enum StepEnums {
   TWO = "2",
   THREE = "3",
 }
-
-const HEIGHT_HEADER_MOBILE = 56;
-const HEIGHT_FOOTER_MOBILE = -8;
-
-const HEIGHT_HEADER_DESKTOP = 68;
-const HEIGHT_FOOTER_DESKTOP = -8;
 
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
@@ -467,15 +459,65 @@ const HomePage = () => {
               animate={{ opacity: 1, transition: { duration: 1 } }}
               className="w-[100%] h-[100vh] absolute top-0 left-0"
             >
-              <div className="absolute top-[10%] left-[50%] translate-x-[-50%] z-10 uppercase font-semibold">
+              <div className="absolute top-[20%] left-[5%] z-10 font-semibold">
                 <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">
-                  <p>
-                    <span className="text-primary font-bold		">VIỆT</span>{" "}
-                    <span className="text-[#312e81] font-bold		">SING</span>
+                  <p className="mb-10">
+                    <span className="text-primary font-bold">VIỆT</span>{" "}
+                    <span className="text-[#312e81] font-bold">SING</span>
                   </p>
-                  <p className="text">SỨC MẠNH NGOÀI TRỜI</p>
-                  <p className="text">SÁNG TẠO NGHỆ THUẬT</p>
-                  <p className="text">TỎA SÁNG KHÔNG GIAN</p>
+                  <div className={montserrat.className}>
+                    <motion.p
+                      className="uppercase font-medium text-[42px]"
+                      initial={{
+                        transform: "translateX(-100%)",
+                        opacity: 0,
+                      }}
+                      animate={{
+                        transform: "translateX(0)",
+                        opacity: 1,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
+                    >
+                      Sức mạnh ngoài trời
+                    </motion.p>
+                    <motion.p
+                      className="uppercase font-medium text-[42px]"
+                      initial={{
+                        transform: "translateX(100%)",
+                        opacity: 0,
+                      }}
+                      animate={{
+                        transform: "translateX(0)",
+                        opacity: 1,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
+                    >
+                      Sáng tạo nghệ thuật
+                    </motion.p>
+                    <motion.p
+                      className="uppercase font-medium text-[42px]"
+                      initial={{
+                        transform: "translateX(-100%)",
+                        opacity: 0,
+                      }}
+                      animate={{
+                        transform: "translateX(0)",
+                        opacity: 1,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
+                    >
+                      Tỏa sáng không gian
+                    </motion.p>
+                  </div>
+                  <button className="border border-white border-solid text-[20px] transition px-4 py-3 mt-10 hover:bg-primary hover:border-primary rounded-md">
+                    Tìm hiểu thêm
+                  </button>
                 </h2>
               </div>
             </motion.div>
@@ -559,7 +601,7 @@ const HomePage = () => {
                   )}
                 >
                   <span className="leading-[20px] md:leading-[40px]">
-                    Thi công
+                    dịch vụ
                   </span>
                 </div>
               </div>
@@ -567,27 +609,60 @@ const HomePage = () => {
             </div>
           </div>
           <div>
-            <div className="bg-[#efefef] mt-10">
+            <div className=" mt-10">
               <div className="container mx-auto pt-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {THICONG.map((item, index) => (
-                    <div>
-                      <Image
-                        className="w-full h-[500px] object-cover"
-                        src={item}
-                        key={index}
-                        alt="image"
-                      />
-                    </div>
-                  ))}
+                <div className="flex flex-col lg:flex-row gap-10 items-center flex-wrap">
+                  <div className="flex-1 object-cover h-[400px] lg:h-[800px] overflow-hidden">
+                    <Image src={Service1} alt="service 1" />
+                  </div>
+                  <div className="w-[100%] lg:w-[40%]">
+                    <p className="font-bold mb-4 text-4xl">
+                      Sx lắp đặt trò chơi thiết bị tập gym ngoài trời
+                    </p>
+                    <p className="text-gray-500">
+                      This is a great space to write a long text about your
+                      company and your services. You can use this space to go
+                      into a little more detail about your company. Talk about
+                      your team and what services you provide. Tell your
+                      visitors the story of how you came up with the idea for
+                      your business and what makes you different from your
+                      competitors.
+                    </p>
+                  </div>
                 </div>
-                <div className="text-center mt-8 pb-6 flex justify-center">
-                  <Link
-                    href={productDesign.to}
-                    className="bg-[#1c1c1c] text-white w-[140px] flex justify-center items-center py-3 rounded-md border border-solid border-black hover:bg-white transition hover:text-black"
-                  >
-                    Xem thêm
-                  </Link>
+                <div className="flex flex-col my-10 lg:flex-row-reverse gap-10 items-center flex-wrap">
+                  <div className="flex-1 object-cover h-[400px] lg:h-[800px] overflow-hidden">
+                    <Image src={Service2} alt="service 1" />
+                  </div>
+                  <div className="w-[100%] lg:w-[40%]">
+                    <p className="font-bold mb-4 text-4xl">Tượng art work </p>
+                    <p className="text-gray-500">
+                      This is a great space to write a long text about your
+                      company and your services. You can use this space to go
+                      into a little more detail about your company. Talk about
+                      your team and what services you provide. Tell your
+                      visitors the story of how you came up with the idea for
+                      your business and what makes you different from your
+                      competitors.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col lg:flex-row gap-10 items-center flex-wrap">
+                  <div className="flex-1 object-cover h-[400px] lg:h-[800px] overflow-hidden">
+                    <Image src={Service3} alt="service 1" />
+                  </div>
+                  <div className="w-[100%] lg:w-[40%]">
+                    <p className="font-bold mb-4 text-4xl">Bảng biển deco </p>
+                    <p className="text-gray-500">
+                      This is a great space to write a long text about your
+                      company and your services. You can use this space to go
+                      into a little more detail about your company. Talk about
+                      your team and what services you provide. Tell your
+                      visitors the story of how you came up with the idea for
+                      your business and what makes you different from your
+                      competitors.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -12,11 +12,7 @@ import clsx from "clsx";
 import { useAppStore } from "@/store/app.store";
 import { usePathname } from "next/navigation";
 import DropdownMenu from "../DropdownMenu";
-import {
-  dropdownMenuItems,
-  FACEBOOK_LINK,
-  RoutesEnum,
-} from "@/constants/app.constants";
+import { FACEBOOK_LINK, RoutesEnum } from "@/constants/app.constants";
 import { cn } from "@/lib/utils";
 
 const menu = {
@@ -34,37 +30,12 @@ const menu = {
   },
 };
 
-const subMenuAnimate = {
-  enter: {
-    opacity: 1,
-    rotateX: 0,
-    transition: {
-      duration: 0.5,
-    },
-    display: "block",
-  },
-  exit: {
-    opacity: 0,
-    rotateX: -15,
-    transition: {
-      duration: 0.5,
-      delay: 0.3,
-    },
-    transitionEnd: {
-      display: "none",
-    },
-  },
-};
 const Header = () => {
   const { showFooter } = useAppStore();
-  const [isHover, setIsHover] = useState(false);
-  const [showSubMenu, setShowSubMenu] = useState(false);
-  const toggleHoverMenu = () => {
-    setIsHover(!isHover);
-  };
   const { isDesktopDown } = useBreakpoint();
   const [show, setShow] = useState(false);
   const pathname = usePathname();
+  const [active, setActive] = useState(false);
   const { setShowFooter } = useAppStore();
   useEffect(() => {
     if (pathname !== "/") {
@@ -75,13 +46,32 @@ const Header = () => {
   useEffect(() => {
     setShow(false);
   }, [pathname]);
+  useEffect(() => {
+    const handleScroll = (e: Event) => {
+      const height = window.innerHeight;
+      if (window.scrollY > height * 0.9) {
+        setActive(true);
+      } else {
+        setActive(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [true]);
 
   if (!showFooter) {
     return null;
   }
 
   return (
-    <div className="sticky top-0 left-0 z-[11] bg-white w-full px-3">
+    <div
+      className={cn(
+        "sticky top-0 left-0 z-[11]  font-medium w-full px-3 transition",
+        active ? "bg-white text-black shadow-md" : "text-white bg-transparent"
+      )}
+    >
       {isDesktopDown ? (
         <motion.nav initial={false} animate={show ? "open" : "closed"}>
           <div className="flex justify-between pr-4 relative py-2">
@@ -140,7 +130,7 @@ const Header = () => {
               >
                 Dự án thi công
               </Link>
-              <DropdownMenu
+              {/* <DropdownMenu
                 item={{
                   label: "Tin tức",
                   items: [
@@ -158,7 +148,7 @@ const Header = () => {
                     },
                   ],
                 }}
-              />
+              /> */}
               <Link
                 href={RoutesEnum.LIEN_HE}
                 className={cn(
@@ -237,7 +227,7 @@ const Header = () => {
             >
               Dự án thi công
             </Link>
-            <DropdownMenu
+            {/* <DropdownMenu
               item={{
                 label: "Tin tức",
                 items: [
@@ -255,7 +245,7 @@ const Header = () => {
                   },
                 ],
               }}
-            />
+            /> */}
             <Link
               href={RoutesEnum.LIEN_HE}
               className={cn(
