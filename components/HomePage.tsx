@@ -79,7 +79,7 @@ enum StepEnums {
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
+  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
   const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
   const [type, setType] = useState(1);
@@ -124,12 +124,11 @@ const HomePage = () => {
     }
     const timeoutTwo = setTimeout(() => {
       setStep(StepEnums.THREE);
-    }, 4500);
+    }, 1500);
     return () => {
       clearTimeout(timeoutTwo);
     };
   }, [loaded]);
-  const onLoadVideo = () => {};
   useEffect(() => {
     if (step === StepEnums.THREE) {
       setShowFooter(true);
@@ -166,281 +165,45 @@ const HomePage = () => {
                 >
                   <div className="relative">
                     <motion.div
-                      className="bg-primary"
                       initial={{
-                        height: RESOLUTION.line.width,
-                        width: RESOLUTION.line.width,
-                        transform: "translateX(-100%)",
-                      }}
-                      animate={{
                         transform: "translateX(0)",
-                        transition: {
-                          duration: 0.3,
-                        },
+                        position: "relative",
+                        zIndex: 3,
                       }}
-                    ></motion.div>
-                    <div className="absolute top-[30%] left-0">
-                      <motion.div
-                        className="bg-white"
-                        initial={{
-                          height: RESOLUTION.strike.height,
-                          width: RESOLUTION.strike.width,
-                          transform: "translateX(-100%)",
-                        }}
-                        animate={{
-                          transform: "translateX(0)",
-                          transition: {
-                            duration: 0.3,
-                            delay: 2.5,
-                          },
-                        }}
-                      ></motion.div>
-                    </div>
-                    <div className="absolute top-[66%] left-0">
-                      <motion.div
-                        className="bg-white"
-                        initial={{
-                          height: RESOLUTION.strike.height,
-                          width: RESOLUTION.strike.width,
-                          transform: "translateX(-100%)",
-                        }}
-                        animate={{
-                          transform: "translateX(0)",
-                          transition: {
-                            duration: 0.3,
-                            delay: 2.5,
-                          },
-                        }}
-                      ></motion.div>
-                    </div>
-                  </div>
-                  <div className="relative rounded-full">
+                    >
+                      <Image
+                        src={Logo}
+                        className="w-[300px] aspect-[5/3] object-contain"
+                        alt="Logo"
+                      />
+                    </motion.div>
                     <motion.div
-                      className="bg-primary"
                       initial={{
-                        height: RESOLUTION.line.width,
-                        width: RESOLUTION.line.width,
-                        transform: "translateX(-100%)",
-                        borderRadius: "50%",
-                        opacity: 0,
-                      }}
-                      animate={{
                         transform: "translateX(0)",
-                        opacity: 1,
-                        transition: {
-                          duration: 0.5,
-                          delay: 0.5,
-                        },
-                      }}
-                    ></motion.div>
-                    <div
-                      className="absolute top-0"
-                      style={{
-                        height: RESOLUTION.fullHeight,
-                        right: "0.5rem",
-                      }}
-                    >
-                      <motion.div
-                        className="bg-white"
-                        initial={{
-                          height: RESOLUTION.fullHeight,
-                          width: RESOLUTION.circleStrike.width,
-                          transform: "translateY(-100%)",
-                        }}
-                        animate={{
-                          transform: "translateY(0)",
-                          transition: {
-                            duration: 0.3,
-                            delay: 2.5,
-                          },
-                        }}
-                      ></motion.div>
-                    </div>
-                    <div
-                      className="absolute top-0"
-                      style={{
-                        height: RESOLUTION.fullHeight,
-                        right: isMobileLargeDown ? "1rem" : "1.5rem",
-                      }}
-                    >
-                      <motion.div
-                        className="bg-white"
-                        initial={{
-                          height: RESOLUTION.fullHeight,
-                          width: RESOLUTION.circleStrike.width,
-                          transform: "translateY(-100%)",
-                        }}
-                        animate={{
-                          transform: "translateY(0)",
-                          transition: {
-                            duration: 0.3,
-                            delay: 2.5,
-                          },
-                        }}
-                      ></motion.div>
-                    </div>
-                    <div
-                      className="absolute top-0"
-                      style={{
-                        height: RESOLUTION.fullHeight,
-                        right: isMobileLargeDown ? "1.5rem" : "2.5rem",
-                      }}
-                    >
-                      <motion.div
-                        className="bg-white"
-                        initial={{
-                          height: RESOLUTION.fullHeight,
-                          width: RESOLUTION.circleStrike.width,
-                          transform: "translateY(-100%)",
-                        }}
-                        animate={{
-                          transform: "translateY(0)",
-                          transition: {
-                            duration: 0.3,
-                            delay: 2.5,
-                          },
-                        }}
-                      ></motion.div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="relative flex justify-center flex-col w-fit"
-                style={{
-                  height: RESOLUTION.logo.height,
-                }}
-              >
-                <motion.div
-                  className="absolute left-[-17px] top-0 bg-primary"
-                  initial={{
-                    height: "100%",
-                    width: 0,
-                    transform: "translateX(0px)",
-                  }}
-                  animate={{
-                    width: 3,
-                    transition: {
-                      duration: 0.2,
-                      delay: 1,
-                    },
-                  }}
-                ></motion.div>
-                <div className="flex flex-col justify-between h-full">
-                  <div className="h-[60%] w-[170px] sm:w-[260px] md:w-[360px] lg:w-[360px] relative overflow-hidden">
-                    <img className="h-full w-full" src={EchoImage.src} alt="" />
-                    <motion.div
-                      initial={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
                         width: "100%",
-                        right: 0,
+                        height: "100%",
+                        zIndex: 4,
+                        background: "white",
                       }}
                       animate={{
-                        width: 0,
-                        right: 0,
+                        transform: "translateX(100%)",
                         transition: {
-                          duration: 0.8,
-                          delay: 1,
+                          duration: 1,
                         },
                       }}
-                      className="absolute top-0 right-0 w-full bg-white h-full"
-                    ></motion.div>
-                  </div>
-                  <div className="h-[15%] w-[170px] sm:w-[260px] md:w-[360px] lg:w-[360px] relative overflow-hidden">
-                    <img
-                      className="h-full w-full"
-                      src={ArchitectImage.src}
-                      alt=""
-                    />
-                    <motion.div
-                      initial={{
-                        width: "100%",
-                        right: 0,
-                      }}
-                      animate={{
-                        width: 0,
-                        right: 0,
-                        transition: {
-                          duration: 0.7,
-                          delay: 1.8,
-                        },
-                      }}
-                      className="absolute top-0 right-0 w-full bg-white h-full"
                     ></motion.div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="flex justify-center text-5xl md:mt-10 items-center gap-x-3 w-full">
-              <div>
-                {SLOGAN.map((el, i) => (
-                  <motion.span
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                      duration: 0.1,
-                      delay: i / 30 + 3,
-                    }}
-                    key={i}
-                    className={`text-base sm:text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
-                  >
-                    {el}
-                  </motion.span>
-                ))}
-              </div>
-              <div>
-                {SLOGAN2.map((el, i) => (
-                  <motion.span
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                      duration: 0.1,
-                      delay: i / 30 + 0.35 + 3,
-                    }}
-                    key={i}
-                    className={`text-base sm:text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
-                  >
-                    {el}
-                  </motion.span>
-                ))}
-              </div>
-              <div>
-                {SLOGAN3.map((el, i) => (
-                  <motion.span
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                      duration: 0.1,
-                      delay: i / 30 + 0.6 + 3,
-                    }}
-                    key={i}
-                    className={`text-base sm:text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
-                  >
-                    {el}
-                  </motion.span>
-                ))}
-              </div>
-              <div>
-                {SLOGAN4.map((el, i) => (
-                  <motion.span
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{
-                      duration: 0.3,
-                      delay: i / 30 + 0.9 + 3,
-                    }}
-                    key={i}
-                    className={`text-base sm:text-xl md:text-3xl inline-block mx-[1px] ${FuturaNow.className}`}
-                  >
-                    {el}
-                  </motion.span>
-                ))}
               </div>
             </div>
           </div>
         )}
         {step === StepEnums.THREE && (
           <>
-            <div className="fixed top-0 left-0 w-full h-[100vh] z-[-1] overflow-hidden">
+            <div className="fixed top-0 left-0 w-full h-[100vh] z-[-1] overflow-hidden animate-fade">
               {loaded ? (
                 <video
                   loop
