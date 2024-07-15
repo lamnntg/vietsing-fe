@@ -143,7 +143,7 @@ const HomePage = () => {
   return (
     <div>
       <div
-        className="w-[100vw] bg-white flex justify-center items-center relative h-[100vh]"
+        className="w-[100%] max-w-[100%] overflow-hidden bg-white flex justify-center items-center relative h-[100vh]"
         style={{
           zIndex: step === StepEnums.THREE ? 1 : 3,
         }}
@@ -446,7 +446,7 @@ const HomePage = () => {
                 autoPlay
                 playsInline
                 poster=""
-                className="w-[100vw] h-[100vh] object-cover"
+                className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover"
               >
                 <source
                   src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
@@ -457,7 +457,7 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { duration: 1 } }}
-              className="w-[100vw] h-[100vh] absolute top-0 left-0"
+              className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] absolute top-0 left-0"
             >
               <div className="absolute top-[20%] left-[5%] z-10 font-semibold w-[80vw]">
                 <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">
@@ -604,7 +604,7 @@ const HomePage = () => {
                       style={{ objectFit: "cover", height: "100%" }}
                     />
                   </div>
-                  <div className="w-[100%] lg:w-[40%]">
+                  <div className="w-[100%] max-w-[100%] overflow-hidden lg:w-[40%]">
                     <p className="font-bold mb-4 text-4xl">
                       SẢN XUẤT LẮP ĐẶT TRÒ CHƠI THIẾT BỊ TẬP GYM
                     </p>
@@ -631,7 +631,7 @@ const HomePage = () => {
                       style={{ objectFit: "cover", height: "100%" }}
                     />
                   </div>
-                  <div className="w-[100%] lg:w-[40%]">
+                  <div className="w-[100%] max-w-[100%] overflow-hidden lg:w-[40%]">
                     <p className="font-bold mb-3 text-4xl">TƯỢNG ART WORK </p>
                     <p className="text-gray-500">
                       Dịch vụ cung cấp các tượng art work tinh xảo và độc đáo.
@@ -650,7 +650,7 @@ const HomePage = () => {
                       style={{ objectFit: "cover", height: "100%" }}
                     />
                   </div>
-                  <div className="w-[100%] lg:w-[40%]">
+                  <div className="w-[100%] max-w-[100%] overflow-hidden lg:w-[40%]">
                     <p className="font-bold mb-4 text-4xl">BẢNG BIỂN DECO </p>
                     <p className="text-gray-500">
                       Thiết kế và sản xuất bảng biển deco sáng tạo và hiện đại.

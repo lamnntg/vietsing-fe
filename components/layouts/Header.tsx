@@ -70,8 +70,8 @@ const Header = () => {
   return (
     <div
       className={cn(
-        "sticky top-0 left-0 z-[11]  font-medium w-full px-3 transition",
-        active || pathname !== "/"
+        "fixed top-0 left-0 z-[11]  font-medium w-full px-3 transition",
+        active || ['/du-an-da-hoan-thanh'].includes(pathname)
           ? "bg-white text-black shadow-md"
           : "text-white bg-transparent"
       )}

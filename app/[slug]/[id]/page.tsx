@@ -12,7 +12,7 @@ const page = ({ params }: { params: { slug: string; id: string } }) => {
     return notFound();
   }
   return (
-    <main className="container mx-auto pb-10 pt-6">
+    <main className="container mx-auto pb-10 pt-14">
       <div className="border-b border-solid border-[#ebebeb] py-4 flex items-center gap-2 text-gray-700">
         <Link href={RoutesEnum.HOME}>Trang chủ</Link>
         <ChevronRight />
