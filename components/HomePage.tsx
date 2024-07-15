@@ -39,6 +39,7 @@ import Service2 from "@/public/images/services/art-work.jpg";
 import Service3 from "@/public/images/services/deco.jpeg";
 
 import { Montserrat } from "next/font/google";
+import { Loader2 } from "lucide-react";
 const montserrat = Montserrat({ subsets: ["latin"] });
 const GYM_IMAGES = [
   Image1,
@@ -128,7 +129,7 @@ const HomePage = () => {
       clearTimeout(timeoutTwo);
     };
   }, [loaded]);
-
+  const onLoadVideo = () => {};
   useEffect(() => {
     if (step === StepEnums.THREE) {
       setShowFooter(true);
@@ -440,87 +441,96 @@ const HomePage = () => {
         {step === StepEnums.THREE && (
           <>
             <div className="fixed top-0 left-0 w-full h-[100vh] z-[-1] overflow-hidden">
-              <video
-                loop
-                muted
-                autoPlay
-                playsInline
-                poster=""
-                className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover"
-              >
-                <source
-                  src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
-                  type="video/mp4"
-                ></source>
-              </video>
+              {loaded ? (
+                <video
+                  loop
+                  muted
+                  autoPlay
+                  playsInline
+                  poster=""
+                  className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover"
+                  onLoad={() => setLoaded(true)}
+                >
+                  <source
+                    src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
+                    type="video/mp4"
+                  ></source>
+                </video>
+              ) : (
+                <div className="h-[100vh] w-full flex justify-center items-center bg-gray-400">
+                  <Loader2 className="mr-2 h-10 w-10 animate-spin text-primary" />
+                </div>
+              )}
             </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { duration: 1 } }}
-              className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] absolute top-0 left-0"
-            >
-              <div className="absolute top-[20%] left-[5%] z-10 font-semibold w-[80vw]">
-                <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">
-                  <p className="mb-10">
-                    <span className="text-primary font-bold">VIỆT</span>{" "}
-                    <span className="text-[#312e81] font-bold">SING</span>
-                  </p>
-                  <div className={montserrat.className}>
-                    <motion.p
-                      className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
-                      initial={{
-                        transform: "translateX(-100%)",
-                        opacity: 0,
-                      }}
-                      animate={{
-                        transform: "translateX(0)",
-                        opacity: 1,
-                        transition: {
-                          duration: 0.8,
-                        },
-                      }}
-                    >
-                      Sức mạnh bền bỉ
-                    </motion.p>
-                    <motion.p
-                      className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
-                      initial={{
-                        transform: "translateX(100%)",
-                        opacity: 0,
-                      }}
-                      animate={{
-                        transform: "translateX(0)",
-                        opacity: 1,
-                        transition: {
-                          duration: 0.8,
-                        },
-                      }}
-                    >
-                      nghệ thuật sáng tạo
-                    </motion.p>
-                    <motion.p
-                      className="uppercase font-medium max-md:text-[20px] lg:text-[42px]"
-                      initial={{
-                        transform: "translateX(-100%)",
-                        opacity: 0,
-                      }}
-                      animate={{
-                        transform: "translateX(0)",
-                        opacity: 1,
-                        transition: {
-                          duration: 0.8,
-                        },
-                      }}
-                    >
-                      Tỏa sáng không gian
-                    </motion.p>
-                  </div>
-                  <button className="border border-white border-solid text-[20px] transition px-4 py-3 mt-10 hover:bg-primary hover:border-primary rounded-md">
-                    Tìm hiểu thêm
-                  </button>
-                </h2>
-              </div>
-            </motion.div>
+            {loaded && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition: { duration: 1 } }}
+                className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] absolute top-0 left-0"
+              >
+                <div className="absolute top-[20%] left-[5%] z-10 font-semibold w-[80vw]">
+                  <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">
+                    <p className="mb-10">
+                      <span className="text-primary font-bold">VIỆT</span>{" "}
+                      <span className="text-[#312e81] font-bold">SING</span>
+                    </p>
+                    <div className={montserrat.className}>
+                      <motion.p
+                        className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
+                        initial={{
+                          transform: "translateX(-100%)",
+                          opacity: 0,
+                        }}
+                        animate={{
+                          transform: "translateX(0)",
+                          opacity: 1,
+                          transition: {
+                            duration: 0.8,
+                          },
+                        }}
+                      >
+                        Sức mạnh bền bỉ
+                      </motion.p>
+                      <motion.p
+                        className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
+                        initial={{
+                          transform: "translateX(100%)",
+                          opacity: 0,
+                        }}
+                        animate={{
+                          transform: "translateX(0)",
+                          opacity: 1,
+                          transition: {
+                            duration: 0.8,
+                          },
+                        }}
+                      >
+                        nghệ thuật sáng tạo
+                      </motion.p>
+                      <motion.p
+                        className="uppercase font-medium max-md:text-[20px] lg:text-[42px]"
+                        initial={{
+                          transform: "translateX(-100%)",
+                          opacity: 0,
+                        }}
+                        animate={{
+                          transform: "translateX(0)",
+                          opacity: 1,
+                          transition: {
+                            duration: 0.8,
+                          },
+                        }}
+                      >
+                        Tỏa sáng không gian
+                      </motion.p>
+                    </div>
+                    <button className="border border-white border-solid text-[20px] transition px-4 py-3 mt-10 hover:bg-primary hover:border-primary rounded-md">
+                      Tìm hiểu thêm
+                    </button>
+                  </h2>
+                </div>
+              </motion.div>
+            )}
           </>
         )}
       </div>
