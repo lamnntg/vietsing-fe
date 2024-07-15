@@ -14,6 +14,7 @@ import { usePathname } from "next/navigation";
 import DropdownMenu from "../DropdownMenu";
 import { FACEBOOK_LINK, RoutesEnum } from "@/constants/app.constants";
 import { cn } from "@/lib/utils";
+import path from "path";
 
 const menu = {
   open: {
@@ -49,7 +50,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = (e: Event) => {
       const height = window.innerHeight;
-      if (window.scrollY > height * 0.25) {
+      if (window.scrollY > height * 0.2) {
         setActive(true);
       } else {
         setActive(false);
@@ -69,7 +70,9 @@ const Header = () => {
     <div
       className={cn(
         "sticky top-0 left-0 z-[11]  font-medium w-full px-3 transition",
-        active ? "bg-white text-black shadow-md" : "text-white bg-transparent"
+        active || pathname !== "/"
+          ? "bg-white text-black shadow-md"
+          : "text-white bg-transparent"
       )}
     >
       {isDesktopDown ? (

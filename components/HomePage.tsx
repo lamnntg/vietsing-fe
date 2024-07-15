@@ -529,18 +529,10 @@ const HomePage = () => {
           <div className="container mx-auto">
             <div className="flex items-center flex-col md:flex-row flex-wrap gap-6">
               <div className="flex-1">
-                <h3 className="text-3xl mb-8 pt-10">
+                <h3 className="text-2xl mb-8 pt-10 text-bold">
                   CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
                 </h3>
                 <p>
-                  <p>
-                    Lời đầu tiên, chúng tôi -{" "}
-                    <span className="font-medium">
-                      CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
-                    </span>{" "}
-                    gửi tới Quý khách hàng lời chào trân trọng, lời chúc sức
-                    khoẻ, thành công, thịnh vượng và gặp nhiều may mắn.
-                  </p>
                   <p className="mt-2">
                     <span className="font-medium">
                       Công Ty Cổ Phần Xây dựng và Thương mại Việt Sing
@@ -566,13 +558,6 @@ const HomePage = () => {
                     và từng công trình để đảm bảo an toàn, chất lượng, tiến độ;
                     đồng thời góp phần giúp sắc màu của công trình luôn bền đẹp
                     với thời gian.
-                  </p>
-                  <p className="mt-2">
-                    <span className="font-medium">Công ty Việt Sing</span> cam
-                    kết đem lại dịch vụ tốt nhất cho từng khách hàng. Mặc dù
-                    chúng tôi cung cấp những sản phẩm chất lượng cao nhưng giá
-                    cả luôn rất cạnh tranh. Chúng tôi có chính sách chiết khấu
-                    sản phẩm rất ưu đãi dành cho khách hàng.
                   </p>
                 </p>
                 <div>
@@ -612,8 +597,12 @@ const HomePage = () => {
             <div className=" mt-10">
               <div className="container mx-auto pt-6">
                 <div className="flex flex-col lg:flex-row gap-10 items-center flex-wrap">
-                  <div className="flex-1 object-cover h-[400px] lg:h-[800px] overflow-hidden">
-                    <Image src={Service1} alt="service 1" />
+                  <div className="flex-1 object-cover h-[400px] lg:h-[600px] overflow-hidden">
+                    <Image
+                      src={Service1}
+                      alt="service 1"
+                      style={{ objectFit: "cover", height: "100%" }}
+                    />
                   </div>
                   <div className="w-[100%] lg:w-[40%]">
                     <p className="font-bold mb-4 text-4xl">
@@ -635,11 +624,15 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex flex-col my-10 lg:flex-row-reverse gap-10 items-center flex-wrap">
-                  <div className="flex-1 object-cover h-[400px] lg:h-[800px] overflow-hidden">
-                    <Image src={Service2} alt="service 1" />
+                  <div className="flex-1 object-cover h-[400px] lg:h-[600px] overflow-hidden">
+                    <Image
+                      src={Service2}
+                      alt="service 1"
+                      style={{ objectFit: "cover", height: "100%" }}
+                    />
                   </div>
                   <div className="w-[100%] lg:w-[40%]">
-                    <p className="font-bold mb-4 text-4xl">TƯỢNG ART WORK </p>
+                    <p className="font-bold mb-3 text-4xl">TƯỢNG ART WORK </p>
                     <p className="text-gray-500">
                       Dịch vụ cung cấp các tượng art work tinh xảo và độc đáo.
                       Chúng tôi sử dụng vật liệu cao cấp như đá, gỗ, kim loại,
@@ -650,8 +643,12 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-10 items-center flex-wrap">
-                  <div className="flex-1 object-cover h-[400px] lg:h-[800px] overflow-hidden">
-                    <Image src={Service3} alt="service 1" />
+                  <div className="flex-1 object-cover h-[400px] lg:h-[600px] overflow-hidden">
+                    <Image
+                      src={Service3}
+                      alt="service 1"
+                      style={{ objectFit: "cover", height: "100%" }}
+                    />
                   </div>
                   <div className="w-[100%] lg:w-[40%]">
                     <p className="font-bold mb-4 text-4xl">BẢNG BIỂN DECO </p>

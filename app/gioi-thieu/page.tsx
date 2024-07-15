@@ -16,7 +16,7 @@ export default function Introduce() {
       <div className="relative">
         <Image
           src={Slide2}
-          style={{ objectFit: "cover", height: 400 }}
+          style={{ objectFit: "cover", height: 400, width: "100%" }}
           alt="Thumnail"
         />
         <p className="absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%] z-[2] text-4xl text-nowrap lg:text-5xl text-white">
