@@ -148,14 +148,21 @@ const HomePage = () => {
           zIndex: step === StepEnums.THREE ? 1 : 3,
         }}
       >
-        <Image
-          src={Logo}
-          width={0}
-          height={0}
-          alt="Logo"
-          style={{ width: "0", height: "0" }}
-          onLoad={() => setLoaded(true)}
-        />
+        <video
+          loop
+          muted
+          autoPlay
+          playsInline
+          poster=""
+          className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover"
+          onCanPlayThrough={() => setLoaded(true)}
+          hidden
+        >
+          <source
+            src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
+            type="video/mp4"
+          ></source>
+        </video>
         {step === StepEnums.TWO && (
           <div className="w-full px-2 flex justify-center flex-col items-center">
             <div className="flex items-center gap-8">
