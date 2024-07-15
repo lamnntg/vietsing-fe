@@ -143,7 +143,7 @@ const HomePage = () => {
   return (
     <div>
       <div
-        className="w-[100%] bg-white flex justify-center items-center relative h-[100vh]"
+        className="w-[100vw] bg-white flex justify-center items-center relative h-[100vh]"
         style={{
           zIndex: step === StepEnums.THREE ? 1 : 3,
         }}
@@ -457,9 +457,9 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { duration: 1 } }}
-              className="w-[100%] h-[100vh] absolute top-0 left-0"
+              className="w-[100vw] h-[100vh] absolute top-0 left-0"
             >
-              <div className="absolute top-[20%] left-[5%] z-10 font-semibold">
+              <div className="absolute top-[20%] left-[5%] z-10 font-semibold w-[80vw]">
                 <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">
                   <p className="mb-10">
                     <span className="text-primary font-bold">VIỆT</span>{" "}
@@ -467,7 +467,7 @@ const HomePage = () => {
                   </p>
                   <div className={montserrat.className}>
                     <motion.p
-                      className="uppercase font-medium text-[42px]"
+                      className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
                       initial={{
                         transform: "translateX(-100%)",
                         opacity: 0,
@@ -480,10 +480,10 @@ const HomePage = () => {
                         },
                       }}
                     >
-                      Sức mạnh ngoài trời
+                      Sức mạnh bền bỉ
                     </motion.p>
                     <motion.p
-                      className="uppercase font-medium text-[42px]"
+                      className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
                       initial={{
                         transform: "translateX(100%)",
                         opacity: 0,
@@ -496,10 +496,10 @@ const HomePage = () => {
                         },
                       }}
                     >
-                      Sáng tạo nghệ thuật
+                      nghệ thuật sáng tạo
                     </motion.p>
                     <motion.p
-                      className="uppercase font-medium text-[42px]"
+                      className="uppercase font-medium max-md:text-[20px] lg:text-[42px]"
                       initial={{
                         transform: "translateX(-100%)",
                         opacity: 0,
@@ -529,7 +529,7 @@ const HomePage = () => {
           <div className="container mx-auto">
             <div className="flex items-center flex-col md:flex-row flex-wrap gap-6">
               <div className="flex-1">
-                <h3 className="text-2xl mb-8 pt-10 text-bold">
+                <h3 className="text-2xl mb-8 pt-10 font-bold">
                   CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
                 </h3>
                 <p>

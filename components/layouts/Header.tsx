@@ -47,6 +47,7 @@ const Header = () => {
   useEffect(() => {
     setShow(false);
   }, [pathname]);
+
   useEffect(() => {
     const handleScroll = (e: Event) => {
       const height = window.innerHeight;
@@ -77,7 +78,7 @@ const Header = () => {
     >
       {isDesktopDown ? (
         <motion.nav initial={false} animate={show ? "open" : "closed"}>
-          <div className="flex justify-between pr-4 relative py-2">
+          <div className="flex justify-between pr-4 relative py-2 ">
             <Link href="/">
               <Image
                 className="w-[80px] h-[40px] object-cover"
@@ -91,7 +92,7 @@ const Header = () => {
               initial="close"
               animate={show ? "open" : "close"}
               className={clsx(
-                "absolute top-full left-0 w-full bg-white transition -mt-1"
+                "absolute top-full left-0 w-full bg-white transition -mt-1 text-black shadow-md"
               )}
               variants={menu}
             >
