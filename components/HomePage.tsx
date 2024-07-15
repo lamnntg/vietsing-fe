@@ -680,7 +680,7 @@ const HomePage = () => {
               </div>
               <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
             </div>
-            <div className="bg-[#efefef] py-10">
+            <div className="bg-white py-10">
               <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
                   {GYM_IMAGES.map((item, index) => (
