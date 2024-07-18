@@ -309,7 +309,7 @@ const HomePage = () => {
           <div className="container mx-auto">
             <div className="flex items-center flex-col md:flex-row flex-wrap gap-6">
               <div className="flex-1">
-                <h3 className="text-2xl mb-8 pt-10 font-bold">
+                <h3 className="font-bold text-4xl mb-8 pt-10 ">
                   CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
                 </h3>
                 <p>
@@ -354,6 +354,7 @@ const HomePage = () => {
                   src={Slide1}
                   style={{ objectFit: "cover" }}
                   alt="Thumnail"
+                  className="rounded-lg"
                 />
               </div>
             </div>
@@ -454,7 +455,7 @@ const HomePage = () => {
                   )}
                 >
                   <span className="leading-[20px] md:leading-[40px] uppercase">
-                    Hình ảnh
+                    Dự án tiêu biểu
                   </span>
                 </div>
               </div>

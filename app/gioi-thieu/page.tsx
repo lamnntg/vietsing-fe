@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Slide2 from "@/public/images/Picture5.png";
+import Slide2 from "@/public/images/introduce_banner.jpg";
 import {
   Accordion,
   AccordionContent,
