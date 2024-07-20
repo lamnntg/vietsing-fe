@@ -76,53 +76,14 @@ const Footer = () => {
           >
             Sản phẩm
           </Link>
-          <Link
-            className="mb-3 transition hover:text-primary"
-            href={RoutesEnum.LIEN_HE}
-          >
-            Liên hệ
-          </Link>
         </div>
 
         <div>
           <p className="mb-2 md:mb-7">LIÊN HỆ CHÚNG TÔI</p>
           <div className="flex items-center gap-2 mb-3 transition hover:text-primary cursor-pointer">
-            <Link
-              href={FACEBOOK_LINK}
-              className="flex items-center"
-              target="_blank"
-            >
-              <div className="w-[30px]">
-                <FontAwesomeIcon icon={faFacebookF} size="lg" />
-              </div>
-              Facebook
+            <Link href={RoutesEnum.LIEN_HE} className="flex items-center">
+              Liên hệ
             </Link>
-          </div>
-          <div className="flex items-center gap-2 transition hover:text-primary cursor-pointer">
-            <Link
-              href="https://www.youtube.com/@ECHO.design"
-              className="flex items-center"
-              target="_blank"
-            >
-              <div className="w-[30px]">
-                <FontAwesomeIcon icon={faYoutube} size="lg" />
-              </div>
-              Youtube
-            </Link>
-          </div>
-        </div>
-
-        <div>
-          <p className="mb-2 md:mb-7">FANPAGE</p>
-          <div className="flex items-center gap-2 mb-3 transition hover:text-primary cursor-pointer">
-            {/* <iframe
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fed.interior.architecture&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=433043327764949"
-              width="340"
-              height="130"
-              scrolling="no"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              className="max-w-full"
-            ></iframe> */}
           </div>
         </div>
       </div>

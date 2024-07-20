@@ -163,23 +163,6 @@ const Header = () => {
               >
                 Liên hệ
               </Link>
-              <div className="px-4 my-3 leading-6 text-base">
-                <Link href={FACEBOOK_LINK} target="_blank" className="mr-4">
-                  <FontAwesomeIcon
-                    icon={faFacebookF}
-                    className="cursor-pointer hover:text-primary transition"
-                  />
-                </Link>
-                <Link
-                  href="https://www.youtube.com/@ECHO.design"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    icon={faYoutube}
-                    className="cursor-pointer hover:text-primary transition"
-                  />
-                </Link>
-              </div>
             </motion.div>
           </div>
         </motion.nav>
@@ -259,18 +242,6 @@ const Header = () => {
               prefetch
             >
               Liên hệ
-            </Link>
-            <Link href={FACEBOOK_LINK} target="_blank" className="mr-4">
-              <FontAwesomeIcon
-                icon={faFacebookF}
-                className="cursor-pointer hover:text-primary transition"
-              />
-            </Link>
-            <Link href="https://www.youtube.com/@ECHO.design" target="_blank">
-              <FontAwesomeIcon
-                icon={faYoutube}
-                className="cursor-pointer hover:text-primary transition"
-              />
             </Link>
           </div>
         </div>
