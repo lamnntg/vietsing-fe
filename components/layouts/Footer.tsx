@@ -41,7 +41,7 @@ const Footer = () => {
           </p>
           <p className="mt-3">
             <Link
-              href="tel:0941689999"
+              href="tel:0932925999"
               className="hover:text-primary transition"
             >
               0932.925.999 / 0941.689.999

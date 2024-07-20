@@ -36,7 +36,7 @@ const ContactFooter = () => {
         <div>
           <div className="mb-2 text-white bg-[#fff] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer">
             <Link
-              href="https://zalo.me/0886889995"
+              href="https://zalo.me/0932925999"
               target="_blank"
               className="text-[14px] text-[#005be0] font-semibold"
             >
@@ -44,14 +44,9 @@ const ContactFooter = () => {
             </Link>
           </div>
           <div className="bg-[#fff] rounded-full w-10 h-10 flex justify-center items-center mb-3 cursor-pointer">
-            <a href="tel:+0886889995">
+            <a href="tel:+0932925999">
               <Image src={Phone} alt="phone" />
             </a>
-          </div>
-          <div className="mb-3 bg-[#fff] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer">
-            <Link href="https://m.me/100144595512175" target="_blank">
-              <Image src={Messenger} alt="messenger" />
-            </Link>
           </div>
           <div
             className="bg-primary rounded-full w-10 h-10 flex justify-center items-center cursor-pointer"
