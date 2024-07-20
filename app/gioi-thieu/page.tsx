@@ -7,8 +7,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Building, Building2, SquarePen } from "lucide-react";
+import { Building, Building2, CircleDot, SquarePen } from "lucide-react";
 import Team from "@/components/Team";
+import sodo from "@/public/images/sodo.png";
+import nangluc from "@/public/images/nangluc.png";
 
 export default function Introduce() {
   return (
@@ -16,7 +18,7 @@ export default function Introduce() {
       <div className="relative">
         <Image
           src={Slide2}
-          style={{ objectFit: "cover", height: 400, width: "100%" }}
+          style={{ objectFit: "cover", height: 600, width: "100%" }}
           alt="Thumnail"
         />
         <p className="absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%] z-[2] text-4xl text-nowrap lg:text-5xl text-white">
@@ -29,7 +31,7 @@ export default function Introduce() {
           <h1 className="text-[30px] lg:text-[36px] xl:text-[40px] font-semibold text-black leading-[45px] mb-6">
             CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
           </h1>
-          <p className="text-[15px] font-[300] text-[#222] leading-7 tracking-wide">
+          <p className="text-[15px] leading-7 tracking-wide">
             Lời đầu tiên, chúng tôi - CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI
             VIỆT SING gửi tới Quý khách hàng lời chào trân trọng, lời chúc sức
             khoẻ, thành công, thịnh vượng và gặp nhiều may mắn. VIỆT SING được
@@ -62,27 +64,39 @@ export default function Introduce() {
         >
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-2xl font-light text-[#222] border border-solid border-[#dedede] px-6 border-b-0 hover:no-underline">
-              Tầm nhìn
+              Sơ đồ tổ chức
             </AccordionTrigger>
             <AccordionContent className="text-base px-6 py-5 border border-solid border-[#dedede]">
-              Trong giai đoạn 5 năm tới, VIỆT SING định hướng phát triển trở
-              thành công ty thiết kế và thi công kiến trúc nội thất trong top 10
-              miền Bắc. Chúng tôi sẽ mở rộng phát triển tại các tỉnh thành phố
-              lớn như: TP Hồ Chí Minh, Đà Nẵng, Hải Phòng, Hải Dương, Thanh Hóa,
-              Quảng Ninh, ... Ngoài mục tiêu phát triển chuyên sâu về thiết kế
-              và xây dựng hoàn thiện, chúng tôi cũng hướng tới các lĩnh vực kính
-              doanh bán lẻ, quản lý dự án và cung cấp giải pháp công nghệ mới để
-              nâng tầm chất lượng cuộc sống cho khách hàng.
+              <div className="flex justify-center">
+                <Image src={sodo} alt="Sơ đồ tổ chức" />
+              </div>
+              <div className="mt-2">
+                <p className="text-xl font-semibold">Ban lãnh đạo Công ty:</p>
+                <ul className="list-disc ml-4">
+                  <li>Ban Giám đốc: 03 người</li>
+                  <li>Phòng nghiệp vụ: 10 người</li>
+                  <li>Ban CH công trường: 6 người</li>
+                </ul>
+                <p className="text-xl font-semibold mt-4">
+                  Trình độ chuyên môn nghiệp vụ:
+                </p>
+                <ul className="list-disc ml-4">
+                  <li>Kỹ sư: 10 người</li>
+                  <li>Kiến trúc sư: 07 người</li>
+                  <li>Cử nhân kinh tế: 09 người</li>
+                  <li>Bằng nghề: 40 người</li>
+                </ul>
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2" className="mt-3">
             <AccordionTrigger className="text-2xl font-light text-[#222] border border-solid border-[#dedede] px-6 border-b-0 hover:no-underline">
-              Sứ mệnh
+              Năng lực thi công
             </AccordionTrigger>
             <AccordionContent className="text-base px-6 py-5 border border-solid border-[#dedede]">
-              Sứ mệnh của chúng tôi là từng bước tạo ra những không gian sống,
-              làm việc, vui chơi, học tập và sinh hoạt mang lại trải nghiệm trọn
-              vẹn, tạo nên giá trị và cảm xúc cho quý khách hàng.
+              <div className="flex justify-center">
+                <Image src={nangluc} alt="Năng lực thi công" />
+              </div>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3" className="mt-3">
@@ -90,41 +104,51 @@ export default function Introduce() {
               Giá trị cốt lõi
             </AccordionTrigger>
             <AccordionContent className="text-base px-6 py-5 border border-solid border-[#dedede]">
-              <p>
-                - Ý tưởng thiết kế sáng tạo - bền vững: Luôn cập nhật và đưa tới
-                khách hàng những sản phẩm thiết kế mới mang tính sáng tạo nhưng
-                vẫn bám theo tính giá trị bền vững của không gian cũng như nhu
-                cầu sử dụng của khách hàng.
+              <p className="text-xl font-semibold flex items-center gap-2">
+                <CircleDot size={16} /> Kỹ năng làm việc – phát triển nguồn nhân
+                lực
               </p>
-              <p>
-                {" "}
-                - Chất lượng sản phẩm: Tập trung vào các sản phẩm mang tính thẩm
-                mỹ, hài hòa với không gian, bối cảnh và phù hợp với mong muốn
-                của khách hàng nhắm nâng tầm giá trị cuộc sống.
+              <p className="ml-4 mt-1">
+                Chúng tôi luôn tâm niệm nguồn nhân lực là tài sản quý nhất của
+                công ty. Với mục đích đạt được sự thành công bền vững, Việt Sing
+                sẽ tạo dựng nên một môi trường làm việc hổ trợ về mọi mặt cho
+                nhân viên. Chúng tôi luôn tạo cơ hội và niềm tin cho nhân viên
+                mình phát triển hết tiềm năng và tài năng của từng người. Đội
+                ngũ chúng tôi luôn hỗ trợ cùng nhau làm việc với khách hàng nhằm
+                đưa ra giải pháp có lợi nhất. Sư tôn trọng lẫn nhau luôn là nền
+                tảng cho thành công của chúng tôi.
               </p>
-              <p>
-                - Đội ngũ nhân sự chuyên nghiệp: VIỆT SING tập trung phát triển
-                nguồn nhân sự và coi đó là nền tảng và cốt lõi của công ty.
-                Chúng tôi xây dựng một đội ngũ nhân sự có chuyên môn và bề dày
-                kinh nghiệm trong lĩnh vực kiến trúc, xây dựng và nội thất.{" "}
+              <p className="text-xl font-semibold mt-3 flex items-center gap-2">
+                <CircleDot size={16} /> Sự chính trực – chuẩn mực đạo đức nghề
+                nghiệp cao nhất
               </p>
-              <p>
-                - Uy tín hàng đầu: Đó là mục tiêu lớn nhất mà chúng tôi luôn
-                hướng tới trong quá trình thiết kế và thi công hoàn thiện. Được
-                khẳng định qua sự công nhận và hài lòng của khách hàng.{" "}
+              <p className="ml-4 mt-1">
+                Chúng tôi luôn đặt lên hàng đầu các giá trị nền tảng của chất
+                lượng, trung thực và cần mẫn. Chúng tôi luôn hướng đến những
+                chuẩn mực nghề nhiệp cao nhất trong lĩnh vực của mình. Việt Sing
+                luôn làm việc với thái độ thẳng thắn và chính trực. Chúng tôi
+                tạo dựng một doanh nghiệp với nền tảng là sự tin cậy. Tên tuổi
+                Việt Sing gắn liền với các chuẩn mực vượt trội của dịch vụ, chất
+                lượng, hướng đến khách hàng và sự chính trực.
               </p>
-              <p>
-                - Tối ưu chi phí và tiết kiệm thời gian của khách hàng: Thấu
-                hiểu được nỗi băn khoăn đó của khách hàng, VIỆT SING đưa ra quy
-                trình thiết kế, sản xuất và hoàn thiện nhanh chóng với chất
-                lượng và chi phí tối ưu cho mỗi công trình.
-              </p>{" "}
+              <p className="text-xl font-semibold mt-3 flex items-center gap-2">
+                <CircleDot size={16} /> Sự cam kết – hướng đến khách hàng
+              </p>
+              <p className="ml-4 mt-1">
+                Chúng tôi chủ động đưa ra những giải pháp tối ưu cho khách hàng
+                của mình. Sự hợp tác bền vững và quan hệ lâu bền với khách hàng
+                là sự sống của công ty chúng tôi. Chúng tôi luôn tạo niềm tin
+                với khách hàng với hình ảnh nhân viên của chúng tôi luôn nổ lực
+                với quyết tâm cao nhất trong mọi công việc. Đây là sự khác biệt.
+                Từng cá nhân trong Công ty Việt Sing “hướng đến khách hàng” và
+                chăm sóc khách hàng như khách hàng duy nhất của chúng tôi.{" "}
+              </p>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>
 
-      <div className="container mx-auto mt-[100px]">
+      {/* <div className="container mx-auto mt-[100px]">
         <h3 className="text-3xl lg:text-[39px] text-center uppercase mb-10">
           Dịch vụ cung cấp
         </h3>
@@ -148,9 +172,9 @@ export default function Introduce() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <Team />
+      {/* <Team /> */}
     </main>
   );
 }

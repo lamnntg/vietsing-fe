@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Công viên nước VinWonders Nha Trang",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3ZpbndvbmRlci5qcGc=&version_id=null"
+        ]
+    },
+    {
+        "name": "Trò chơi trẻ em – Lô Hạ tầng cảnh quan A1&A2 – Phân khu 2 – Vinhomes Grand Park",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL2RvY2hvaXRyZWVtLmpwZw==&version_id=null"
+        ]
+    },
+    {
+        "name": "Vincom Shophouse Royal Park Nam Đông Hà  - Quảng Trị / Hạng mục Phào đúc sẵn",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3Nob3Bob3VzZS53ZWJw&version_id=null"
+        ]
+    },
+    {
+        "name": "Nội thất 32 căn hộ Ocean Park",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3ZpbmhvbWUuanBn&version_id=null"
+        ]
+    },
+    {
+        "name": "Ocean Park và Harmony Villa",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL2hhcm1vbnkuanBn&version_id=null"
+        ]
+    },
+    {
+        "name": "Công viên nước/ Khu du lịch quốc tế Đồi Rồng",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL2RvaXJvbmcud2VicA==&version_id=null"
+        ]
+    },
+    {
+        "name": "Cung cấp lắp đặt thiết bị trò chơi_HTCQ lô B5-CT04_Vinhome Ocean Park",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3Ryb2Nob2lvY2VhbnBhcmsuanBn&version_id=null"
+        ]
+    },
+    {
+        "name": "Thi công hoàn thiện nội thất chung cư 03.19 Sao Biển",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3Nhb2JpZW4uanBn&version_id=null"
+        ]
+    }
+]

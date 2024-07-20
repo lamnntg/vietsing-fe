@@ -9,9 +9,6 @@ import { useAppStore } from "@/store/app.store";
 import { FuturaNow } from "@/utils/font";
 import clsx from "clsx";
 import Link from "next/link";
-import { MENU_HOME } from "@/constants/app.constants";
-import EchoImage from "@/public/echo.png";
-import ArchitectImage from "@/public/architect.png";
 import Thicong2 from "@/public/images/thicong2.png";
 import Thicong3 from "@/public/images/thicong3.png";
 import Thicong4 from "@/public/images/thicong4.png";
@@ -40,6 +37,10 @@ import Service3 from "@/public/images/services/deco.jpeg";
 
 import { Montserrat } from "next/font/google";
 import { Loader2 } from "lucide-react";
+import StepTwo from "./StepTwo";
+
+import project from "@/data/project.json";
+
 const montserrat = Montserrat({ subsets: ["latin"] });
 const GYM_IMAGES = [
   Image1,
@@ -65,11 +66,6 @@ const THICONG = [
   Thicong13,
   Thicong14,
 ];
-
-const SLOGAN = "T i m e l e s s".split(" ");
-const SLOGAN2 = "d e s i g n ,".split(" ");
-const SLOGAN3 = "e n d l e s s".split(" ");
-const SLOGAN4 = "e c h o .".split(" ");
 enum StepEnums {
   ONE = "1",
   TWO = "2",
@@ -82,41 +78,9 @@ const HomePage = () => {
   const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
   const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
-  const [type, setType] = useState(1);
-  const productDesign = useMemo(() => {
-    const res = MENU_HOME.find((item) => item.type === type);
-    return res || MENU_HOME[0];
-  }, [type]);
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  const RESOLUTION = useMemo(() => {
-    return {
-      fullHeight: 160,
-      circleStrike: {
-        width: isMobileLargeDown ? 4 : 8,
-      },
-      line: {
-        width: isMobile ? 80 : isMobileLargeDown ? 120 : 160,
-        height: isMobile ? 80 : isMobileLarge ? 112 : 22,
-      },
-      strike: {
-        width: 160,
-        height: isMobileLargeDown ? 4 : 10,
-      },
-      logo: {
-        width: isMobile ? 120 : isMobileLarge ? 254 : 364,
-        height: isMobile ? 80 : isMobileLarge ? 112 : 160,
-      },
-      line1: {
-        fontSize: isMobile ? 30 : isMobileLarge ? 80 : 120,
-      },
-      line2: {
-        fontSize: isMobileLargeDown ? 12 : 16,
-      },
-    };
-  }, [isMobile, isMobileLarge]);
 
   useEffect(() => {
     if (!loaded) {
@@ -163,51 +127,7 @@ const HomePage = () => {
             type="video/mp4"
           ></source>
         </video>
-        {step === StepEnums.TWO && (
-          <div className="w-full px-2 flex justify-center flex-col items-center">
-            <div className="flex items-center gap-8">
-              <div className="relative overflow-hidden">
-                <div
-                  className={`flex relative gap-2 sm:gap-3 md:gap-4 items-end overflow-hidden`}
-                >
-                  <div className="relative">
-                    <motion.div
-                      initial={{
-                        transform: "translateX(0)",
-                        position: "relative",
-                        zIndex: 3,
-                      }}
-                    >
-                      <Image
-                        src={Logo}
-                        className="w-[300px] aspect-[5/3] object-contain"
-                        alt="Logo"
-                      />
-                    </motion.div>
-                    <motion.div
-                      initial={{
-                        transform: "translateX(0)",
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        width: "100%",
-                        height: "100%",
-                        zIndex: 4,
-                        background: "white",
-                      }}
-                      animate={{
-                        transform: "translateX(100%)",
-                        transition: {
-                          duration: 1,
-                        },
-                      }}
-                    ></motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        {step === StepEnums.TWO && <StepTwo />}
         {step === StepEnums.THREE && (
           <>
             <div className="fixed top-0 left-0 w-full h-[100vh] z-[-1] overflow-hidden animate-fade">
@@ -464,14 +384,19 @@ const HomePage = () => {
             <div className="bg-white py-10">
               <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
-                  {GYM_IMAGES.map((item, index) => (
-                    <div>
-                      <Image
+                  {project.map((item, index) => (
+                    <div className="w-full relative overflow-hidden group cursor-pointer">
+                      <img
                         className="w-full h-[400px] object-cover"
-                        src={item}
+                        src={item.images[0]}
                         key={index}
                         alt="image"
                       />
+                      <div className="py-2 px-6 absolute transition-all duration-300 group-hover:bottom-0 bottom-[100%] flex items-center justify-center left-0 w-full h-full backdrop-blur-[3px] bg-[rgb(0,0,0,0.4)] text-white">
+                        <p className="text-2xl font-semibold mb-3 text-center">
+                          {item.name}
+                        </p>
+                      </div>
                     </div>
                   ))}
                 </div>
