@@ -132,10 +132,21 @@ const HomePage = () => {
             type="video/mp4"
           ></source>
         </video>
+        <img
+          src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3ZpZGVvLnBuZw==&version_id=null"
+          className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover z-[-1] absolute top-0 left-0"
+          alt=""
+          hidden
+        />
         {step === StepEnums.TWO && <StepTwo />}
         {step === StepEnums.THREE && (
           <>
             <div className="fixed top-0 left-0 w-full h-[100vh] z-[-1] overflow-hidden animate-fade">
+              <img
+                src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3ZpZGVvLnBuZw==&version_id=null"
+                className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover z-[-1] absolute top-0 left-0"
+                alt=""
+              />
               {loaded ? (
                 <video
                   loop
@@ -143,8 +154,7 @@ const HomePage = () => {
                   autoPlay
                   playsInline
                   poster=""
-                  className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover"
-                  onLoad={() => setLoaded(true)}
+                  className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover relative z-[3]"
                 >
                   <source
                     src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
