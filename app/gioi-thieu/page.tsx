@@ -1,14 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import Slide2 from "@/public/images/introduce_banner.jpg";
+import Slide2 from "@/public/images/gioi-thieu-banner.webp";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Building, Building2, CircleDot, SquarePen } from "lucide-react";
-import Team from "@/components/Team";
+import { CircleDot } from "lucide-react";
 import sodo from "@/public/images/sodo.png";
 import nangluc from "@/public/images/nangluc.png";
 

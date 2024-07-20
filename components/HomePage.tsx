@@ -119,7 +119,11 @@ const HomePage = () => {
           playsInline
           poster=""
           className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover"
-          onCanPlayThrough={() => setLoaded(true)}
+          onCanPlayThrough={() => {
+            setTimeout(() => {
+              setLoaded(true);
+            }, 200);
+          }}
           hidden
         >
           <source

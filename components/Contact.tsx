@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Slide3 from "@/public/slide_3.jpg";
+import Slide3 from "@/public/images/introduce_banner.jpg";
 import Image from "next/image";
 import { Clock, Mail, MapPin, Newspaper, Phone } from "lucide-react";
 import Link from "next/link";
@@ -13,7 +13,8 @@ const Contact = () => {
         <Image
           src={Slide3}
           style={{
-            height: 370,
+            height: 600,
+            width: "100%",
             objectFit: "cover",
           }}
           alt="Liên hệ"

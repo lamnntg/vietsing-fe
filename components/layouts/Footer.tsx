@@ -72,15 +72,15 @@ const Footer = () => {
           </Link>
           <Link
             className="mb-3 transition hover:text-primary"
-            href={RoutesEnum.THUC_TE}
+            href={RoutesEnum.COMPLETED}
           >
-            Dự án thi công lắp đặt
+            Sản phẩm
           </Link>
           <Link
             className="mb-3 transition hover:text-primary"
-            href={RoutesEnum.THUC_TE}
+            href={RoutesEnum.LIEN_HE}
           >
-            Dự án thi công
+            Liên hệ
           </Link>
         </div>
 
