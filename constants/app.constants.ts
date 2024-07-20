@@ -23,6 +23,7 @@ export enum RoutesEnum {
   THUC_TE = "/du-an-da-hoan-thanh",
   SAN_VUON = "/san-vuon",
   NHA_THO = "/nha-tho",
+  SAN_PHAM = "/san-pham",
 }
 
 export const INTRODUCE_DROPDOWN = [

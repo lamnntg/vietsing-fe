@@ -71,7 +71,7 @@ const Header = () => {
     <div
       className={cn(
         "fixed top-0 left-0 z-[11]  font-medium w-full px-3 transition",
-        active || ["/du-an"].includes(pathname)
+        active || ["/du-an", "/san-pham"].includes(pathname)
           ? "bg-white text-black shadow-md"
           : "text-white bg-transparent"
       )}
@@ -125,10 +125,10 @@ const Header = () => {
                 Dự án
               </Link>
               <Link
-                href={RoutesEnum.COMPLETED}
+                href={RoutesEnum.SAN_PHAM}
                 className={cn(
                   "flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base",
-                  pathname === RoutesEnum.COMPLETED && "text-primary"
+                  pathname === RoutesEnum.SAN_PHAM && "text-primary"
                 )}
                 prefetch
               >
@@ -219,17 +219,17 @@ const Header = () => {
               )}
               prefetch
             >
-              Sản phẩm
+              Dự án
             </Link>
             <Link
-              href={RoutesEnum.COMPLETED}
+              href={RoutesEnum.SAN_PHAM}
               className={cn(
                 "flex items-center px-4 text-sm hover:text-primary transition",
-                pathname === RoutesEnum.COMPLETED && "text-primary"
+                pathname === RoutesEnum.SAN_PHAM && "text-primary"
               )}
               prefetch
             >
-              Dự án
+              Sản phẩm
             </Link>
             {/* <DropdownMenu
               item={{
