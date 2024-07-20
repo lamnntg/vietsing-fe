@@ -84,16 +84,13 @@ const HomePage = () => {
   }, []);
 
   useEffect(() => {
-    if (!loaded) {
-      return;
-    }
     const timeoutTwo = setTimeout(() => {
       setStep(StepEnums.THREE);
     }, 1500);
     return () => {
       clearTimeout(timeoutTwo);
     };
-  }, [loaded]);
+  }, []);
   useEffect(() => {
     if (step === StepEnums.THREE) {
       setShowFooter(true);
