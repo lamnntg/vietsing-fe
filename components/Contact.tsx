@@ -13,13 +13,13 @@ const Contact = () => {
         <Image
           src={Slide3}
           style={{
-            height: 600,
             width: "100%",
             objectFit: "cover",
           }}
+          className="h-[360px] md:h-[600px]"
           alt="Liên hệ"
         />
-        <h2 className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white z-[2] text-[22px] md:text-[48px] font-light">
+        <h2 className="absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white z-[2] text-[22px] md:text-[48px] font-medium uppercase text-center w-full">
           Liên hệ với chúng tôi
         </h2>
       </div>
@@ -78,7 +78,7 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-      <div className="bg-white container mx-auto px-3 flex py-[80px] justify-center">
+      <div className="bg-white container mx-auto px-3 flex py-[80px] justify-center pt-4 md:pt-[80px]">
         <div className="flex gap-4 w-full flex-col md:flex-row">
           <form className="flex-1">
             <h1 className="text-3xl text-[#333]">

@@ -17,15 +17,19 @@ export default function Introduce() {
       <div className="relative">
         <Image
           src={Slide2}
-          style={{ objectFit: "cover", height: 600, width: "100%" }}
+          style={{
+            width: "100%",
+            objectFit: "cover",
+          }}
+          className="h-[360px] md:h-[600px]"
           alt="Thumnail"
         />
-        <p className="absolute top-[50%] translate-x-[-50%] translate-y-[-50%] left-[50%] z-[2] text-4xl text-nowrap lg:text-5xl text-white">
-          Về VIỆT SING
-        </p>
+        <h2 className="absolute font-medium top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] text-white z-[2] text-[22px] md:text-[48px]">
+          VỀ VIỆT SING
+        </h2>
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-[1]"></div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-[60%,40%] gap-8 container mx-auto items-center my-[100px]">
+      <div className="grid grid-cols-1 lg:grid-cols-[60%,40%] gap-8 container mx-auto items-center my-[100px] mt-10 md:mt-[100px]">
         <div>
           <h1 className="text-[30px] lg:text-[36px] xl:text-[40px] font-semibold text-black leading-[45px] mb-6">
             CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING

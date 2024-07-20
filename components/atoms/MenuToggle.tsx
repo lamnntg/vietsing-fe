@@ -1,15 +1,35 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
 import { SVGMotionProps, motion } from "framer-motion";
+import { useBreakpointScreen } from "@/utils/breakpoint";
+import useBreakpoint from "@/hooks/useBreakpoint";
 
-const Path = (props: SVGMotionProps<SVGPathElement>) => (
-  <motion.path
-    fill="transparent"
-    strokeWidth="3"
-    stroke="hsl(0, 0%, 18%)"
-    strokeLinecap="round"
-    {...props}
-  />
-);
+const Path = (props: SVGMotionProps<SVGPathElement>) => {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = (e: Event) => {
+      const height = window.innerHeight;
+      if (window.scrollY > height * 0.2) {
+        setActive(true);
+      } else {
+        setActive(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [true]);
+  return (
+    <motion.path
+      fill="transparent"
+      strokeWidth="3"
+      stroke={active ? "hsl(0, 0%, 18%)" : "white"}
+      strokeLinecap="round"
+      {...props}
+    />
+  );
+};
 
 type MenuToggleProps = {
   toggle: () => void;
