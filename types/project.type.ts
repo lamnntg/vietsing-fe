@@ -18,3 +18,10 @@ export type DropdownLink = {
     label: string;
   }[];
 };
+
+export type RowDataDef = {
+  width?: number;
+  label: string;
+  colSpan: number;
+  rowSpan: number;
+};

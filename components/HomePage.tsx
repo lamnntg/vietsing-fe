@@ -160,7 +160,7 @@ const HomePage = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { duration: 1 } }}
-                className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] absolute top-0 left-0"
+                className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] absolute top-0 left-0 bg-[rgba(0,0,0,0.3)]"
               >
                 <div className="absolute top-[20%] left-[5%] z-10 font-semibold w-[80vw]">
                   <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">

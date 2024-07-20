@@ -8,25 +8,48 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { RowDataDef } from "@/types/project.type";
+import { FC } from "react";
 
-const CustomTable = () => {
+type CustomTableProps = {
+  header: RowDataDef[];
+  row: RowDataDef[];
+};
+
+const CustomTable: FC<CustomTableProps> = ({ header, row }) => {
   return (
     <div>
       <Table className="border-[#e2e8f0] border border-solid w-full">
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px]">Invoice</TableHead>
-            <TableHead>Status</TableHead>
-            <TableHead>Method</TableHead>
-            <TableHead className="text-right">Amount</TableHead>
+            {header.map((item) => (
+              <TableHead
+                colSpan={item.colSpan}
+                rowSpan={item.rowSpan}
+                key={item.label}
+                style={{
+                  width: item.width || undefined,
+                }}
+              >
+                {item.label}
+              </TableHead>
+            ))}
           </TableRow>
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell className="font-medium">INV001</TableCell>
-            <TableCell>Paid</TableCell>
-            <TableCell>Credit Card</TableCell>
-            <TableCell className="text-right">$250.00</TableCell>
+            {row.map((item) => (
+              <TableCell
+                colSpan={item.colSpan}
+                rowSpan={item.rowSpan}
+                key={item.label}
+                style={{
+                  width: item.width || undefined,
+                }}
+              >
+                {item.label}
+              </TableCell>
+            ))}
           </TableRow>
         </TableBody>
       </Table>

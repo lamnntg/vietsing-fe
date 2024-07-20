@@ -11,7 +11,36 @@ const page = () => {
         <h3 className="text-xl md:text-2xl font-semibold uppercase mb-3">
           Các sản phẩm bột bả, sơn hãng Jotun
         </h3>
-        <CustomTable />
+        <CustomTable
+          header={[
+            {
+              label: "TT",
+              colSpan: 2,
+              rowSpan: 1,
+            },
+            {
+              label: "Tên sản phẩm",
+              colSpan: 2,
+              rowSpan: 1,
+            },
+            {
+              label: "Tên tiếng Anh",
+              colSpan: 1,
+              rowSpan: 2,
+            },
+            {
+              label: "Tên tiếng Việt",
+              colSpan: 1,
+              rowSpan: 2,
+            },
+            {
+              label: "Nhãn hiệu",
+              colSpan: 2,
+              rowSpan: 1,
+            },
+          ]}
+          row={[]}
+        />
       </div>
     </main>
   );
