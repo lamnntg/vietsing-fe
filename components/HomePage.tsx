@@ -40,6 +40,7 @@ import { Loader2 } from "lucide-react";
 import StepTwo from "./StepTwo";
 
 import project from "@/data/project.json";
+import { RoutesEnum } from "@/constants/app.constants";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 const GYM_IMAGES = [
@@ -218,9 +219,11 @@ const HomePage = () => {
                         Tỏa sáng không gian
                       </motion.p>
                     </div>
-                    <button className="border border-white border-solid text-[20px] transition px-4 py-3 mt-10 hover:bg-primary hover:border-primary rounded-md">
-                      Tìm hiểu thêm
-                    </button>
+                    <Link href={RoutesEnum.INTRODUCE}>
+                      <button className="border border-white border-solid text-[20px] transition px-4 py-3 mt-10 hover:bg-primary hover:border-primary rounded-md">
+                        Tìm hiểu thêm
+                      </button>
+                    </Link>
                   </h2>
                 </div>
               </motion.div>
@@ -267,7 +270,7 @@ const HomePage = () => {
                 <div>
                   <Link
                     className="bg-black px-10 mt-10 inline-block py-3 text-white"
-                    href="/gioi-thieu"
+                    href={RoutesEnum.INTRODUCE}
                   >
                     TÌM HIỂU THÊM
                   </Link>
