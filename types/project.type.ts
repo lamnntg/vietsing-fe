@@ -22,6 +22,6 @@ export type DropdownLink = {
 export type RowDataDef = {
   width?: number;
   label: string;
-  colSpan: number;
-  rowSpan: number;
+  colSpan?: number;
+  rowSpan?: number;
 };

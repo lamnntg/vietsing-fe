@@ -1,4 +1,5 @@
 import CustomTable from "@/components/atoms/CustomTable";
+import { PRODUCT_1, PRODUCT_2 } from "@/constants/product";
 import React from "react";
 
 const page = () => {
@@ -13,33 +14,61 @@ const page = () => {
         </h3>
         <CustomTable
           header={[
-            {
-              label: "TT",
-              colSpan: 2,
-              rowSpan: 1,
-            },
-            {
-              label: "Tên sản phẩm",
-              colSpan: 2,
-              rowSpan: 1,
-            },
-            {
-              label: "Tên tiếng Anh",
-              colSpan: 1,
-              rowSpan: 2,
-            },
-            {
-              label: "Tên tiếng Việt",
-              colSpan: 1,
-              rowSpan: 2,
-            },
-            {
-              label: "Nhãn hiệu",
-              colSpan: 2,
-              rowSpan: 1,
-            },
+            [
+              {
+                label: "TT",
+                colSpan: 1,
+                rowSpan: 2,
+              },
+              {
+                label: "Tên sản phẩm",
+                colSpan: 2,
+                rowSpan: 1,
+              },
+              {
+                label: "Nhãn hiệu",
+                colSpan: 1,
+                rowSpan: 2,
+              },
+            ],
+            [
+              {
+                label: "Tên tiếng Anh",
+                colSpan: 1,
+                rowSpan: 2,
+              },
+              {
+                label: "Tên tiếng Việt",
+                colSpan: 1,
+                rowSpan: 2,
+              },
+            ],
           ]}
-          row={[]}
+          row={PRODUCT_1}
+        />
+      </div>
+      <div className="mt-14">
+        <h3 className="text-xl md:text-2xl font-semibold uppercase mb-3">
+          Vật liệu chống thấm
+        </h3>
+        <CustomTable
+          header={[
+            [
+              {
+                label: "STT",
+              },
+              {
+                label: "Hạng mục",
+              },
+              {
+                label: "Sản phẩm tương ứng",
+              },
+              {
+                label: "Đặc tính kỹ thuật ",
+              },
+            ],
+          ]}
+          row={PRODUCT_2}
         />
       </div>
     </main>
