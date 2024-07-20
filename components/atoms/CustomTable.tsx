@@ -55,7 +55,7 @@ const CustomTable: FC<CustomTableProps> = ({ header, row }) => {
                     index === 0 && item.length > 3 ? "text-center" : "",
                     row.length === 29 && index === 3 ? "text-center" : "",
                     item.length === 1 && "font-medium",
-                    "border border-[#e2e8f0] text-nowrap"
+                    "border border-[#e2e8f0] text-nowrap lg:text-wrap"
                   )}
                 >
                   {r.label}
