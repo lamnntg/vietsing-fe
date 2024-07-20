@@ -21,7 +21,7 @@ const Card: FC<CardProps> = ({ project }) => {
             }}
             src={project.images[0]}
             alt="project"
-            className="group-hover:scale-110 transition-all duration-300 h-[255px] md:h-[320px] lg:h-[400px]"
+            className="group-hover:scale-110 transition-all duration-300 h-[220px] md:h-[280px] lg:h-[320px]"
           />
         </div>
         <div className="py-2 px-6 absolute transition-all duration-300 group-hover:bottom-0 bottom-[100%] left-0 w-full h-full backdrop-blur-[3px] bg-[rgb(0,0,0,0.4)] text-white">

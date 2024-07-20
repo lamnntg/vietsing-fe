@@ -46,5 +46,11 @@
         "images": [
             "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3Nhb2JpZW4uanBn&version_id=null"
         ]
+    },
+    {
+        "name": "Cung cấp lắp đặt tượng đá phù điêu HM11-GĐ2",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3BodS1kaWV1LWRhcC1ub2ktMS0xLmpwZw==&version_id=null"
+        ]
     }
 ]

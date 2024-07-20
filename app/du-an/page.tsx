@@ -8,7 +8,7 @@ const page = () => {
       <h1 className="text-center uppercase text-[32px] pb-[80px]">
         CÁC sản phẩm của Việt Sing
       </h1>
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
         {(project as ProjectDef[]).map((item) => (
           <Card key={item.name} project={item} />
         ))}

@@ -233,7 +233,7 @@ const HomePage = () => {
           <div className="container mx-auto">
             <div className="flex items-center flex-col md:flex-row flex-wrap gap-6">
               <div className="flex-1">
-                <h3 className="font-bold text-4xl mb-8 pt-10 ">
+                <h3 className="font-bold text-2xl md:text-4xl mb-8 pt-10">
                   CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
                 </h3>
                 <p>
@@ -310,7 +310,7 @@ const HomePage = () => {
                     />
                   </div>
                   <div className="w-[100%] max-w-[100%] overflow-hidden lg:w-[40%]">
-                    <p className="font-bold mb-4 text-4xl">
+                    <p className="font-bold mb-4 text-2xl md:text-4xl">
                       SẢN XUẤT LẮP ĐẶT TRÒ CHƠI THIẾT BỊ TẬP GYM
                     </p>
                     <p className="text-gray-500">
@@ -337,7 +337,9 @@ const HomePage = () => {
                     />
                   </div>
                   <div className="w-[100%] max-w-[100%] overflow-hidden lg:w-[40%]">
-                    <p className="font-bold mb-3 text-4xl">TƯỢNG ART WORK </p>
+                    <p className="font-bold mb-3 text-2xl md:text-4xl">
+                      TƯỢNG ART WORK{" "}
+                    </p>
                     <p className="text-gray-500">
                       Dịch vụ cung cấp các tượng art work tinh xảo và độc đáo.
                       Chúng tôi sử dụng vật liệu cao cấp như đá, gỗ, kim loại,
@@ -356,7 +358,9 @@ const HomePage = () => {
                     />
                   </div>
                   <div className="w-[100%] max-w-[100%] overflow-hidden lg:w-[40%]">
-                    <p className="font-bold mb-4 text-4xl">BẢNG BIỂN DECO </p>
+                    <p className="font-bold mb-4 text-2xl md:text-4xl">
+                      BẢNG BIỂN DECO{" "}
+                    </p>
                     <p className="text-gray-500">
                       Thiết kế và sản xuất bảng biển deco sáng tạo và hiện đại.
                       Chúng tôi sử dụng các vật liệu cao cấp, bền bỉ như gỗ, kim
@@ -387,11 +391,11 @@ const HomePage = () => {
             </div>
             <div className="bg-white py-10">
               <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
                   {project.map((item, index) => (
                     <div className="w-full relative overflow-hidden group cursor-pointer">
                       <img
-                        className="w-full h-[400px] object-cover"
+                        className="w-full h-[300px] object-cover"
                         src={item.images[0]}
                         key={index}
                         alt="image"

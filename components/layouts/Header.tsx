@@ -122,6 +122,16 @@ const Header = () => {
                 )}
                 prefetch
               >
+                Dự án
+              </Link>
+              <Link
+                href={RoutesEnum.COMPLETED}
+                className={cn(
+                  "flex items-center px-4 hover:text-primary transition my-3 leading-6 text-base",
+                  pathname === RoutesEnum.COMPLETED && "text-primary"
+                )}
+                prefetch
+              >
                 Sản phẩm
               </Link>
               {/* <DropdownMenu
@@ -210,6 +220,16 @@ const Header = () => {
               prefetch
             >
               Sản phẩm
+            </Link>
+            <Link
+              href={RoutesEnum.COMPLETED}
+              className={cn(
+                "flex items-center px-4 text-sm hover:text-primary transition",
+                pathname === RoutesEnum.COMPLETED && "text-primary"
+              )}
+              prefetch
+            >
+              Dự án
             </Link>
             {/* <DropdownMenu
               item={{
