@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import { SVGMotionProps, motion } from "framer-motion";
 import { useBreakpointScreen } from "@/utils/breakpoint";
 import useBreakpoint from "@/hooks/useBreakpoint";
+import { usePathname } from "next/navigation";
 
 const Path = (props: SVGMotionProps<SVGPathElement>) => {
   const [active, setActive] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = (e: Event) => {
@@ -24,7 +26,13 @@ const Path = (props: SVGMotionProps<SVGPathElement>) => {
     <motion.path
       fill="transparent"
       strokeWidth="3"
-      stroke={active ? "hsl(0, 0%, 18%)" : "white"}
+      stroke={
+        active ||
+        ["/du-an", "/san-pham"].includes(pathname) ||
+        pathname.includes("/du-an")
+          ? "hsl(0, 0%, 18%)"
+          : "white"
+      }
       strokeLinecap="round"
       {...props}
     />

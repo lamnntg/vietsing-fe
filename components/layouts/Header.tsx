@@ -71,7 +71,9 @@ const Header = () => {
     <div
       className={cn(
         "fixed top-0 left-0 z-[11]  font-medium w-full px-3 transition",
-        active || ["/du-an", "/san-pham"].includes(pathname)
+        active ||
+          ["/du-an", "/san-pham"].includes(pathname) ||
+          pathname.includes("/du-an")
           ? "bg-white text-black shadow-md"
           : "text-white bg-transparent"
       )}

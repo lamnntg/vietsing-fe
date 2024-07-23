@@ -75,6 +75,12 @@
   body {
     @apply bg-background text-foreground;
   }
+  .detail .swiper-pagination-bullet-active {
+    @apply bg-primary;
+  }
+  .detail .swiper-pagination-bullet {
+    @apply w-3 h-3;
+  }
 }
 
 .input {

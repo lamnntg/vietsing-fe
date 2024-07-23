@@ -36,7 +36,7 @@ import Service2 from "@/public/images/services/art-work.jpg";
 import Service3 from "@/public/images/services/deco.jpeg";
 
 import { Montserrat } from "next/font/google";
-import { Loader2 } from "lucide-react";
+import { Dumbbell, Loader2 } from "lucide-react";
 import StepTwo from "./StepTwo";
 
 import project from "@/data/project.json";
@@ -76,7 +76,7 @@ enum StepEnums {
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
+  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
   const [mounted, setMounted] = useState(false);
   const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
   useEffect(() => {
@@ -241,7 +241,7 @@ const HomePage = () => {
       {step === StepEnums.THREE && (
         <div className="bg-white z-10 relative">
           <div className="container mx-auto">
-            <div className="flex items-center flex-col md:flex-row flex-wrap gap-6">
+            <div className="flex items-center flex-col md:flex-row flex-wrap gap-6 pt-14">
               <div className="flex-1">
                 <h3 className="font-bold text-2xl md:text-4xl mb-8 pt-10">
                   CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
@@ -259,7 +259,7 @@ const HomePage = () => {
                     công trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn
                     chống thấm, Băng keo chống thấm....
                   </p>
-                  <p className="mt-2">
+                  {/* <p className="mt-2">
                     <span className="font-medium">Công ty Việt Sing</span> cũng
                     là đại lý cấp đặc biệt cung cấp và phân phối các loại sơn
                     của hãng Jotun (Na Uy).
@@ -272,7 +272,7 @@ const HomePage = () => {
                     và từng công trình để đảm bảo an toàn, chất lượng, tiến độ;
                     đồng thời góp phần giúp sắc màu của công trình luôn bền đẹp
                     với thời gian.
-                  </p>
+                  </p> */}
                 </p>
                 <div>
                   <Link
@@ -310,8 +310,8 @@ const HomePage = () => {
           </div>
           <div>
             <div className=" mt-10">
-              <div className="container mx-auto pt-6">
-                <div className="flex flex-col lg:flex-row gap-10 items-center flex-wrap">
+              <div className="container mx-auto pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="flex relative gap-10 items-center flex-wrap group cursor-pointer">
                   <div className="flex-1 object-cover h-[400px] lg:h-[600px] overflow-hidden">
                     <Image
                       src={Service1}
@@ -319,26 +319,17 @@ const HomePage = () => {
                       style={{ objectFit: "cover", height: "100%" }}
                     />
                   </div>
-                  <div className="w-[100%] max-w-[100%] overflow-hidden lg:w-[40%]">
-                    <p className="font-bold mb-4 text-2xl md:text-4xl">
+                  <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
+                  <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
+                    <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
+                      <Dumbbell />
+                    </div>
+                    <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
                       SẢN XUẤT LẮP ĐẶT TRÒ CHƠI THIẾT BỊ TẬP GYM
-                    </p>
-                    <p className="text-gray-500">
-                      Công ty Việt Sing chuyên sản xuất và lắp đặt thiết bị trò
-                      chơi và tập gym ngoài trời, cam kết chất lượng và an toàn
-                      hàng đầu. Chúng tôi sử dụng vật liệu bền vững như thép
-                      không gỉ, nhựa cao cấp, đảm bảo độ bền và khả năng chống
-                      chịu thời tiết.
-                      <br />
-                      Thiết kế đa dạng, hiện đại, phù hợp với mọi lứa tuổi và
-                      nhu cầu sử dụng. Dịch vụ chuyên nghiệp từ tư vấn thiết kế
-                      đến lắp đặt và bảo trì định kỳ, giúp sản phẩm luôn hoạt
-                      động tốt. Việt Sing mong muốn nâng cao sức khỏe và gắn kết
-                      cộng đồng, tạo không gian sống năng động và lành mạnh.
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col my-10 lg:flex-row-reverse gap-10 items-center flex-wrap">
+                <div className="flex relative my-10gap-10 items-center flex-wrap group">
                   <div className="flex-1 object-cover h-[400px] lg:h-[600px] overflow-hidden">
                     <Image
                       src={Service2}
@@ -346,20 +337,17 @@ const HomePage = () => {
                       style={{ objectFit: "cover", height: "100%" }}
                     />
                   </div>
-                  <div className="w-[100%] max-w-[100%] overflow-hidden lg:w-[40%]">
-                    <p className="font-bold mb-3 text-2xl md:text-4xl">
-                      TƯỢNG ART WORK{" "}
-                    </p>
-                    <p className="text-gray-500">
-                      Dịch vụ cung cấp các tượng art work tinh xảo và độc đáo.
-                      Chúng tôi sử dụng vật liệu cao cấp như đá, gỗ, kim loại,
-                      đảm bảo độ bền và thẩm mỹ. Mỗi tác phẩm được chế tác tỉ
-                      mỉ, thể hiện rõ nét phong cách và tâm hồn của nghệ nhân,
-                      góp phần tạo điểm nhấn cho không gian sống và làm việc.
+                  <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
+                  <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
+                    <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
+                      <Dumbbell />
+                    </div>
+                    <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
+                      TƯỢNG ART WORK
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col lg:flex-row gap-10 items-center flex-wrap">
+                <div className="flex relative gap-10 items-center flex-wrap group">
                   <div className="flex-1 object-cover h-[400px] lg:h-[600px] overflow-hidden">
                     <Image
                       src={Service3}
@@ -367,17 +355,13 @@ const HomePage = () => {
                       style={{ objectFit: "cover", height: "100%" }}
                     />
                   </div>
-                  <div className="w-[100%] max-w-[100%] overflow-hidden lg:w-[40%]">
-                    <p className="font-bold mb-4 text-2xl md:text-4xl">
-                      BẢNG BIỂN DECO{" "}
-                    </p>
-                    <p className="text-gray-500">
-                      Thiết kế và sản xuất bảng biển deco sáng tạo và hiện đại.
-                      Chúng tôi sử dụng các vật liệu cao cấp, bền bỉ như gỗ, kim
-                      loại và nhựa, đảm bảo sản phẩm có độ bền cao và thẩm mỹ.
-                      Các bảng biển deco của chúng tôi không chỉ giúp trang trí
-                      không gian mà còn tạo điểm nhấn độc đáo, phù hợp với nhiều
-                      phong cách và nhu cầu trang trí khác nhau.
+                  <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
+                  <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
+                    <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
+                      <Dumbbell />
+                    </div>
+                    <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
+                      BẢNG BIỂN DECO
                     </p>
                   </div>
                 </div>
