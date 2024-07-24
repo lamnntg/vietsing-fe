@@ -5,7 +5,7 @@ import project from "@/data/project.json";
 const page = () => {
   return (
     <div className="container mx-auto px-2 py-[80px] pt-[40px]">
-      <h1 className="text-2xl md:text-4xl font-medium text-center py-10 pt-[100px] uppercase">
+      <h1 className="text-2xl md:text-4xl font-medium text-center py-10 pt-[60px] md:pt-[100px] uppercase">
         CÁC dự án của Việt Sing
       </h1>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
