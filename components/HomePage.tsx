@@ -356,30 +356,38 @@ const HomePage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 pt-10">
                   <Link
                     href="/san-pham"
-                    className="block w-full relative overflow-hidden group cursor-pointer"
+                    className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
                   >
-                    <Image
-                      className="w-full aspect-[2/1] object-cover group-hover:scale-[1.1] transition"
-                      src={Sanpham1}
-                      alt="image"
-                    />
-                    <div className="py-2 px-6 absolute transition-all duration-300 group-hover:bottom-0 bottom-[100%] flex items-center justify-center left-0 w-full h-full backdrop-blur-[3px] bg-[rgb(0,0,0,0.4)] text-white">
-                      <p className="text-xl font-semibold mb-3 text-center">
+                    <div className="flex-1 object-cover overflow-hidden">
+                      <Image
+                        src={Sanpham1}
+                        alt="service 1"
+                        style={{ objectFit: "cover", height: "100%" }}
+                        className="w-full aspect-[2/1] object-cover group-hover:scale-[1.1] transition"
+                      />
+                    </div>
+                    <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
+                    <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
+                      <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
                         BỘT BẢ, SƠN HÃNG JOTUN
                       </p>
                     </div>
                   </Link>
                   <Link
                     href="/san-pham#chongtham"
-                    className="block w-full relative overflow-hidden group cursor-pointer"
+                    className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
                   >
-                    <Image
-                      className="w-full aspect-[2/1] object-cover group-hover:scale-[1.1] transition"
-                      src={Sanpham2}
-                      alt="image"
-                    />
-                    <div className="py-2 px-6 absolute transition-all duration-300 group-hover:bottom-0 bottom-[100%] flex items-center justify-center left-0 w-full h-full backdrop-blur-[3px] bg-[rgb(0,0,0,0.4)] text-white">
-                      <p className="text-xl font-semibold mb-3 text-center">
+                    <div className="flex-1 object-cover overflow-hidden">
+                      <Image
+                        src={Sanpham2}
+                        alt="san pham 1"
+                        style={{ objectFit: "cover", height: "100%" }}
+                        className="w-full aspect-[2/1] object-cover group-hover:scale-[1.1] transition"
+                      />
+                    </div>
+                    <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
+                    <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
+                      <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
                         VẬT LIỆU CHỐNG THẤM
                       </p>
                     </div>
