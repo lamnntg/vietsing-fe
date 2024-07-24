@@ -47,7 +47,7 @@ const page = () => {
           row={PRODUCT_1}
         />
       </div>
-      <div className="mt-14">
+      <div className="pt-[5rem]" id="chongtham">
         <h3 className="text-xl md:text-2xl font-semibold uppercase mb-3">
           Vật liệu chống thấm
         </h3>

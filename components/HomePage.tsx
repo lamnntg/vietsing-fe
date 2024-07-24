@@ -3,70 +3,27 @@ import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
-import Slide1 from "@/public/images/Picture3.png";
+import Slide1 from "@/public/images/introduce.jpg";
 import useBreakpoint from "@/hooks/useBreakpoint";
 import { useAppStore } from "@/store/app.store";
 import { FuturaNow } from "@/utils/font";
 import clsx from "clsx";
 import Link from "next/link";
-import Thicong2 from "@/public/images/thicong2.png";
-import Thicong3 from "@/public/images/thicong3.png";
-import Thicong4 from "@/public/images/thicong4.png";
-import Thicong5 from "@/public/images/thicong5.png";
-import Thicong6 from "@/public/images/thicong6.png";
-import Thicong7 from "@/public/images/thicong7.png";
-import Thicong9 from "@/public/images/thicong9.png";
-import Thicong10 from "@/public/images/thicong10.png";
-import Thicong11 from "@/public/images/thicong11.png";
-import Thicong12 from "@/public/images/thicong12.png";
-import Thicong13 from "@/public/images/thicong13.png";
-import Thicong14 from "@/public/images/thicong14.png";
-
-import Image1 from "@/public/images/image1.jpg";
-import Image2 from "@/public/images/image2.jpg";
-import Image3 from "@/public/images/image3.jpg";
-import Image4 from "@/public/images/image4.jpg";
-import Image5 from "@/public/images/image5.jpg";
-import Image6 from "@/public/images/image6.jpg";
-import Image7 from "@/public/images/image7.jpg";
-import Image8 from "@/public/images/image8.jpg";
-
+import Sanpham1 from "@/public/images/sanpham1.jpg";
+import Sanpham2 from "@/public/images/sanpham2.jpg";
 import Service1 from "@/public/images/services/gym-equip.webp";
 import Service2 from "@/public/images/services/art-work.jpg";
 import Service3 from "@/public/images/services/deco.jpeg";
 
 import { Montserrat } from "next/font/google";
-import { Dumbbell, Loader2 } from "lucide-react";
+import { Dumbbell, Images, Landmark, Loader2 } from "lucide-react";
 import StepTwo from "./StepTwo";
-
+import FooterImage from "@/public/images/construction-banner.jpg";
 import project from "@/data/project.json";
 import { RoutesEnum } from "@/constants/app.constants";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
-const GYM_IMAGES = [
-  Image1,
-  Image2,
-  Image3,
-  Image4,
-  Image5,
-  Image6,
-  Image7,
-  Image8,
-];
-const THICONG = [
-  Thicong2,
-  Thicong3,
-  Thicong4,
-  Thicong5,
-  Thicong6,
-  Thicong7,
-  Thicong9,
-  Thicong10,
-  Thicong11,
-  Thicong12,
-  Thicong13,
-  Thicong14,
-];
+
 enum StepEnums {
   ONE = "1",
   TWO = "2",
@@ -78,7 +35,6 @@ const HomePage = () => {
   const [loaded, setLoaded] = useState(false);
   const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
   const [mounted, setMounted] = useState(false);
-  const { isMobile, isMobileLarge, isMobileLargeDown } = useBreakpoint();
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -159,7 +115,7 @@ const HomePage = () => {
                   ></source>
                 </video>
               ) : (
-                <div className="h-[100vh] w-full flex justify-center items-center bg-gray-400">
+                <div className="h-[100vh] w-full flex justify-center items-center">
                   <Loader2 className="mr-2 h-10 w-10 animate-spin text-primary" />
                 </div>
               )}
@@ -288,7 +244,7 @@ const HomePage = () => {
                   src={Slide1}
                   style={{ objectFit: "cover" }}
                   alt="Thumnail"
-                  className="rounded-lg"
+                  className="rounded-lg shadow-md h-[200px] md:h-[400px]"
                 />
               </div>
             </div>
@@ -311,12 +267,16 @@ const HomePage = () => {
           <div>
             <div className=" mt-10">
               <div className="container mx-auto pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <div className="flex relative gap-10 items-center flex-wrap group cursor-pointer">
-                  <div className="flex-1 object-cover h-[400px] lg:h-[600px] overflow-hidden">
+                <Link
+                  href={RoutesEnum.COMPLETED + "?category=1"}
+                  className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
+                >
+                  <div className="flex-1 object-cover h-[300px] lg:h-[600px] overflow-hidden">
                     <Image
                       src={Service1}
                       alt="service 1"
                       style={{ objectFit: "cover", height: "100%" }}
+                      className="group-hover:scale-[1.1] transition"
                     />
                   </div>
                   <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
@@ -328,42 +288,102 @@ const HomePage = () => {
                       SẢN XUẤT LẮP ĐẶT TRÒ CHƠI THIẾT BỊ TẬP GYM
                     </p>
                   </div>
-                </div>
-                <div className="flex relative my-10gap-10 items-center flex-wrap group">
-                  <div className="flex-1 object-cover h-[400px] lg:h-[600px] overflow-hidden">
+                </Link>
+                <Link
+                  href={RoutesEnum.COMPLETED + "?category=1"}
+                  className="flex relative my-10gap-10 items-center flex-wrap group cursor-pointer"
+                >
+                  <div className="flex-1 object-cover h-[300px] lg:h-[600px] overflow-hidden">
                     <Image
                       src={Service2}
                       alt="service 1"
                       style={{ objectFit: "cover", height: "100%" }}
+                      className="group-hover:scale-[1.1] transition"
                     />
                   </div>
                   <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
                   <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
                     <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
-                      <Dumbbell />
+                      <Landmark />
                     </div>
                     <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
                       TƯỢNG ART WORK
                     </p>
                   </div>
-                </div>
-                <div className="flex relative gap-10 items-center flex-wrap group">
-                  <div className="flex-1 object-cover h-[400px] lg:h-[600px] overflow-hidden">
+                </Link>
+                <Link
+                  href={RoutesEnum.COMPLETED + "?category=1"}
+                  className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
+                >
+                  <div className="flex-1 object-cover h-[300px] lg:h-[600px] overflow-hidden">
                     <Image
                       src={Service3}
                       alt="service 1"
                       style={{ objectFit: "cover", height: "100%" }}
+                      className="group-hover:scale-[1.1] transition"
                     />
                   </div>
                   <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
                   <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
                     <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
-                      <Dumbbell />
+                      <Images />
                     </div>
                     <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
                       BẢNG BIỂN DECO
                     </p>
                   </div>
+                </Link>
+              </div>
+            </div>
+
+            <div className="container mx-auto flex justify-center mt-14 relative">
+              <div className="px-8 bg-white relative z-[2] ">
+                <div
+                  className={clsx(
+                    "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base text-center md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
+                    FuturaNow.className
+                  )}
+                >
+                  <span className="leading-[20px] md:leading-[40px] uppercase">
+                    SẢN PHẨM
+                  </span>
+                </div>
+              </div>
+              <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
+            </div>
+            <div className="bg-white py-10">
+              <div className="container mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 pt-10">
+                  <Link
+                    href="/san-pham"
+                    className="block w-full relative overflow-hidden group cursor-pointer"
+                  >
+                    <Image
+                      className="w-full aspect-[2/1] object-cover group-hover:scale-[1.1] transition"
+                      src={Sanpham1}
+                      alt="image"
+                    />
+                    <div className="py-2 px-6 absolute transition-all duration-300 group-hover:bottom-0 bottom-[100%] flex items-center justify-center left-0 w-full h-full backdrop-blur-[3px] bg-[rgb(0,0,0,0.4)] text-white">
+                      <p className="text-xl font-semibold mb-3 text-center">
+                        BỘT BẢ, SƠN HÃNG JOTUN
+                      </p>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/san-pham#chongtham"
+                    className="block w-full relative overflow-hidden group cursor-pointer"
+                  >
+                    <Image
+                      className="w-full aspect-[2/1] object-cover group-hover:scale-[1.1] transition"
+                      src={Sanpham2}
+                      alt="image"
+                    />
+                    <div className="py-2 px-6 absolute transition-all duration-300 group-hover:bottom-0 bottom-[100%] flex items-center justify-center left-0 w-full h-full backdrop-blur-[3px] bg-[rgb(0,0,0,0.4)] text-white">
+                      <p className="text-xl font-semibold mb-3 text-center">
+                        VẬT LIỆU CHỐNG THẤM
+                      </p>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -385,11 +405,15 @@ const HomePage = () => {
             </div>
             <div className="bg-white py-10">
               <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 pt-10">
                   {project.map((item, index) => (
-                    <div className="w-full relative overflow-hidden group cursor-pointer">
+                    <Link
+                      href="/du-an/1"
+                      key={index}
+                      className="block w-full relative overflow-hidden group cursor-pointer"
+                    >
                       <img
-                        className="w-full h-[300px] object-cover"
+                        className="w-full h-[300px] object-cover transition group-hover:scale-[1.1]"
                         src={item.images[0]}
                         key={index}
                         alt="image"
@@ -399,7 +423,7 @@ const HomePage = () => {
                           {item.name}
                         </p>
                       </div>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -407,6 +431,22 @@ const HomePage = () => {
           </div>
         </div>
       )}
+      <div className="relative">
+        <div className="absolute top-0 left-0 w-full h-full bg-[rgb(0,0,0,0.4)] z-[11]"></div>
+        <Image
+          src={FooterImage}
+          className="relative z-10 h-[360px] object-cover"
+          alt="footer image"
+        />
+        <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-white z-[12]">
+          <h2 className="text-xl md:text-3xl">
+            CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING{" "}
+          </h2>
+          <p className="mt-6 text-lg">
+            Đơn vị Tư vấn Thiết kế - Sản xuất - Thương Mại
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
