@@ -1,6 +1,5 @@
 import HomePage from "@/components/HomePage";
 import { Viewport } from "next";
-import Head from "next/head";
 
 export const viewport: Viewport = {
   initialScale: 1,
@@ -10,9 +9,6 @@ export const viewport: Viewport = {
 export default function Home() {
   return (
     <main>
-      {/* <Head>
-        <link rel="preload" href="../public/home_thumbnail.jpeg" as="image" />
-      </Head> */}
       <HomePage />
     </main>
   );

@@ -90,10 +90,12 @@ const ProjectDetail: FC<ProjectDetailProps> = ({ project }) => {
             {/* 4 */}
             <div className="flex gap-3 mt-3">
               <Layers3 className="mt-1" />
-              <div>
-                <p>Quy mô </p>
-                <p className="text-gray-600 font-medium">{project.area}</p>
-              </div>
+              {project.area && (
+                <div>
+                  <p>Quy mô </p>
+                  <p className="text-gray-600 font-medium">{project.area}</p>
+                </div>
+              )}
             </div>
             {/* 5 */}
             <div className="flex gap-3 mt-3">

@@ -21,6 +21,7 @@ import StepTwo from "./StepTwo";
 import FooterImage from "@/public/images/construction-banner.jpg";
 import project from "@/data/project.json";
 import { RoutesEnum } from "@/constants/app.constants";
+import { ProductType } from "@/types/project.type";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -268,7 +269,7 @@ const HomePage = () => {
             <div className=" mt-10">
               <div className="container mx-auto pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <Link
-                  href={RoutesEnum.COMPLETED + "?category=1"}
+                  href={RoutesEnum.COMPLETED + "?category=" + ProductType.GYM}
                   className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
                 >
                   <div className="flex-1 object-cover h-[300px] lg:h-[600px] overflow-hidden">
@@ -290,7 +291,7 @@ const HomePage = () => {
                   </div>
                 </Link>
                 <Link
-                  href={RoutesEnum.COMPLETED + "?category=1"}
+                  href={RoutesEnum.COMPLETED + "?category=" + ProductType.ART}
                   className="flex relative my-10gap-10 items-center flex-wrap group cursor-pointer"
                 >
                   <div className="flex-1 object-cover h-[300px] lg:h-[600px] overflow-hidden">
@@ -312,7 +313,9 @@ const HomePage = () => {
                   </div>
                 </Link>
                 <Link
-                  href={RoutesEnum.COMPLETED + "?category=1"}
+                  href={
+                    RoutesEnum.COMPLETED + "?category=" + ProductType.DECORATION
+                  }
                   className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
                 >
                   <div className="flex-1 object-cover h-[300px] lg:h-[600px] overflow-hidden">
