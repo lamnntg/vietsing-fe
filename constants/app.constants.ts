@@ -1,10 +1,3 @@
-import CEOAvatar from "@/public/ceo-avatar.jpeg";
-import HaAnh from "@/public/HaAnh.jpg";
-import HoangOanh from "@/public/HoangOanh.jpg";
-import VietAnh from "@/public/VietAnh.jpg";
-import YenChi from "@/public/YenChi.jpg";
-import MinhBang from "@/public/MinhBang.jpg";
-import NoAvatar from "@/public/no-avatar.png";
 export enum RoutesEnum {
   HOME = "/",
   INTRODUCE = "/gioi-thieu",
@@ -41,44 +34,6 @@ export const INTRODUCE_DROPDOWN = [
     label: "Tầm nhìn",
     description:
       "Trong giai đoạn 5 năm tới, Echo Design định hướng phát triển trở thành công ty thiết kế và thi công kiến trúc nội thất trong top 10 miền Bắc. Chúng tôi sẽ mở rộng phát triển tại các tỉnh thành phố lớn như: TP Hồ Chí Minh, Đà Nẵng, Hải Phòng, Hải Dương, Thanh Hóa, Quảng Ninh, ... Ngoài mục tiêu phát triển chuyên sâu về thiết kế và xây dựng hoàn thiện, chúng tôi cũng hướng tới các lĩnh vực kính doanh bán lẻ, quản lý dự án và cung cấp giải pháp công nghệ mới để nâng tầm chất lượng cuộc sống cho khách hàng.",
-  },
-];
-
-export const CEO_INTRODUCE = [
-  {
-    name: "Nguyễn Minh Quang",
-    role: "Founder - CEO",
-    image: CEOAvatar,
-  },
-  {
-    name: "Nguyễn Thị Hà Anh",
-    role: "Chuyên viên thiết kế nội thất - kỹ thuật",
-    image: HaAnh,
-  },
-  {
-    name: "Phạm Việt Anh",
-    role: "Kiến trúc sư",
-    image: VietAnh,
-  },
-  {
-    name: "Bùi Thị Yến Chi",
-    role: "Chuyên viên thiết kế nội thất - kỹ thuật",
-    image: YenChi,
-  },
-  {
-    name: "Lê Minh Bàng",
-    role: "Sale & Marketing",
-    image: MinhBang,
-  },
-  {
-    name: "Nguyễn Văn Giang",
-    role: "Quản lý dự án",
-    image: NoAvatar,
-  },
-  {
-    name: "Nguyễn Thị Hoàng Oanh ",
-    role: "Chuyên viên thiết kế nội thất - kỹ thuật",
-    image: HoangOanh,
   },
 ];
 

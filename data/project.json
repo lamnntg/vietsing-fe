@@ -1,256 +1,268 @@
 [
-  {
-    "name": "Thiết kế & thi công lắp đặt biểu tượng ARTWORK – Vinhomes Grand Park",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL2RvY2hvaXRyZWVtLmpwZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrLzIwMjItMDgtMDkuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrLzIwMjMtMDEtMTIgKDEpLmpwZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrLzIwMjMtMDEtMTIgKDIpLmpwZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL2Nvbmctdmllbi1hbmgtc2FuZy0wOS0xNjkyNjY3Mzg2LmpwZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL2Nvbmctdmllbi1waG9uZy1jYWNoLW5oYXQtYmFuLnBuZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL2Nvbmctdmllbi12aW5ob21lcy1ncmFuZC1wYXJrLXZlLWRlbS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL1NjcmVlbi1TaG90LTIwMjItMDgtMTYtYXQtMTQuNTYuMjIucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL3RpZW4tZG8tdGllbi1pY2gtMi5qcGc=&version_id=null"
-    ],
-    "category": "decorative",
-    "job_title": "Thiết kế & Thi công lắp đặt",
-    "customer": "Tập Đoàn Vingroup & Công Ty CP Kinh Doanh Bất Động Sản MV Việt Nam",
-    "job": "Thiết kế & thi công lắp đặt biểu tượng ARTWORK",
-    "location": "Công viên Grand Forest - Vinhomes Grand Park, Quận 9,TP Hồ Chí Minh",
-    "area": "36 ha",
-    "year": "2022"
-  },
-  {
-    "name": "Thiết kế & thi công lắp đặt hệ thống cột ánh sáng - Vinhomes Grand Park",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvQ09ORy1WSUVOLUFOSC1TQU5HLTM2SEEtVklOSE9NRVMtR1JBTkQtUEFSSy1RVUFOOS02LmpwZy53ZWJw&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvMTMtY29uZy12aWVuLWdyYW5kLWZvcmVzdC1kdS1hbi12aW5ob21lcy1ncmFuZC1wYXJrLXF1YW4tOS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uLWR1b25nLWRlbi1sb25nLW5oYXQtYmFuLXF1YW4tOS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLTE0LTE2OTI4MDM3NTYuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvQ09ORy1WSUVOLUFOSC1TQU5HLTM2SEEtVklOSE9NRVMtR1JBTkQtUEFSSy1RVUFOOS0yLmpwZy53ZWJw&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLWtoYWktdHJ1b25nLmpwZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY8O0bmctdmnDqm4tw6FuaC1zw6FuZy12aW5ob21lcy1ncmFuZC1wYXJrLXF14bqtbi05LmpwZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLXZpbmhvbWVzLWdyYW5kLXBhcmthMi5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLXZpbmhvbWVzLWdyYW5kLXBhcmthMmFhLmpwZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvREpJXzA5MjYtSERSLmpwZw==&version_id=null"
-    ],
-    "category": "decorative",
-    "job_title": " Thiết kế & Thi công lắp đặt",
-    "customer": "Tập Đoàn Vingroup & Công Ty CP Kinh Doanh Bất Động Sản MV Việt Nam",
-    "job": "Thiết kế & thi công lắp đặt hệ thống cột ánh sáng",
-    "location": "Công viên ánh sáng - Vinhomes Grand Park, Quận 9, TP Hồ Chí Minh",
-    "area": "36 ha",
-    "year": "2021"
-  },
-  {
-    "name": "Cung cấp & thi công lắp đặt chòi nướng BBQ, chòi nghỉ – Vinhomes Grand Park",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYmJxLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLTA2LTE2OTI2MzcyMTYuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYmJxLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLTEyLTE2OTI4MDM1ODcuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYmJxLXZpbmhvbWVzLWdyYW5kLXBhcmsvQ09ORy1WSUVOLUFOSC1TQU5HLTM2SEEtVklOSE9NRVMtR1JBTkQtUEFSSy1RVUFOOS00LmpwZy53ZWJw&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYmJxLXZpbmhvbWVzLWdyYW5kLXBhcmsvaG/DoG4tdGhp4buHbi1jaMOyaS1uZ2jhu4kuanBn&version_id=null"
-    ],
-    "category": "equipment",
-    "job_title": "Thi công lắp đặt",
-    "customer": "Tập Đoàn Vingroup & Công Ty CP Kinh Doanh Bất Động Sản MV Việt Nam",
-    "job": "Cung cấp & thi công lắp đặt chòi nướng BBQ, chòi nghỉ",
-    "location": "Bãi biển nhân tạo - Vinhomes Grand Park, Quận 9, TP Hồ Chí Minh",
-    "area": "36 ha",
-    "year": "2022"
-  },
-  {
-    "name": "Vincom Shophouse Royal Park Nam Đông Hà  - Quảng Trị / Hạng mục Phào đúc sẵn",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3Nob3Bob3VzZS53ZWJw&version_id=null"
-    ],
-    "category": "equipment"
-  },
-  {
-    "name": "Nội thất 32 căn hộ Ocean Park",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3ZpbmhvbWUuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlMS5wbmc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlMi5wbmc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlMy5wbmc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlNC5wbmc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlNS5wbmc=&version_id=null"
-    ],
-    "category": "decorative",
-    "job_title": "Thiết kế & thi công hoàn thiện nội thất",
-    "customer": "Tập đoàn Vingroup & Công ty CP Vinhomes",
-    "job": "Thiết kế & thi công nội thất căn hộ chung cư",
-    "location": "Tòa CT03 - Vinhomes Ocean Park 2, Văn Giang, Hưng Yên",
-    "area": "32 căn hộ",
-    "year": "2022"
-  },
-  {
-    "name": "Cung cấp & lắp đặt thiết bị trò chơi trẻ em - Vinhomes",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2NDQzNjg3OTdfY2UxOGM2ZjE4MWIzZTY4NzIwYTRiZjliMDIyYjNjOTAuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTEzMjAzOThfOTFhYjkxZTUzZGJmMzlkN2I1NTJhOTc4YjM5YzkwM2YuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTEzNjkzMDRfYWE0YTc2N2Y5OTI3N2ExNzkzMTU5ZmI0MzdlOGMxNDMuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTEzOTQ1NTdfYTRmYzFlZmI0MDg4NzBmNTk1ZjkyZTk4MGJjNDdmMDEuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTEzOTU5NzVfZmE5Y2M2NjM1M2VjY2I3NWNiNjc1NzI4NWJhN2Q0YjQuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTE0MTE0OTVfYzljZTNlYzUxNWM3YmExZjA1MjMxYjNmZjAyYTQ4YzUuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2NDQyOTg5MTVfOWY1ZjBjYTFkMGFmMzRhZWYyMTM2NjZhOGFmMzczYmEuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2NDQzMzkzOTlfZGY0Zjc2MDhmZjlhYmE3Y2ViMTNkMWY2ZTY1OGVmNzguanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2NDQzNTIyNDJfOGVmNGFkNzcyMTcwYWVlNTZhMDg5NWNhM2M2MjFlZGIuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2ODc2MDQ1NTBfY2Y5MzQ2N2QyOTM5Y2Y0MWY3NTRiODM4Mjc4YTVmNzYuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2ODc2MDk5MjBfZDFiOGI2NTA5MWMxN2NjYjQ3NzRmOGY4NTBmODY4NWQuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2ODc2MTU3MDBfNzMxYTQwMGUxYTM3YTQ5ZDc5MDdkYzBjNWZjODU5YzguanBn&version_id=null"
-    ],
-    "category": "equipment",
-    "job_title": " Thi công & lắp đặt thiết bị trò chơi",
-    "customer": "Tập đoàn Vingroup & Công ty CP Vinhomes",
-    "job": "Cung cấp & lắp đặt thiết bị trò chơi trẻ em",
-    "location": "Công viên nội khu Lô A1 & A2 & A3 - Vinhomes Grand Park, Quận 9, TP HCM",
-    "area": "3 phân khu",
-    "year": "2023"
-  },
-  {
-    "name": "Thi công sơn & vẽ trang trí cổng công viên thần thoại Legend park",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTgzNTg2MTdfNjk5MWE1MGRlNWVmZTQzZDRkMWM4YzVlOTNjMGE2ZWUuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTg0MzE1OThfM2MzNWE1ZjUyYzA0MWJlMjNjYTQ0YzIwZGU2YWQ2MGUuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTg1Mzk1NDBfOTdlYmM3NDg0MGRlMDM2MTMzZTIyMWYxOGY4YTE1ODQuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTg4NDI5NDVfZjU3ODdiYTA0NTY0NDM0ZTgxOTNhNDAwMWJmNGU4YzguanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTkyOTAwMzJfMzUwMGVhNTdjZmVmM2FmODJiYWYyNzYyNWFhMzJmYjMuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTk2MzM4MzlfZTA1NzFkZjA2Y2FlOWM2ODMyOWE4ODM4NjdkNzVjMDQuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTk3MDgyOTFfZTljNzk1MjFkYTM4ZTk2N2JiZDU2NjA3ODgzODAzMjkuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTk4NjQxMjlfMDhjMmU2OTRiYTY5Y2EzZDM0NDNmYzg0MDA2MjhlODEuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTk4NjUzMjNfMGYxNjdlODc3ZGEzMzNhOGRkNTY3YzE0YmE3YWY1OGEuanBn&version_id=null"
-    ],
-    "category": "billboards",
-    "job_title": "Thi công sơn & vẽ trang trí",
-    "customer": "Tập Đoàn Gleximco & Công Ty CP Đầu tư và du lịch Vạn Hương",
-    "job": "Thi công sơn & vẽ trang trí cổng công viên thần thoại Legend park",
-    "location": "Công viên thần thoại - Khu du lịch Quốc tế Đồi Rồng ,Đồ Sơn, Hải Phòng",
-    "area": null,
-    "year": "2022"
-  },
-  {
-    "name": "Cung cấp & thi công lắp đặt biểu tượng ARTWORK - Khu du lịch quốc tế Đồi Rồng",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODc2MDIxOF9hMjQ4MDZkODEzOTUwMDRhMzVjYzAwYmM4MDlhY2ZjOS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODU0ODkxOV9iZmRmMDg4NDkyMDkwOTRlZDk1MjZlMDg4MDViODM1MC5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5NzQ2OTYxN180NzA2ZTc5ZTM2YjQyMjZkMmYzNWM2YzQxNTI3ZmNlYS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5NzQ4NDc4OV85YjE2ZjU4MWZkOWZhMmM0Njc5NTMzM2I0MDhhNmNkNi5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5NzU2NDkzNV8wOWIzNzc5ZGE1N2VlMDRkM2Y1OTQzOGI5ZTczOTM1ZS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5Nzk0MzUxMF8yMTRmMTc3NjM2MGM4MTNmYzA3NTg3OWI0Y2ViMWFkNS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5NzcxNzczM18zZWZjOWIyOGJmMjMyNGQ0YzAxNzg2NDQ0MTU3ODg5Ni5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODA5ODc0OV9mZWUxZTE3OWZmZmE4MTM0OTA1ZWE0MDI4ODhhYTU3Ni5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODA5NDA1Ml85NzFkOTAwMjE2YTFiNDYwYTRkMWJkOWM3ZDM1MzM0Yy5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODA5NDA1Ml85NzFkOTAwMjE2YTFiNDYwYTRkMWJkOWM3ZDM1MzM0Yy5qcGc=&version_id=null",
-      ""
-    ],
-    "category": "decorative",
-    "job_title": " Thiết kế & Thi công lắp đặt",
-    "customer": "Tập Đoàn Gleximco & Công Ty CP Đầu tư và du lịch Vạn Hương",
-    "job": "Cung cấp & thi công lắp đặt biểu tượng ARTWORK",
-    "location": "Công viên thần thoại - Khu du lịch Quốc tế Đồi Rồng ,Đồ Sơn, Hải Phòng",
-    "area": null,
-    "year": "2023"
-  },
-  {
-    "name": "Công viên nước/ Khu du lịch quốc tế Đồi Rồng",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzY4ODcyMl81ZDk4ZTRmYmJkNTRlMjc0NmRiNTZhZjQ5ZjRlMTVjZC5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzY5MzY2N19jMTM3MDQ5MTYxMjM3NjlmODE2NDVhMmZlN2Y3Yjg3OC5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzcyMzgyN19jOTdiOTMyMzQwMTg1NmIwOTBhOWNiMjNiMWMyMmRlYS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5Nzg0MzY2NV8wNDNkNTg0NzhhOTlkYTU4OWZmOTVjMGU1ODcyZmNkZC5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5Nzg1Nzg4M18wMjE4ZDQ4NzE4YWUyZGM1ZDdjZjYzY2ZkMzY0YmQ4ZC5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5Nzg4MTUyNV82NmM2NjE4MzMxOGU0Y2NhM2NmODQyMzQxNzgxYmE3OC5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzkxNjE4MV81OTZmZjg5YjUyNTg5N2VkZjQ2MmM3NWZmZjYyMjQzNS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzkxNjE4MV81OTZmZjg5YjUyNTg5N2VkZjQ2MmM3NWZmZjYyMjQzNS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5ODEyMjY4N184NDgyZmQzODRlYTAxZmU4ZDBmYzBkMTNhOWMzZGViNS5qcGc=&version_id=null"
-    ],
-    "category": "decorative",
-    "job_title": "Thi công lắp đặt",
-    "customer": "Tập Đoàn Gleximco & Công Ty CP Đầu tư và du lịch Vạn Hương",
-    "job": "Cung cấp & thi công lắp đặt hệ thống mái rơm cót ép",
-    "location": "Công viên thần thoại - Khu du lịch Quốc tế Đồi Rồng ,Đồ Sơn, Hải Phòng",
-    "area": null,
-    "year": "2022"
-  },
-  {
-    "name": "Thiết kế & thi công biển quảng cáo Logo VP Bank",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL3RodW1ibmFpbHZwYmFua3RoYXlpbXR0aW5jaGluaC0yNzc2LTQ5MzgtMTY0OTA0NDgwOS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL2ltZ18xNTgzLmpwZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL2ltZ18xNjE1X2xlZC5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL1BpY3R1cmUyNC5wbmc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL1BpY3R1cmUyNi5wbmc=&version_id=null"
-    ],
-    "category": "billboards",
-    "job_title": "Thiết kế & thi công biển hiệu",
-    "customer": "Ngân hàng Thương mại cổ phần Việt Nam Thịnh Vượng",
-    "job": "Thiết kế & thi công biển quảng cáo Logo VP Bank",
-    "location": "Ngân hàng VP Bank Chi Nhánh Hà Nội",
-    "area": null,
-    "year": "2020"
-  },
-  {
-    "name": "Thiết kế & thi công biển quảng cáo Logo DOJI",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZG9qaS8xLTguanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZG9qaS9raHV5ZW4tbWFpLTUyX2ExMzE3YzAxMWE1MjQ3NWQ4OTM0N2I4MGY0MTBiNGVlLndlYnA=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZG9qaS9QaWN0dXJlMi5wbmc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZG9qaS9QaWN0dXJlMy5wbmc=&version_id=null"
-    ],
-    "category": "billboards",
-    "job_title": "Thiết kế & thi công biển hiệu",
-    "customer": "Tập đoàn Vàng bạc Đá quý DOJI",
-    "job": "Thiết kế & thi công biển quảng cáo Logo DOJI",
-    "location": "Trung tâm vàng bạc trang sức DOJI Đà Nẵng",
-    "area": null,
-    "year": "2021"
-  },
-
-  {
-    "name": "Thiết kế & thi công biển bảng, biển chỉ dẫn, Logo Khách sạn InterContinental",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC9EU0MwNDc0Mi5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zMjEzLmpwZw==&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zMjIyMy5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zNDUuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zNTQuanBn&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zOTc4OS5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC81My5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC81NC5qcGc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC9QaWN0dXJlMzEucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC9QaWN0dXJlMzIucG5n&version_id=null"
-    ],
-    "category": "billboards",
-    "job_title": "Thiết kế & thi công bảng biển",
-    "customer": "Tập đoàn Khách sạn InterContinental",
-    "job": "Thiết kế & thi công biển bảng, biển chỉ dẫn, Logo",
-    "location": "Khách sạn InterContinental Landmark 72 Hà Nội",
-    "area": null,
-    "year": "2020"
-  },
-  {
-    "name": "Thiết kế & xây dựng thi công hoàn thiện villa, biệt thự Đà Lạt",
-    "images": [
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTAucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTEucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTIucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTMucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTUucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTcucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTgucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMjAucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMjEucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMjIucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMjMucG5n&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlOC5wbmc=&version_id=null",
-      "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlOS5wbmc=&version_id=null"
-    ],
-    "category": "decorative",
-    "job_title": "Thiết kế & thi công hoàn thiện villa",
-    "customer": "Anh Thái Tuấn",
-    "job": "Thiết kế & xây dựng thi công hoàn thiện villa, biệt thự",
-    "location": "98 Tô Hiến Thành, Trung tâm Đà Lạt, Đà Lạt",
-    "area": "300m2",
-    "year": "2021"
-  }
+    {
+        "id": 1,
+        "name": "Thiết kế & thi công lắp đặt biểu tượng ARTWORK – Vinhomes Grand Park",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL2RvY2hvaXRyZWVtLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrLzIwMjItMDgtMDkuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrLzIwMjMtMDEtMTIgKDEpLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrLzIwMjMtMDEtMTIgKDIpLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL2Nvbmctdmllbi1hbmgtc2FuZy0wOS0xNjkyNjY3Mzg2LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL2Nvbmctdmllbi1waG9uZy1jYWNoLW5oYXQtYmFuLnBuZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL2Nvbmctdmllbi12aW5ob21lcy1ncmFuZC1wYXJrLXZlLWRlbS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL1NjcmVlbi1TaG90LTIwMjItMDgtMTYtYXQtMTQuNTYuMjIucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL3RpZW4tZG8tdGllbi1pY2gtMi5qcGc=&version_id=null"
+        ],
+        "category": "decorative",
+        "job_title": "Thiết kế & Thi công lắp đặt",
+        "customer": "Tập Đoàn Vingroup & Công Ty CP Kinh Doanh Bất Động Sản MV Việt Nam",
+        "job": "Thiết kế & thi công lắp đặt biểu tượng ARTWORK",
+        "location": "Công viên Grand Forest - Vinhomes Grand Park, Quận 9,TP Hồ Chí Minh",
+        "area": "36 ha",
+        "year": "2022"
+    },
+    {
+        "id": 2,
+        "name": "Thiết kế & thi công lắp đặt hệ thống cột ánh sáng - Vinhomes Grand Park",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvQ09ORy1WSUVOLUFOSC1TQU5HLTM2SEEtVklOSE9NRVMtR1JBTkQtUEFSSy1RVUFOOS02LmpwZy53ZWJw&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvMTMtY29uZy12aWVuLWdyYW5kLWZvcmVzdC1kdS1hbi12aW5ob21lcy1ncmFuZC1wYXJrLXF1YW4tOS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uLWR1b25nLWRlbi1sb25nLW5oYXQtYmFuLXF1YW4tOS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLTE0LTE2OTI4MDM3NTYuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvQ09ORy1WSUVOLUFOSC1TQU5HLTM2SEEtVklOSE9NRVMtR1JBTkQtUEFSSy1RVUFOOS0yLmpwZy53ZWJw&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLWtoYWktdHJ1b25nLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY8O0bmctdmnDqm4tw6FuaC1zw6FuZy12aW5ob21lcy1ncmFuZC1wYXJrLXF14bqtbi05LmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLXZpbmhvbWVzLWdyYW5kLXBhcmthMi5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLXZpbmhvbWVzLWdyYW5kLXBhcmthMmFhLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvREpJXzA5MjYtSERSLmpwZw==&version_id=null"
+        ],
+        "category": "decorative",
+        "job_title": " Thiết kế & Thi công lắp đặt",
+        "customer": "Tập Đoàn Vingroup & Công Ty CP Kinh Doanh Bất Động Sản MV Việt Nam",
+        "job": "Thiết kế & thi công lắp đặt hệ thống cột ánh sáng",
+        "location": "Công viên ánh sáng - Vinhomes Grand Park, Quận 9, TP Hồ Chí Minh",
+        "area": "36 ha",
+        "year": "2021"
+    },
+    {
+        "id": 3,
+        "name": "Cung cấp & thi công lắp đặt chòi nướng BBQ, chòi nghỉ – Vinhomes Grand Park",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYmJxLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLTA2LTE2OTI2MzcyMTYuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYmJxLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLTEyLTE2OTI4MDM1ODcuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYmJxLXZpbmhvbWVzLWdyYW5kLXBhcmsvQ09ORy1WSUVOLUFOSC1TQU5HLTM2SEEtVklOSE9NRVMtR1JBTkQtUEFSSy1RVUFOOS00LmpwZy53ZWJw&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYmJxLXZpbmhvbWVzLWdyYW5kLXBhcmsvaG/DoG4tdGhp4buHbi1jaMOyaS1uZ2jhu4kuanBn&version_id=null"
+        ],
+        "category": "equipment",
+        "job_title": "Thi công lắp đặt",
+        "customer": "Tập Đoàn Vingroup & Công Ty CP Kinh Doanh Bất Động Sản MV Việt Nam",
+        "job": "Cung cấp & thi công lắp đặt chòi nướng BBQ, chòi nghỉ",
+        "location": "Bãi biển nhân tạo - Vinhomes Grand Park, Quận 9, TP Hồ Chí Minh",
+        "area": "36 ha",
+        "year": "2022"
+    },
+    {
+        "id": 4,
+        "name": "Vincom Shophouse Royal Park Nam Đông Hà  - Quảng Trị / Hạng mục Phào đúc sẵn",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3Nob3Bob3VzZS53ZWJw&version_id=null"
+        ],
+        "category": "equipment"
+    },
+    {
+        "id": 5,
+        "name": "Nội thất 32 căn hộ Ocean Park",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3ZpbmhvbWUuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlMS5wbmc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlMi5wbmc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlMy5wbmc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlNC5wbmc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlNS5wbmc=&version_id=null"
+        ],
+        "category": "decorative",
+        "job_title": "Thiết kế & thi công hoàn thiện nội thất",
+        "customer": "Tập đoàn Vingroup & Công ty CP Vinhomes",
+        "job": "Thiết kế & thi công nội thất căn hộ chung cư",
+        "location": "Tòa CT03 - Vinhomes Ocean Park 2, Văn Giang, Hưng Yên",
+        "area": "32 căn hộ",
+        "year": "2022"
+    },
+    {
+        "id": 6,
+        "name": "Cung cấp & lắp đặt thiết bị trò chơi trẻ em - Vinhomes",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2NDQzNjg3OTdfY2UxOGM2ZjE4MWIzZTY4NzIwYTRiZjliMDIyYjNjOTAuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTEzMjAzOThfOTFhYjkxZTUzZGJmMzlkN2I1NTJhOTc4YjM5YzkwM2YuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTEzNjkzMDRfYWE0YTc2N2Y5OTI3N2ExNzkzMTU5ZmI0MzdlOGMxNDMuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTEzOTQ1NTdfYTRmYzFlZmI0MDg4NzBmNTk1ZjkyZTk4MGJjNDdmMDEuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTEzOTU5NzVfZmE5Y2M2NjM1M2VjY2I3NWNiNjc1NzI4NWJhN2Q0YjQuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2MTE0MTE0OTVfYzljZTNlYzUxNWM3YmExZjA1MjMxYjNmZjAyYTQ4YzUuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2NDQyOTg5MTVfOWY1ZjBjYTFkMGFmMzRhZWYyMTM2NjZhOGFmMzczYmEuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2NDQzMzkzOTlfZGY0Zjc2MDhmZjlhYmE3Y2ViMTNkMWY2ZTY1OGVmNzguanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2NDQzNTIyNDJfOGVmNGFkNzcyMTcwYWVlNTZhMDg5NWNhM2M2MjFlZGIuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2ODc2MDQ1NTBfY2Y5MzQ2N2QyOTM5Y2Y0MWY3NTRiODM4Mjc4YTVmNzYuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2ODc2MDk5MjBfZDFiOGI2NTA5MWMxN2NjYjQ3NzRmOGY4NTBmODY4NWQuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY2hpbGRyZW4tZ2FtZXMvejU2MTY2ODc2MTU3MDBfNzMxYTQwMGUxYTM3YTQ5ZDc5MDdkYzBjNWZjODU5YzguanBn&version_id=null"
+        ],
+        "category": "equipment",
+        "job_title": " Thi công & lắp đặt thiết bị trò chơi",
+        "customer": "Tập đoàn Vingroup & Công ty CP Vinhomes",
+        "job": "Cung cấp & lắp đặt thiết bị trò chơi trẻ em",
+        "location": "Công viên nội khu Lô A1 & A2 & A3 - Vinhomes Grand Park, Quận 9, TP HCM",
+        "area": "3 phân khu",
+        "year": "2023"
+    },
+    {
+        "id": 7,
+        "name": "Thi công sơn & vẽ trang trí cổng công viên thần thoại Legend park",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTgzNTg2MTdfNjk5MWE1MGRlNWVmZTQzZDRkMWM4YzVlOTNjMGE2ZWUuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTg0MzE1OThfM2MzNWE1ZjUyYzA0MWJlMjNjYTQ0YzIwZGU2YWQ2MGUuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTg1Mzk1NDBfOTdlYmM3NDg0MGRlMDM2MTMzZTIyMWYxOGY4YTE1ODQuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTg4NDI5NDVfZjU3ODdiYTA0NTY0NDM0ZTgxOTNhNDAwMWJmNGU4YzguanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTkyOTAwMzJfMzUwMGVhNTdjZmVmM2FmODJiYWYyNzYyNWFhMzJmYjMuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTk2MzM4MzlfZTA1NzFkZjA2Y2FlOWM2ODMyOWE4ODM4NjdkNzVjMDQuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTk3MDgyOTFfZTljNzk1MjFkYTM4ZTk2N2JiZDU2NjA3ODgzODAzMjkuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTk4NjQxMjlfMDhjMmU2OTRiYTY5Y2EzZDM0NDNmYzg0MDA2MjhlODEuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcGFpbnQtZGVjb3JhdGUtZG9pLXJvbmcvejU2NjU5OTk4NjUzMjNfMGYxNjdlODc3ZGEzMzNhOGRkNTY3YzE0YmE3YWY1OGEuanBn&version_id=null"
+        ],
+        "category": "billboards",
+        "job_title": "Thi công sơn & vẽ trang trí",
+        "customer": "Tập Đoàn Gleximco & Công Ty CP Đầu tư và du lịch Vạn Hương",
+        "job": "Thi công sơn & vẽ trang trí cổng công viên thần thoại Legend park",
+        "location": "Công viên thần thoại - Khu du lịch Quốc tế Đồi Rồng ,Đồ Sơn, Hải Phòng",
+        "area": null,
+        "year": "2022"
+    },
+    {
+        "id": 8,
+        "name": "Cung cấp & thi công lắp đặt biểu tượng ARTWORK - Khu du lịch quốc tế Đồi Rồng",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODc2MDIxOF9hMjQ4MDZkODEzOTUwMDRhMzVjYzAwYmM4MDlhY2ZjOS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODU0ODkxOV9iZmRmMDg4NDkyMDkwOTRlZDk1MjZlMDg4MDViODM1MC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5NzQ2OTYxN180NzA2ZTc5ZTM2YjQyMjZkMmYzNWM2YzQxNTI3ZmNlYS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5NzQ4NDc4OV85YjE2ZjU4MWZkOWZhMmM0Njc5NTMzM2I0MDhhNmNkNi5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5NzU2NDkzNV8wOWIzNzc5ZGE1N2VlMDRkM2Y1OTQzOGI5ZTczOTM1ZS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5Nzk0MzUxMF8yMTRmMTc3NjM2MGM4MTNmYzA3NTg3OWI0Y2ViMWFkNS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5NzcxNzczM18zZWZjOWIyOGJmMjMyNGQ0YzAxNzg2NDQ0MTU3ODg5Ni5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODA5ODc0OV9mZWUxZTE3OWZmZmE4MTM0OTA1ZWE0MDI4ODhhYTU3Ni5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODA5NDA1Ml85NzFkOTAwMjE2YTFiNDYwYTRkMWJkOWM3ZDM1MzM0Yy5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODA5NDA1Ml85NzFkOTAwMjE2YTFiNDYwYTRkMWJkOWM3ZDM1MzM0Yy5qcGc=&version_id=null",
+            ""
+        ],
+        "category": "decorative",
+        "job_title": " Thiết kế & Thi công lắp đặt",
+        "customer": "Tập Đoàn Gleximco & Công Ty CP Đầu tư và du lịch Vạn Hương",
+        "job": "Cung cấp & thi công lắp đặt biểu tượng ARTWORK",
+        "location": "Công viên thần thoại - Khu du lịch Quốc tế Đồi Rồng ,Đồ Sơn, Hải Phòng",
+        "area": null,
+        "year": "2023"
+    },
+    {
+        "id": 9,
+        "name": "Công viên nước/ Khu du lịch quốc tế Đồi Rồng",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzY4ODcyMl81ZDk4ZTRmYmJkNTRlMjc0NmRiNTZhZjQ5ZjRlMTVjZC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzY5MzY2N19jMTM3MDQ5MTYxMjM3NjlmODE2NDVhMmZlN2Y3Yjg3OC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzcyMzgyN19jOTdiOTMyMzQwMTg1NmIwOTBhOWNiMjNiMWMyMmRlYS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5Nzg0MzY2NV8wNDNkNTg0NzhhOTlkYTU4OWZmOTVjMGU1ODcyZmNkZC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5Nzg1Nzg4M18wMjE4ZDQ4NzE4YWUyZGM1ZDdjZjYzY2ZkMzY0YmQ4ZC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5Nzg4MTUyNV82NmM2NjE4MzMxOGU0Y2NhM2NmODQyMzQxNzgxYmE3OC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzkxNjE4MV81OTZmZjg5YjUyNTg5N2VkZjQ2MmM3NWZmZjYyMjQzNS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzkxNjE4MV81OTZmZjg5YjUyNTg5N2VkZjQ2MmM3NWZmZjYyMjQzNS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5ODEyMjY4N184NDgyZmQzODRlYTAxZmU4ZDBmYzBkMTNhOWMzZGViNS5qcGc=&version_id=null"
+        ],
+        "category": "decorative",
+        "job_title": "Thi công lắp đặt",
+        "customer": "Tập Đoàn Gleximco & Công Ty CP Đầu tư và du lịch Vạn Hương",
+        "job": "Cung cấp & thi công lắp đặt hệ thống mái rơm cót ép",
+        "location": "Công viên thần thoại - Khu du lịch Quốc tế Đồi Rồng ,Đồ Sơn, Hải Phòng",
+        "area": null,
+        "year": "2022"
+    },
+    {
+        "id": 10,
+        "name": "Thiết kế & thi công biển quảng cáo Logo VP Bank",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL3RodW1ibmFpbHZwYmFua3RoYXlpbXR0aW5jaGluaC0yNzc2LTQ5MzgtMTY0OTA0NDgwOS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL2ltZ18xNTgzLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL2ltZ18xNjE1X2xlZC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL1BpY3R1cmUyNC5wbmc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvdnBiYW5rL1BpY3R1cmUyNi5wbmc=&version_id=null"
+        ],
+        "category": "billboards",
+        "job_title": "Thiết kế & thi công biển hiệu",
+        "customer": "Ngân hàng Thương mại cổ phần Việt Nam Thịnh Vượng",
+        "job": "Thiết kế & thi công biển quảng cáo Logo VP Bank",
+        "location": "Ngân hàng VP Bank Chi Nhánh Hà Nội",
+        "area": null,
+        "year": "2020"
+    },
+    {
+        "id": 11,
+        "name": "Thiết kế & thi công biển quảng cáo Logo DOJI",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZG9qaS8xLTguanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZG9qaS9raHV5ZW4tbWFpLTUyX2ExMzE3YzAxMWE1MjQ3NWQ4OTM0N2I4MGY0MTBiNGVlLndlYnA=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZG9qaS9QaWN0dXJlMi5wbmc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZG9qaS9QaWN0dXJlMy5wbmc=&version_id=null"
+        ],
+        "category": "billboards",
+        "job_title": "Thiết kế & thi công biển hiệu",
+        "customer": "Tập đoàn Vàng bạc Đá quý DOJI",
+        "job": "Thiết kế & thi công biển quảng cáo Logo DOJI",
+        "location": "Trung tâm vàng bạc trang sức DOJI Đà Nẵng",
+        "area": null,
+        "year": "2021"
+    },
+    {
+        "id": 12,
+        "name": "Thiết kế & thi công biển bảng, biển chỉ dẫn, Logo Khách sạn InterContinental",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC9EU0MwNDc0Mi5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zMjEzLmpwZw==&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zMjIyMy5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zNDUuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zNTQuanBn&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC8zOTc4OS5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC81My5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC81NC5qcGc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC9QaWN0dXJlMzEucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvSW50ZXJDb250aW5lbnRhbCBIb3RlbC9QaWN0dXJlMzIucG5n&version_id=null"
+        ],
+        "category": "billboards",
+        "job_title": "Thiết kế & thi công bảng biển",
+        "customer": "Tập đoàn Khách sạn InterContinental",
+        "job": "Thiết kế & thi công biển bảng, biển chỉ dẫn, Logo",
+        "location": "Khách sạn InterContinental Landmark 72 Hà Nội",
+        "area": null,
+        "year": "2020"
+    },
+    {
+        "id": 3,
+        "name": "Thiết kế & xây dựng thi công hoàn thiện villa, biệt thự Đà Lạt",
+        "images": [
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTAucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTEucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTIucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTMucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTUucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTcucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMTgucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMjAucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMjEucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMjIucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlMjMucG5n&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlOC5wbmc=&version_id=null",
+            "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlOS5wbmc=&version_id=null"
+        ],
+        "category": "decorative",
+        "job_title": "Thiết kế & thi công hoàn thiện villa",
+        "customer": "Anh Thái Tuấn",
+        "job": "Thiết kế & xây dựng thi công hoàn thiện villa, biệt thự",
+        "location": "98 Tô Hiến Thành, Trung tâm Đà Lạt, Đà Lạt",
+        "area": "300m2",
+        "year": "2021"
+    }
 ]

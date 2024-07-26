@@ -1,14 +1,14 @@
 export type ProjectDef = {
-  title?: string;
-  slug: string;
+  id: 3;
   name: string;
-  address?: string;
-  status: "doing" | "completed";
-  area?: string;
-  year_completed?: string;
-  design_by?: string;
-  photo?: string;
   images: string[];
+  category: string;
+  job_title: string;
+  customer: string;
+  job: string;
+  location: string;
+  area: string;
+  year: string;
 };
 
 export type DropdownLink = {
@@ -25,3 +25,10 @@ export type RowDataDef = {
   colSpan?: number;
   rowSpan?: number;
 };
+
+export enum ProductType {
+  ALL = "all",
+  GYM = "equipment",
+  ART = "decorative",
+  DECORATION = "billboards",
+}

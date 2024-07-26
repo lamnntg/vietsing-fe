@@ -12,7 +12,7 @@ type CardProps = {
 const Card: FC<CardProps> = ({ project }) => {
   return (
     <div>
-      <Link href="/du-an/1">
+      <Link href={RoutesEnum.COMPLETED + "/" + project.id}>
         <div className="w-full relative overflow-hidden group cursor-pointer">
           <div className="w-full">
             <img
@@ -33,7 +33,7 @@ const Card: FC<CardProps> = ({ project }) => {
         </div>
         <div className="mt-3">
           <p className="text-primary text-xs font-medium">
-            Thiết kế & thi công Showroom
+            {project.job_title}
           </p>
           <p className="text-lg">{project.name}</p>
         </div>

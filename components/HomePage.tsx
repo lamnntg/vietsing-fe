@@ -33,7 +33,7 @@ enum StepEnums {
 const HomePage = () => {
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
+  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
@@ -416,7 +416,7 @@ const HomePage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 pt-10">
                   {project.map((item, index) => (
                     <Link
-                      href="/du-an/1"
+                      href={RoutesEnum.COMPLETED + "/" + item.id}
                       key={index}
                       className="block w-full relative overflow-hidden group cursor-pointer"
                     >
@@ -437,24 +437,24 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+          <div className="relative">
+            <div className="absolute top-0 left-0 w-full h-full bg-[rgb(0,0,0,0.4)] z-[11]"></div>
+            <Image
+              src={FooterImage}
+              className="relative z-10 h-[360px] object-cover"
+              alt="footer image"
+            />
+            <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-white z-[12]">
+              <h2 className="text-xl md:text-3xl">
+                CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING{" "}
+              </h2>
+              <p className="mt-6 text-lg">
+                Đơn vị Tư vấn Thiết kế - Sản xuất - Thương Mại
+              </p>
+            </div>
+          </div>
         </div>
       )}
-      <div className="relative">
-        <div className="absolute top-0 left-0 w-full h-full bg-[rgb(0,0,0,0.4)] z-[11]"></div>
-        <Image
-          src={FooterImage}
-          className="relative z-10 h-[360px] object-cover"
-          alt="footer image"
-        />
-        <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-white z-[12]">
-          <h2 className="text-xl md:text-3xl">
-            CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING{" "}
-          </h2>
-          <p className="mt-6 text-lg">
-            Đơn vị Tư vấn Thiết kế - Sản xuất - Thương Mại
-          </p>
-        </div>
-      </div>
     </div>
   );
 };
