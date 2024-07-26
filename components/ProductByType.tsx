@@ -3,6 +3,7 @@
 import { FC, useEffect, useMemo } from "react";
 import Product from "./atoms/Product";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 type ProductByTypeProps = {
   item: any;
@@ -16,15 +17,17 @@ const ProductByType: FC<ProductByTypeProps> = ({ item }) => {
   }, [searchParams]);
 
   return (
-    <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-      {data.map((product: any) => (
-        <Product
-          key={product.slug}
-          to={item.link + "/" + product.slug}
-          item={product}
-        />
-      ))}
-    </div>
+    <Suspense>
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        {data.map((product: any) => (
+          <Product
+            key={product.slug}
+            to={item.link + "/" + product.slug}
+            item={product}
+          />
+        ))}
+      </div>
+    </Suspense>
   );
 };
 

@@ -6,6 +6,7 @@ import project from "@/data/project.json";
 import { ProjectDef } from "@/types/project.type";
 import Card from "./Card";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 const ProjectList = () => {
   const searchParams = useSearchParams();
@@ -26,13 +27,15 @@ const ProjectList = () => {
   }, [searchParams]);
 
   return (
-    <div>
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-        {projectList.map((item) => (
-          <Card key={item.name} project={item} />
-        ))}
+    <Suspense>
+      <div>
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+          {projectList.map((item) => (
+            <Card key={item.name} project={item} />
+          ))}
+        </div>
       </div>
-    </div>
+    </Suspense>
   );
 };
 

@@ -1,6 +1,3 @@
-import Card from "@/components/Card";
-import { ProjectDef } from "@/types/project.type";
-import project from "@/data/project.json";
 import ProductFilter from "@/components/ProductFilter";
 import ProjectList from "@/components/ProjectList";
 

@@ -8,6 +8,9 @@ const nextConfig = {
   images: {
     domains: ["firebasestorage.googleapis.com", "minio.hdcs.tech"],
   },
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
 };
 
 export default nextConfig;
