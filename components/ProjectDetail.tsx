@@ -50,7 +50,7 @@ const ProjectDetail: FC<ProjectDetailProps> = ({ project }) => {
             {project.images.map((slide, index) => (
               <SwiperSlide key={index}>
                 <img
-                  src={project.images[0]}
+                  src={slide}
                   className="w-full aspect-[4/3] object-cover"
                   alt="slide"
                 />
