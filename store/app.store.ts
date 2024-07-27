@@ -3,19 +3,18 @@ import { devtools, persist } from "zustand/middleware";
 
 interface AppState {
   showFooter: boolean;
+  firstTimeLoaded: boolean;
   setShowFooter: (show: boolean) => void;
+  setFirstTimeLoaded: (value: boolean) => void;
 }
 
-export const useAppStore = create<AppState>()(
-  devtools(
-    persist(
-      (set) => ({
-        showFooter: false,
-        setShowFooter: (show) => {
-          set(() => ({ showFooter: show }));
-        },
-      }),
-      { name: "authStore" }
-    )
-  )
-);
+export const useAppStore = create<AppState>((set) => ({
+  showFooter: false,
+  firstTimeLoaded: true,
+  setShowFooter: (show) => {
+    set(() => ({ showFooter: show }));
+  },
+  setFirstTimeLoaded: (show) => {
+    set(() => ({ firstTimeLoaded: show }));
+  },
+}));

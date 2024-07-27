@@ -15,9 +15,15 @@ const slides = [
   "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzEwLiBNUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC4yLmpwZw==&version_id=null",
 ];
 // Import Swiper styles
-import "swiper/css/pagination";
 import { CalendarDays, Layers, Layers3, MapPin, User } from "lucide-react";
-const ProjectDetail = () => {
+import { ProjectDef } from "@/types/project.type";
+import { FC } from "react";
+
+type ProjectDetailProps = {
+  project: ProjectDef;
+};
+
+const ProjectDetail: FC<ProjectDetailProps> = ({ project }) => {
   return (
     <div>
       <div className="grid grid-cols-1 xl::grid-cols-3 md:grid-cols-2 lg:gap-[100px] md:gap-14 gap-4">
@@ -40,7 +46,7 @@ const ProjectDetail = () => {
             scrollbar={{ draggable: true }}
             className="detail"
           >
-            {slides.map((slide, index) => (
+            {project.images.map((slide, index) => (
               <SwiperSlide key={index}>
                 <img
                   src={slide}
@@ -53,17 +59,15 @@ const ProjectDetail = () => {
         </div>
         <div>
           <h3 className="font-medium text-primary mb-1 text-lg">
-            Thiết kế & thi công Nhà hàng
+            {project.job_title}
           </h3>
-          <h1 className="text-black font-semibold text-3xl">
-            THÁI TUẤN – QUẢNG TRỊ
-          </h1>
+          <h1 className="text-black font-semibold text-3xl">{project.name}</h1>
           <div className="mt-6">
             <div className="flex gap-3">
               <User className="mt-1" />
               <div>
                 <p>Khách hàng</p>
-                <p className="text-gray-600 font-medium">Thái Tuấn</p>
+                <p className="text-gray-600 font-medium">{project.customer}</p>
               </div>
             </div>
             {/* 2 */}
@@ -71,9 +75,7 @@ const ProjectDetail = () => {
               <Layers className="mt-1" />
               <div>
                 <p>Hạng mục</p>
-                <p className="text-gray-600 font-medium">
-                  XDCB, Thi công nội thất & Bảng hiệu mặt tiền
-                </p>
+                <p className="text-gray-600 font-medium">{project.job}</p>
               </div>
             </div>
             {/* 3 */}
@@ -81,25 +83,25 @@ const ProjectDetail = () => {
               <MapPin className="mt-1" />
               <div>
                 <p>Địa điểm</p>
-                <p className="text-gray-600 font-medium">
-                  57 Hùng Vương, TP. Đông Hà, Quảng Trị
-                </p>
+                <p className="text-gray-600 font-medium">{project.location}</p>
               </div>
             </div>
             {/* 4 */}
-            <div className="flex gap-3 mt-3">
-              <Layers3 className="mt-1" />
-              <div>
-                <p>Quy mô </p>
-                <p className="text-gray-600 font-medium">150m2</p>
+            {project.area && (
+              <div className="flex gap-3 mt-3">
+                <Layers3 className="mt-1" />
+                <div>
+                  <p>Quy mô </p>
+                  <p className="text-gray-600 font-medium">{project.area}</p>
+                </div>
               </div>
-            </div>
+            )}
             {/* 5 */}
             <div className="flex gap-3 mt-3">
               <CalendarDays className="mt-1" />
               <div>
                 <p>Năm thực hiện dự án</p>
-                <p className="text-gray-600 font-medium">2022</p>
+                <p className="text-gray-600 font-medium">{project.year}</p>
               </div>
             </div>
           </div>
@@ -109,7 +111,7 @@ const ProjectDetail = () => {
         HÌNH ẢNH DỰ ÁN
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {slides.map((slide, index) => (
+        {project.images.map((slide, index) => (
           <img
             key={index}
             src={slide}

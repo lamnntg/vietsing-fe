@@ -1,10 +1,19 @@
-import CEOAvatar from "@/public/ceo-avatar.jpeg";
-import HaAnh from "@/public/HaAnh.jpg";
-import HoangOanh from "@/public/HoangOanh.jpg";
-import VietAnh from "@/public/VietAnh.jpg";
-import YenChi from "@/public/YenChi.jpg";
-import MinhBang from "@/public/MinhBang.jpg";
-import NoAvatar from "@/public/no-avatar.png";
+import { ProductType } from "@/types/project.type";
+import {
+  CircuitBoard,
+  Dumbbell,
+  Images,
+  Landmark,
+  Paintbrush,
+  Sofa,
+  Webhook,
+} from "lucide-react";
+import Service1 from "@/public/images/services/gym-equip.webp";
+import Service2 from "@/public/images/services/art-work.jpg";
+import Service3 from "@/public/images/services/deco.jpeg";
+import Service4 from "@/public/images/slide6.png";
+import Service5 from "@/public/images/service5.jpg";
+
 export enum RoutesEnum {
   HOME = "/",
   INTRODUCE = "/gioi-thieu",
@@ -44,44 +53,6 @@ export const INTRODUCE_DROPDOWN = [
   },
 ];
 
-export const CEO_INTRODUCE = [
-  {
-    name: "Nguyễn Minh Quang",
-    role: "Founder - CEO",
-    image: CEOAvatar,
-  },
-  {
-    name: "Nguyễn Thị Hà Anh",
-    role: "Chuyên viên thiết kế nội thất - kỹ thuật",
-    image: HaAnh,
-  },
-  {
-    name: "Phạm Việt Anh",
-    role: "Kiến trúc sư",
-    image: VietAnh,
-  },
-  {
-    name: "Bùi Thị Yến Chi",
-    role: "Chuyên viên thiết kế nội thất - kỹ thuật",
-    image: YenChi,
-  },
-  {
-    name: "Lê Minh Bàng",
-    role: "Sale & Marketing",
-    image: MinhBang,
-  },
-  {
-    name: "Nguyễn Văn Giang",
-    role: "Quản lý dự án",
-    image: NoAvatar,
-  },
-  {
-    name: "Nguyễn Thị Hoàng Oanh ",
-    role: "Chuyên viên thiết kế nội thất - kỹ thuật",
-    image: HoangOanh,
-  },
-];
-
 export const FACEBOOK_LINK =
   "https://www.facebook.com/ed.interior.architecture";
 
@@ -112,5 +83,43 @@ export const dropdownMenuItems = [
   {
     href: RoutesEnum.NHA_THO,
     label: "Thiết kế nhà thờ",
+  },
+];
+
+export const SERVICES = [
+  {
+    href: RoutesEnum.COMPLETED + "?category=" + ProductType.EQUIPMENT,
+    image: Service1,
+    icon: Dumbbell,
+    title: "THIẾT KẾ , SẢN XUẤT SÂN CHƠI TRẺ EM, THIẾT BỊ GYM NGOÀI TRỜI",
+    type: ProductType.EQUIPMENT,
+  },
+  {
+    href: RoutesEnum.COMPLETED + "?category=" + ProductType.ARTWORK,
+    image: Service2,
+    icon: Landmark,
+    title: "THIẾT KẾ THI CÔNG ART WORK, THEMINGS",
+    type: ProductType.ARTWORK,
+  },
+  {
+    href: RoutesEnum.COMPLETED + "?category=" + ProductType.INTERIOR,
+    image: Service4,
+    icon: Sofa,
+    title: "THIẾT KẾ THI CÔNG NỘI THẤT ",
+    type: ProductType.INTERIOR,
+  },
+  {
+    href: RoutesEnum.COMPLETED + "?category=" + ProductType.COMPOSITE,
+    image: Service5,
+    icon: Paintbrush,
+    title: "SẢN XUẤT LẮP ĐẶT PHÀO GFRC, COMPOSITE",
+    type: ProductType.COMPOSITE,
+  },
+  {
+    href: RoutesEnum.COMPLETED + "?category=" + ProductType.BILLBOARDS,
+    image: Service3,
+    icon: CircuitBoard,
+    title: "THIẾT KẾ SẢN XUẤT LẮP ĐẶT BẢNG BIỂN",
+    type: ProductType.BILLBOARDS,
   },
 ];

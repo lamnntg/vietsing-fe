@@ -2,25 +2,23 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Logo from "@/public/images/logo.png";
 import Slide1 from "@/public/images/introduce.jpg";
-import useBreakpoint from "@/hooks/useBreakpoint";
 import { useAppStore } from "@/store/app.store";
 import { FuturaNow } from "@/utils/font";
 import clsx from "clsx";
 import Link from "next/link";
-import Sanpham1 from "@/public/images/sanpham1.jpg";
-import Sanpham2 from "@/public/images/sanpham2.jpg";
 import Service1 from "@/public/images/services/gym-equip.webp";
 import Service2 from "@/public/images/services/art-work.jpg";
 import Service3 from "@/public/images/services/deco.jpeg";
 
 import { Montserrat } from "next/font/google";
-import { Dumbbell, Images, Landmark, Loader2 } from "lucide-react";
+import { Dumbbell, Images, Landmark } from "lucide-react";
 import StepTwo from "./StepTwo";
 import FooterImage from "@/public/images/construction-banner.jpg";
 import project from "@/data/project.json";
-import { RoutesEnum } from "@/constants/app.constants";
+import { RoutesEnum, SERVICES } from "@/constants/app.constants";
+import { ProductType } from "@/types/project.type";
+import Banner from "./Banner";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -31,18 +29,26 @@ enum StepEnums {
 }
 
 const HomePage = () => {
+  const { firstTimeLoaded, setFirstTimeLoaded } = useAppStore();
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
-  const [step, setStep] = useState<StepEnums>(StepEnums.THREE);
+  const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
   }, []);
 
   useEffect(() => {
-    const timeoutTwo = setTimeout(() => {
+    let timeoutTwo: any;
+    console.warn("firstTimeLoaded", firstTimeLoaded);
+    if (firstTimeLoaded) {
+      timeoutTwo = setTimeout(() => {
+        setStep(StepEnums.THREE);
+        setFirstTimeLoaded(false);
+      }, 1500);
+    } else {
       setStep(StepEnums.THREE);
-    }, 1500);
+    }
     return () => {
       clearTimeout(timeoutTwo);
     };
@@ -66,138 +72,87 @@ const HomePage = () => {
           zIndex: step === StepEnums.THREE ? 1 : 3,
         }}
       >
-        <video
-          loop
-          muted
-          autoPlay
-          playsInline
-          poster=""
-          className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover"
-          onCanPlayThrough={() => {
-            setTimeout(() => {
-              setLoaded(true);
-            }, 200);
-          }}
-          hidden
-        >
-          <source
-            src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
-            type="video/mp4"
-          ></source>
-        </video>
-        <img
-          src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3ZpZGVvLnBuZw==&version_id=null"
-          className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover z-[-1] absolute top-0 left-0"
-          alt=""
-          hidden
-        />
         {step === StepEnums.TWO && <StepTwo />}
         {step === StepEnums.THREE && (
           <>
-            <div className="fixed top-0 left-0 w-full h-[100vh] z-[-1] overflow-hidden animate-fade">
-              <img
-                src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3ZpZGVvLnBuZw==&version_id=null"
-                className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover z-[-1] absolute top-0 left-0"
-                alt=""
-              />
-              {loaded ? (
-                <video
-                  loop
-                  muted
-                  autoPlay
-                  playsInline
-                  poster=""
-                  className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover relative z-[3]"
-                >
-                  <source
-                    src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvZmlsZS5tcDQ=&version_id=null"
-                    type="video/mp4"
-                  ></source>
-                </video>
-              ) : (
-                <div className="h-[100vh] w-full flex justify-center items-center">
-                  <Loader2 className="mr-2 h-10 w-10 animate-spin text-primary" />
-                </div>
-              )}
+            <div className="h-[100vh] z-[-1] overflow-hidden animate-fade">
+              <Banner />
             </div>
-            {loaded && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 1 } }}
-                className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] absolute top-0 left-0 bg-[rgba(0,0,0,0.3)]"
-              >
-                <div className="absolute top-[20%] left-[5%] z-10 font-semibold w-[80vw]">
-                  <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">
-                    <p className="mb-10">
-                      <span className="text-primary font-bold">VIỆT</span>{" "}
-                      <span className="text-[#312e81] font-bold">SING</span>
-                    </p>
-                    <div className={montserrat.className}>
-                      <motion.p
-                        className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
-                        initial={{
-                          transform: "translateX(-100%)",
-                          opacity: 0,
-                        }}
-                        animate={{
-                          transform: "translateX(0)",
-                          opacity: 1,
-                          transition: {
-                            duration: 0.8,
-                          },
-                        }}
-                      >
-                        Sức mạnh bền bỉ
-                      </motion.p>
-                      <motion.p
-                        className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
-                        initial={{
-                          transform: "translateX(100%)",
-                          opacity: 0,
-                        }}
-                        animate={{
-                          transform: "translateX(0)",
-                          opacity: 1,
-                          transition: {
-                            duration: 0.8,
-                          },
-                        }}
-                      >
-                        nghệ thuật sáng tạo
-                      </motion.p>
-                      <motion.p
-                        className="uppercase font-medium max-md:text-[20px] lg:text-[42px]"
-                        initial={{
-                          transform: "translateX(-100%)",
-                          opacity: 0,
-                        }}
-                        animate={{
-                          transform: "translateX(0)",
-                          opacity: 1,
-                          transition: {
-                            duration: 0.8,
-                          },
-                        }}
-                      >
-                        Tỏa sáng không gian
-                      </motion.p>
-                    </div>
-                    <Link href={RoutesEnum.INTRODUCE}>
-                      <button className="border border-white border-solid text-[20px] transition px-4 py-3 mt-10 hover:bg-primary hover:border-primary rounded-md">
-                        Tìm hiểu thêm
-                      </button>
-                    </Link>
-                  </h2>
-                </div>
-              </motion.div>
-            )}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, transition: { duration: 1 } }}
+            >
+              <div className="absolute top-[20%] left-[5%] z-10 font-semibold w-[80vw]">
+                <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">
+                  <p className="mb-10 text-nowrap">
+                    <span className="text-primary font-bold">VIETSING</span>{" "}
+                    <span className="text-[#312e81] font-bold">GROUP</span>
+                  </p>
+                  <div className={montserrat.className}>
+                    <motion.p
+                      className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
+                      initial={{
+                        transform: "translateX(-100%)",
+                        opacity: 0,
+                      }}
+                      animate={{
+                        transform: "translateX(0)",
+                        opacity: 1,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
+                    >
+                      Sức mạnh bền bỉ
+                    </motion.p>
+                    <motion.p
+                      className="uppercase font-medium  max-md:text-[20px] lg:text-[42px]"
+                      initial={{
+                        transform: "translateX(100%)",
+                        opacity: 0,
+                      }}
+                      animate={{
+                        transform: "translateX(0)",
+                        opacity: 1,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
+                    >
+                      nghệ thuật sáng tạo
+                    </motion.p>
+                    <motion.p
+                      className="uppercase font-medium max-md:text-[20px] lg:text-[42px]"
+                      initial={{
+                        transform: "translateX(-100%)",
+                        opacity: 0,
+                      }}
+                      animate={{
+                        transform: "translateX(0)",
+                        opacity: 1,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
+                    >
+                      Tỏa sáng không gian
+                    </motion.p>
+                  </div>
+                  <Link href={RoutesEnum.INTRODUCE}>
+                    <button className="border border-white border-solid text-[20px] transition px-4 py-3 mt-10 hover:bg-primary hover:border-primary rounded-md">
+                      Tìm hiểu thêm
+                    </button>
+                  </Link>
+                </h2>
+              </div>
+            </motion.div>
           </>
         )}
       </div>
       {step === StepEnums.THREE && (
         <div className="bg-white z-10 relative">
           <div className="container mx-auto">
-            <div className="flex items-center flex-col md:flex-row flex-wrap gap-6 pt-14">
+            <div className="hidden lg:flex items-center flex-col md:flex-row flex-wrap gap-6 pt-14">
               <div className="flex-1">
                 <h3 className="font-bold text-2xl md:text-4xl mb-8 pt-10">
                   CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
@@ -267,132 +222,58 @@ const HomePage = () => {
           <div>
             <div className=" mt-10">
               <div className="container mx-auto pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <Link
-                  href={RoutesEnum.COMPLETED + "?category=1"}
-                  className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
-                >
-                  <div className="flex-1 object-cover h-[300px] lg:h-[600px] overflow-hidden">
-                    <Image
-                      src={Service1}
-                      alt="service 1"
-                      style={{ objectFit: "cover", height: "100%" }}
-                      className="group-hover:scale-[1.1] transition"
-                    />
-                  </div>
-                  <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
-                  <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
-                    <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
-                      <Dumbbell />
-                    </div>
-                    <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
-                      SẢN XUẤT LẮP ĐẶT TRÒ CHƠI THIẾT BỊ TẬP GYM
-                    </p>
-                  </div>
-                </Link>
-                <Link
-                  href={RoutesEnum.COMPLETED + "?category=1"}
-                  className="flex relative my-10gap-10 items-center flex-wrap group cursor-pointer"
-                >
-                  <div className="flex-1 object-cover h-[300px] lg:h-[600px] overflow-hidden">
-                    <Image
-                      src={Service2}
-                      alt="service 1"
-                      style={{ objectFit: "cover", height: "100%" }}
-                      className="group-hover:scale-[1.1] transition"
-                    />
-                  </div>
-                  <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
-                  <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
-                    <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
-                      <Landmark />
-                    </div>
-                    <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
-                      TƯỢNG ART WORK
-                    </p>
-                  </div>
-                </Link>
-                <Link
-                  href={RoutesEnum.COMPLETED + "?category=1"}
-                  className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
-                >
-                  <div className="flex-1 object-cover h-[300px] lg:h-[600px] overflow-hidden">
-                    <Image
-                      src={Service3}
-                      alt="service 1"
-                      style={{ objectFit: "cover", height: "100%" }}
-                      className="group-hover:scale-[1.1] transition"
-                    />
-                  </div>
-                  <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
-                  <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
-                    <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
-                      <Images />
-                    </div>
-                    <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
-                      BẢNG BIỂN DECO
-                    </p>
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            <div className="container mx-auto flex justify-center mt-14 relative">
-              <div className="px-8 bg-white relative z-[2] ">
-                <div
-                  className={clsx(
-                    "uppercase border-[#757575] border border-solid px-[30px] tracking-wider bg-white font-semibold text-base text-center md:text-2xl py-4 pb-3 inline-flex justify-center items-center",
-                    FuturaNow.className
-                  )}
-                >
-                  <span className="leading-[20px] md:leading-[40px] uppercase">
-                    SẢN PHẨM
-                  </span>
-                </div>
-              </div>
-              <div className="absolute top-[50%] left-0 w-full h-[1px] bg-black z-[1]"></div>
-            </div>
-            <div className="bg-white py-10">
-              <div className="container mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 pt-10">
+                {SERVICES.slice(0, 3).map((item, index) => (
                   <Link
-                    href="/san-pham"
+                    key={index}
+                    href={item.href}
                     className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
                   >
-                    <div className="flex-1 object-cover overflow-hidden">
+                    <div className="flex-1 object-cover h-[300px] lg:h-[460px] overflow-hidden">
                       <Image
-                        src={Sanpham1}
-                        alt="service 1"
+                        src={item.image}
+                        alt="service"
                         style={{ objectFit: "cover", height: "100%" }}
-                        className="w-full aspect-[2/1] object-cover group-hover:scale-[1.1] transition"
+                        className="group-hover:scale-[1.1] transition"
                       />
                     </div>
                     <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
                     <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
+                      <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
+                        <item.icon />
+                      </div>
                       <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
-                        BỘT BẢ, SƠN HÃNG JOTUN
+                        {item.title}
                       </p>
                     </div>
                   </Link>
+                ))}
+              </div>
+              <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                {SERVICES.slice(3).map((item, index) => (
                   <Link
-                    href="/san-pham#chongtham"
+                    key={index}
+                    href={item.href}
                     className="flex relative gap-10 items-center flex-wrap group cursor-pointer"
                   >
-                    <div className="flex-1 object-cover overflow-hidden">
+                    <div className="flex-1 object-cover h-[300px] lg:h-[460px] overflow-hidden">
                       <Image
-                        src={Sanpham2}
-                        alt="san pham 1"
+                        src={item.image}
+                        alt="service"
                         style={{ objectFit: "cover", height: "100%" }}
-                        className="w-full aspect-[2/1] object-cover group-hover:scale-[1.1] transition"
+                        className="group-hover:scale-[1.1] transition"
                       />
                     </div>
                     <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.5)] opacity-60 group-hover:opacity-100 transition"></div>
                     <div className="absolute bottom-4 z-[3] left-0 flex flex-col items-center justify-center w-full text-white overflow-hidden group-hover:bottom-[50%] group-hover:translate-y-[50%] transition-all">
+                      <div className="w-10 h-10 rounded-full border border-solid border-white flex justify-center items-center">
+                        <item.icon />
+                      </div>
                       <p className="font-medium mb-4 text-xl md:text-lg mt-4 text-center">
-                        VẬT LIỆU CHỐNG THẤM
+                        {item.title}
                       </p>
                     </div>
                   </Link>
-                </div>
+                ))}
               </div>
             </div>
 
@@ -416,7 +297,7 @@ const HomePage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6 pt-10">
                   {project.map((item, index) => (
                     <Link
-                      href="/du-an/1"
+                      href={RoutesEnum.COMPLETED + "/" + item.id}
                       key={index}
                       className="block w-full relative overflow-hidden group cursor-pointer"
                     >
@@ -437,24 +318,24 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+          <div className="relative">
+            <div className="absolute top-0 left-0 w-full h-full bg-[rgb(0,0,0,0.4)] z-[11]"></div>
+            <Image
+              src={FooterImage}
+              className="relative z-10 h-[360px] object-cover"
+              alt="footer image"
+            />
+            <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-white z-[12]">
+              <h2 className="text-xl md:text-3xl">
+                CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING{" "}
+              </h2>
+              <p className="mt-6 text-lg">
+                Đơn vị Tư vấn Thiết kế - Sản xuất - Thương Mại
+              </p>
+            </div>
+          </div>
         </div>
       )}
-      <div className="relative">
-        <div className="absolute top-0 left-0 w-full h-full bg-[rgb(0,0,0,0.4)] z-[11]"></div>
-        <Image
-          src={FooterImage}
-          className="relative z-10 h-[360px] object-cover"
-          alt="footer image"
-        />
-        <div className="absolute w-full text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-bold text-white z-[12]">
-          <h2 className="text-xl md:text-3xl">
-            CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING{" "}
-          </h2>
-          <p className="mt-6 text-lg">
-            Đơn vị Tư vấn Thiết kế - Sản xuất - Thương Mại
-          </p>
-        </div>
-      </div>
     </div>
   );
 };
