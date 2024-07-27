@@ -7,6 +7,7 @@ import "swiper/css/effect-fade";
 import { Metadata } from "next";
 import ScrollToTop from "@/components/layouts/ScrollToTop";
 import { GoogleTagManager } from "@next/third-parties/google";
+import "swiper/css/pagination";
 
 const sourceSansPro = Source_Sans_3({
   subsets: ["latin"],

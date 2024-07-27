@@ -16,6 +16,7 @@ import Slide4 from "@/public/images/slide4.jpg";
 import Slide5 from "@/public/images/slide5.jpg";
 import Slide6 from "@/public/images/slide6.png";
 import Image from "next/image";
+import "swiper/css/pagination";
 
 const SLIDES = [Slide1, Slide2, Slide3, Slide4, Slide5, Slide6];
 
@@ -41,15 +42,18 @@ const Banner = () => {
         loop={true}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        className="banner h-full"
+        className="detail h-full"
       >
         {SLIDES.map((slide, index) => (
           <SwiperSlide key={index}>
-            <Image
-              src={slide}
-              className="w-full h-full object-cover"
-              alt="slide"
-            />
+            <div className="relative h-full">
+              <Image
+                src={slide}
+                className="w-full h-full object-cover"
+                alt="slide"
+              />
+              <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.2)]"></div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

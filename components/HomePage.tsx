@@ -29,6 +29,7 @@ enum StepEnums {
 }
 
 const HomePage = () => {
+  const { firstTimeLoaded, setFirstTimeLoaded } = useAppStore();
   const { setShowFooter } = useAppStore();
   const [loaded, setLoaded] = useState(false);
   const [step, setStep] = useState<StepEnums>(StepEnums.TWO);
@@ -38,9 +39,16 @@ const HomePage = () => {
   }, []);
 
   useEffect(() => {
-    const timeoutTwo = setTimeout(() => {
+    let timeoutTwo: any;
+    console.warn("firstTimeLoaded", firstTimeLoaded);
+    if (firstTimeLoaded) {
+      timeoutTwo = setTimeout(() => {
+        setStep(StepEnums.THREE);
+        setFirstTimeLoaded(false);
+      }, 1500);
+    } else {
       setStep(StepEnums.THREE);
-    }, 1500);
+    }
     return () => {
       clearTimeout(timeoutTwo);
     };
@@ -64,12 +72,6 @@ const HomePage = () => {
           zIndex: step === StepEnums.THREE ? 1 : 3,
         }}
       >
-        <img
-          src="https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3ZpZGVvLnBuZw==&version_id=null"
-          className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] object-cover z-[-1] absolute top-0 left-0"
-          alt=""
-          hidden
-        />
         {step === StepEnums.TWO && <StepTwo />}
         {step === StepEnums.THREE && (
           <>
@@ -79,7 +81,6 @@ const HomePage = () => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, transition: { duration: 1 } }}
-              className="w-[100%] max-w-[100%] overflow-hidden h-[100vh] absolute top-0 left-0 bg-[rgba(0,0,0,0.3)]"
             >
               <div className="absolute top-[20%] left-[5%] z-10 font-semibold w-[80vw]">
                 <h2 className="text-[38px] text-white max-w-[90%] lg:max-w-[600px] lg:text-[50px]">

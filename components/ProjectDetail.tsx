@@ -15,7 +15,6 @@ const slides = [
   "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzEwLiBNUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC4yLmpwZw==&version_id=null",
 ];
 // Import Swiper styles
-import "swiper/css/pagination";
 import { CalendarDays, Layers, Layers3, MapPin, User } from "lucide-react";
 import { ProjectDef } from "@/types/project.type";
 import { FC } from "react";

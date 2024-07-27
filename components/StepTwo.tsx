@@ -3,8 +3,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 import { memo } from "react";
+import { useAppStore } from "@/store/app.store";
 
 const StepTwo = () => {
+  const { firstTimeLoaded } = useAppStore();
+  if (!firstTimeLoaded) {
+    return null;
+  }
+
   return (
     <div className="w-full px-2 flex justify-center flex-col items-center">
       <div className="flex items-center gap-8">
