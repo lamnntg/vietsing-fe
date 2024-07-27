@@ -76,7 +76,7 @@
   },
   {
     "id": 14,
-    "name": "Cung cấp thi công phào GFRC - Khu du lịch quốc tế Đồi Rồng",
+    "name": "Cung cấp thi công phào Zone 7 - Khu du lịch quốc tế Đồi Rồng",
     "images": [
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZ2ZyYy1kb2lyb25nL3o1NjcyMzQzNDg1Nzk0XzM3M2UwYWM2NGFjZTQ0OGY0NGI0NDhlZGI2NjlhYmE5LmpwZw==&version_id=null",
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvZ2ZyYy1kb2lyb25nL3o1NjcyMzQzNDQzOTMzX2ZmMWVlNzg2ZGU0MDMwMjQ4N2Q2MjYyMWM1MzdmNzIyLmpwZw==&version_id=null",
@@ -93,7 +93,7 @@
     "category": "composite",
     "job_title": "Sản xuất & thi công phào",
     "customer": "Tập Đoàn Gleximco & Công Ty CP Đầu tư và du lịch Vạn Hương",
-    "job": "Cung cấp và thi công phào GFRC",
+    "job": "Cung cấp và thi công phào",
     "location": "Khu du lịch Quốc tế Đồi Rồng ,Đồ Sơn, Hải Phòng",
     "area": null,
     "year": "2022"
