@@ -12,7 +12,7 @@
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL1NjcmVlbi1TaG90LTIwMjItMDgtMTYtYXQtMTQuNTYuMjIucG5n&version_id=null",
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay12aW5ob21lcy1ncmFuZC1wYXJrL3RpZW4tZG8tdGllbi1pY2gtMi5qcGc=&version_id=null"
     ],
-    "category": "decorative",
+    "category": "artwork",
     "job_title": "Thiết kế & Thi công lắp đặt",
     "customer": "Tập Đoàn Vingroup & Công Ty CP Kinh Doanh Bất Động Sản MV Việt Nam",
     "job": "Thiết kế & thi công lắp đặt biểu tượng ARTWORK",
@@ -34,7 +34,7 @@
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvY29uZy12aWVuLWFuaC1zYW5nLXZpbmhvbWVzLWdyYW5kLXBhcmthMmFhLmpwZw==&version_id=null",
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvY29sdW1uLXZpbmhvbWVzLWdyYW5kLXBhcmsvREpJXzA5MjYtSERSLmpwZw==&version_id=null"
     ],
-    "category": "decorative",
+    "category": "artwork",
     "job_title": " Thiết kế & Thi công lắp đặt",
     "customer": "Tập Đoàn Vingroup & Công Ty CP Kinh Doanh Bất Động Sản MV Việt Nam",
     "job": "Thiết kế & thi công lắp đặt hệ thống cột ánh sáng",
@@ -63,7 +63,7 @@
     "images": [
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvaW1hZ2VzL3Nob3Bob3VzZS53ZWJw&version_id=null"
     ],
-    "category": "equipment"
+    "category": "composite"
   },
   {
     "name": "Nội thất 32 căn hộ Ocean Park",
@@ -75,7 +75,7 @@
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlNC5wbmc=&version_id=null",
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvMzItb2NlYW4tcGFyay9QaWN0dXJlNS5wbmc=&version_id=null"
     ],
-    "category": "decorative",
+    "category": "interior",
     "job_title": "Thiết kế & thi công hoàn thiện nội thất",
     "customer": "Tập đoàn Vingroup & Công ty CP Vinhomes",
     "job": "Thiết kế & thi công nội thất căn hộ chung cư",
@@ -143,7 +143,7 @@
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvYXJ0d29yay1sZWdlbmQtcGFyay96NTY2NTk5ODA5NDA1Ml85NzFkOTAwMjE2YTFiNDYwYTRkMWJkOWM3ZDM1MzM0Yy5qcGc=&version_id=null",
       ""
     ],
-    "category": "decorative",
+    "category": "artwork",
     "job_title": " Thiết kế & Thi công lắp đặt",
     "customer": "Tập Đoàn Gleximco & Công Ty CP Đầu tư và du lịch Vạn Hương",
     "job": "Cung cấp & thi công lắp đặt biểu tượng ARTWORK",
@@ -152,7 +152,7 @@
     "year": "2023"
   },
   {
-    "name": "Công viên nước/ Khu du lịch quốc tế Đồi Rồng",
+    "name": "Cung cấp & thi công lắp đặt hệ thống mái rơm cót ép - Khu du lịch quốc tế Đồi Rồng",
     "images": [
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzY4ODcyMl81ZDk4ZTRmYmJkNTRlMjc0NmRiNTZhZjQ5ZjRlMTVjZC5qcGc=&version_id=null",
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzY5MzY2N19jMTM3MDQ5MTYxMjM3NjlmODE2NDVhMmZlN2Y3Yjg3OC5qcGc=&version_id=null",
@@ -164,7 +164,7 @@
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5NzkxNjE4MV81OTZmZjg5YjUyNTg5N2VkZjQ2MmM3NWZmZjYyMjQzNS5qcGc=&version_id=null",
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvcm9vZi1kb2ktcm9uZy96NTY2NTk5ODEyMjY4N184NDgyZmQzODRlYTAxZmU4ZDBmYzBkMTNhOWMzZGViNS5qcGc=&version_id=null"
     ],
-    "category": "decorative",
+    "category": "artwork",
     "job_title": "Thi công lắp đặt",
     "customer": "Tập Đoàn Gleximco & Công Ty CP Đầu tư và du lịch Vạn Hương",
     "job": "Cung cấp & thi công lắp đặt hệ thống mái rơm cót ép",
@@ -245,7 +245,7 @@
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlOC5wbmc=&version_id=null",
       "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvcHJvamVjdHMvaGFybW9ueS9QaWN0dXJlOS5wbmc=&version_id=null"
     ],
-    "category": "decorative",
+    "category": "interior",
     "job_title": "Thiết kế & thi công hoàn thiện villa",
     "customer": "Anh Thái Tuấn",
     "job": "Thiết kế & xây dựng thi công hoàn thiện villa, biệt thự",
