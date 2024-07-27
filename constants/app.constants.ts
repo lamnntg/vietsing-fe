@@ -12,7 +12,7 @@ import Service1 from "@/public/images/services/gym-equip.webp";
 import Service2 from "@/public/images/services/art-work.jpg";
 import Service3 from "@/public/images/services/deco.jpeg";
 import Service4 from "@/public/images/slide6.png";
-import Service5 from "@/public/images/Service5.jpg";
+import Service5 from "@/public/images/service5.jpg";
 
 export enum RoutesEnum {
   HOME = "/",
