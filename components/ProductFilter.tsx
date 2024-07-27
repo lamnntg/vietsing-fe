@@ -27,7 +27,6 @@ const ProductFilter = () => {
 
   return (
     <div className="flex gap-4 justify-end mb-10 items-center">
-      <p>Lọc theo</p>
       <Select value={value} onValueChange={(value) => updateFilter(value)}>
         <SelectTrigger className="w-[500px] max-w-full">
           <SelectValue placeholder="Tất cả" />
