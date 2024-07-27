@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { MenuToggle } from "../atoms/MenuToggle";
 import { motion } from "framer-motion";
 import useBreakpoint from "@/hooks/useBreakpoint";
@@ -62,7 +62,13 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [true]);
-
+  const showBannerText = useMemo(() => {
+    return (
+      active ||
+      ["/du-an", "/san-pham"].includes(pathname) ||
+      pathname.includes("/du-an")
+    );
+  }, [active, pathname]);
   if (!showFooter) {
     return null;
   }
@@ -71,9 +77,7 @@ const Header = () => {
     <div
       className={cn(
         "fixed top-0 left-0 z-[11]  font-medium w-full px-3 transition",
-        active ||
-          ["/du-an", "/san-pham"].includes(pathname) ||
-          pathname.includes("/du-an")
+        showBannerText
           ? "bg-white text-black shadow-md"
           : "text-white bg-transparent"
       )}
@@ -88,6 +92,16 @@ const Header = () => {
                 src={LogoText}
               />
             </Link>
+            {showBannerText && (
+              <div className="flex items-center gap-1">
+                <span className="text-xl font-semibold text-[#ca001a]">
+                  VIETSING
+                </span>
+                <span className="text-xl font-semibold text-[#18298b]">
+                  GROUP
+                </span>
+              </div>
+            )}
             <MenuToggle toggle={() => setShow(!show)} />
             <motion.div
               style={{ overflow: "hidden" }}
@@ -136,25 +150,6 @@ const Header = () => {
               >
                 Sản phẩm
               </Link>
-              {/* <DropdownMenu
-                item={{
-                  label: "Tin tức",
-                  items: [
-                    {
-                      href: RoutesEnum.QUY_TRINH_THIET_KE,
-                      label: "Quy trình thiết kế, thi công",
-                    },
-                    {
-                      href: RoutesEnum.BAO_GIA,
-                      label: "Báo giá",
-                    },
-                    {
-                      href: RoutesEnum.CHINH_SACH,
-                      label: "Chính sách",
-                    },
-                  ],
-                }}
-              /> */}
               <Link
                 href={RoutesEnum.LIEN_HE}
                 className={cn(
@@ -216,25 +211,6 @@ const Header = () => {
             >
               Sản phẩm
             </Link>
-            {/* <DropdownMenu
-              item={{
-                label: "Tin tức",
-                items: [
-                  {
-                    href: RoutesEnum.QUY_TRINH_THIET_KE,
-                    label: "Quy trình thiết kế, thi công",
-                  },
-                  {
-                    href: RoutesEnum.BAO_GIA,
-                    label: "Báo giá",
-                  },
-                  {
-                    href: RoutesEnum.CHINH_SACH,
-                    label: "Chính sách",
-                  },
-                ],
-              }}
-            /> */}
             <Link
               href={RoutesEnum.LIEN_HE}
               className={cn(

@@ -28,7 +28,9 @@ export type RowDataDef = {
 
 export enum ProductType {
   ALL = "all",
-  GYM = "equipment",
-  ART = "decorative",
-  DECORATION = "billboards",
+  EQUIPMENT = "equipment",
+  ARTWORK = "artwork",
+  INTERIOR = "interior",
+  COMPOSITE = "composite",
+  BILLBOARDS = "billboards",
 }

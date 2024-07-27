@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 import { ProductType } from "@/types/project.type";
 import { useRouter } from "next/navigation";
-import { RoutesEnum } from "@/constants/app.constants";
+import { RoutesEnum, SERVICES } from "@/constants/app.constants";
 
 const ProductFilter = () => {
   const router = useRouter();
@@ -29,17 +29,17 @@ const ProductFilter = () => {
     <div className="flex gap-4 justify-end mb-10 items-center">
       <p>Lọc theo</p>
       <Select value={value} onValueChange={(value) => updateFilter(value)}>
-        <SelectTrigger className="w-[300px]">
+        <SelectTrigger className="w-[500px] max-w-full">
           <SelectValue placeholder="Tất cả" />
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
             <SelectItem value={ProductType.ALL}>Tất cả dự án</SelectItem>
-            <SelectItem value={ProductType.GYM}>Trò chơi thiết bị</SelectItem>
-            <SelectItem value={ProductType.ART}>Tượng art work</SelectItem>
-            <SelectItem value={ProductType.DECORATION}>
-              Bảng biển deco
-            </SelectItem>
+            {SERVICES.map((service) => (
+              <SelectItem key={service.title} value={service.type}>
+                {service.title}
+              </SelectItem>
+            ))}
           </SelectGroup>
         </SelectContent>
       </Select>
