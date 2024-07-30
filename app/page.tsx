@@ -9,6 +9,9 @@ export const viewport: Viewport = {
 export default function Home() {
   return (
     <main>
+      <h1 className="font-bold text-2xl md:text-4xl mb-8 pt-10 hidden">
+        CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
+      </h1>
       <HomePage />
     </main>
   );

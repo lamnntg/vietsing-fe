@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     ["og:site_name"]: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
     ["viewport"]: "width=device-width, initial-scale=1.0",
   },
-  keywords:'vietsing, thiết bị gym, thi công artwork, thi công phào, sản xuất bảng biển',
+  keywords:'vietsing, viet sing group, vietsing group, thiết bị gym, thi công artwork, thi công phào, sản xuất bảng biển',
   description: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING ",
   openGraph: {
     title: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",

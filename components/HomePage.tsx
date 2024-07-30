@@ -154,9 +154,9 @@ const HomePage = () => {
           <div className="container mx-auto">
             <div className="hidden lg:flex items-center flex-col md:flex-row flex-wrap gap-6 pt-14">
               <div className="flex-1">
-                <h3 className="font-bold text-2xl md:text-4xl mb-8 pt-10">
+                <h1 className="font-bold text-2xl md:text-4xl mb-8 pt-10">
                   CÔNG TY CP XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING
-                </h3>
+                </h1>
                 <p>
                   <p className="mt-2">
                     <span className="font-medium">
