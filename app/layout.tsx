@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     ["viewport"]: "width=device-width, initial-scale=1.0",
   },
   description:
-    "Công Ty Cổ Phần Xây dựng và Thương mại Việt Sing là nhà cung cấp và phân phối các dòng sơn công nghiệp, sơn nội-ngoại thất, các sản phẩm phụ gia cho các công trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn chống thấm, Băng keo chống thấm....",
+    "Việt Sing là nhà cung cấp và phân phối các dòng sơn công nghiệp, sơn nội-ngoại thất, các sản phẩm phụ gia cho các công trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn chống thấm, Băng keo chống thấm....",
   keywords:
     "vietsing, viet sing group, vietsing group, thiết bị gym, thi công artwork, thi công phào, sản xuất bảng biển",
   openGraph: {
     title: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
     description:
-      "Công Ty Cổ Phần Xây dựng và Thương mại Việt Sing là nhà cung cấp và phân phối các dòng sơn công nghiệp, sơn nội-ngoại thất, các sản phẩm phụ gia cho các công trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn chống thấm, Băng keo chống thấm....",
+      "Việt Sing là nhà cung cấp và phân phối các dòng sơn công nghiệp, sơn nội-ngoại thất, các sản phẩm phụ gia cho các công trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn chống thấm, Băng keo chống thấm....",
     url: "https://vietsinggroup.com.vn",
     type: "website",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CÔNG TY CỔ PHẦN XÂY DỰNG VÀ THƯƠNG MẠI VIỆT SING",
     description:
-      "Công Ty Cổ Phần Xây dựng và Thương mại Việt Sing là nhà cung cấp và phân phối các dòng sơn công nghiệp, sơn nội-ngoại thất, các sản phẩm phụ gia cho các công trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn chống thấm, Băng keo chống thấm....",
+      "Việt Sing là nhà cung cấp và phân phối các dòng sơn công nghiệp, sơn nội-ngoại thất, các sản phẩm phụ gia cho các công trình xây dựng như vật liệu chống thấm, sơn epoxy, sơn chống thấm, Băng keo chống thấm....",
     site: "https://vietsinggroup.com.vn",
     images: [
       {
