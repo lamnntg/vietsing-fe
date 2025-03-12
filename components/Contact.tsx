@@ -48,7 +48,7 @@ const Contact = () => {
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <Phone />
-              <Link href="tel:+0932925999">0932.925.999 / 0941.689.999</Link>
+              <Link href="tel:+0932925999">0932.925.999 </Link>
             </li>
             <li className="px-4 py-2 flex items-center gap-3 border-b border-solid border-[rgba(0,0,0,.125)]">
               <MapPin />
