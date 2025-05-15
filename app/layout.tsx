@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvbG9nb19zbWFsbC5wbmc=&version_id=null",
+        url: "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvbG9nb19zbWFsbC5wbmc=&version_id=null",
         alt: "thumbnailUrl",
         width: 400,
         height: 200,
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     site: "https://vietsinggroup.com.vn",
     images: [
       {
-        url: "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvbG9nb19zbWFsbC5wbmc=&version_id=null",
+        url: "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=dmlldHNpbmcvbG9nb19zbWFsbC5wbmc=&version_id=null",
         alt: "thumbnailUrl",
         width: 400,
         height: 200,

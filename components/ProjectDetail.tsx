@@ -10,9 +10,9 @@ import {
 } from "swiper/modules";
 
 const slides = [
-  "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzEwLiBNUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC4xLmpwZw==&version_id=null",
-  "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzEwLiBNUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC4xMC5qcGc=&version_id=null",
-  "https://console.minio.hdcs.tech/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzEwLiBNUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC4yLmpwZw==&version_id=null",
+  "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzEwLiBNUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC4xLmpwZw==&version_id=null",
+  "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzEwLiBNUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC4xMC5qcGc=&version_id=null",
+  "https://console.minio.echodesign.vn/api/v1/buckets/echo/objects/download?preview=true&prefix=RGF0YS9iaWV0dGh1LzEwLiBNUiBMScOKTiAtIFFV4bqiTkcgTklOSC9NUiBMScOKTiAtIFFV4bqiTkcgTklOSC4yLmpwZw==&version_id=null",
 ];
 // Import Swiper styles
 import { CalendarDays, Layers, Layers3, MapPin, User } from "lucide-react";
